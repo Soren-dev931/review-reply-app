@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import NavBar from "@/components/NavBar";
 
 export const metadata: Metadata = {
   title: "Reviewly — AI Review Response Generator",
@@ -14,28 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen flex flex-col">
-        <nav className="border-b border-navy-100 bg-white/80 backdrop-blur-sm sticky top-0 z-50">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
-            <a href="/" className="flex items-center gap-2">
-              <span className="text-2xl">💬</span>
-              <span className="text-xl font-bold text-navy-900">Reviewly</span>
-            </a>
-            <div className="flex items-center gap-3">
-              <a
-                href="/login"
-                className="text-navy-600 hover:text-navy-900 font-medium text-sm transition-colors"
-              >
-                Log in
-              </a>
-              <a
-                href="/signup"
-                className="btn-primary text-sm !px-4 !py-2"
-              >
-                Get Started Free
-              </a>
-            </div>
-          </div>
-        </nav>
+        <NavBar />
 
         <main className="flex-1">{children}</main>
 

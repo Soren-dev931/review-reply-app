@@ -6,8 +6,8 @@ CREATE TABLE profiles (
   tone TEXT DEFAULT 'professional',
   custom_instructions TEXT,
   plan TEXT DEFAULT 'free',
-  stripe_customer_id TEXT,
-  stripe_subscription_id TEXT,
+  polar_customer_id TEXT,
+  polar_subscription_id TEXT,
   monthly_usage INT DEFAULT 0,
   usage_reset_at TIMESTAMPTZ DEFAULT (date_trunc('month', NOW()) + INTERVAL '1 month'),
   created_at TIMESTAMPTZ DEFAULT NOW()

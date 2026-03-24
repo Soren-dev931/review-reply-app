@@ -152,7 +152,7 @@ export default function HomePage() {
       <section className="bg-gradient-to-b from-navy-900 to-navy-800 text-white py-20 sm:py-28">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <div className="inline-block bg-emerald-500/10 border border-emerald-500/20 rounded-full px-4 py-1.5 text-emerald-400 text-sm font-medium mb-6">
-            Used by 500+ local businesses
+            AI-powered review responses in 10 seconds
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
             Stop ignoring
@@ -249,6 +249,7 @@ export default function HomePage() {
               <ul className="mt-6 space-y-3 text-sm">
                 {[
                   'Unlimited responses',
+                  'Google Business Profile integration',
                   'Tone customization',
                   'Custom instructions',
                   'Response history',

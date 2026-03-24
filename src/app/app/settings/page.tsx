@@ -174,14 +174,14 @@ export default function SettingsPage() {
         <div className="card p-6">
           <h2 className="font-semibold text-navy-900 mb-1">Custom Instructions</h2>
           <p className="text-navy-500 text-xs mb-4">
-            Add things you always want mentioned in responses.
+            Add things you always want mentioned in responses. These will be included in every generated response.
           </p>
           <textarea
             value={customInstructions}
             onChange={(e) => setCustomInstructions(e.target.value)}
             className="input-field resize-none"
-            rows={3}
-            placeholder="e.g. We recently renovated our patio"
+            rows={4}
+            placeholder={"Examples:\n• For negative reviews, offer a free item on their next visit\n• Always mention we're under new management\n• Include our phone number: (555) 123-4567\n• Mention our new outdoor patio"}
           />
         </div>
 
