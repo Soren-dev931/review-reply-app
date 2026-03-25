@@ -36,6 +36,7 @@ export default function SettingsPage() {
   const [saving, setSaving] = useState(false)
   const [saved, setSaved] = useState(false)
   const [error, setError] = useState('')
+  const [upgrading, setUpgrading] = useState(false)
 
   const supabase = createClient()
 
@@ -199,9 +200,25 @@ export default function SettingsPage() {
             {!isPro && (
               <button
                 type="button"
-                className="btn-primary !py-2 !px-4 text-sm"
+                disabled={upgrading}
+                onClick={async () => {
+                  setUpgrading(true)
+                  try {
+                    const res = await fetch('/api/checkout', { method: 'POST' })
+                    const data = await res.json()
+                    if (data.url) {
+                      window.location.href = data.url
+                    } else {
+                      setError(data.error || 'Failed to start checkout')
+                    }
+                  } catch {
+                    setError('Failed to start checkout')
+                  }
+                  setUpgrading(false)
+                }}
+                className="btn-primary !py-2 !px-4 text-sm disabled:opacity-50"
               >
-                Upgrade to Pro
+                {upgrading ? 'Loading...' : 'Upgrade to Pro — $49/mo'}
               </button>
             )}
           </div>
