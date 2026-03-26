@@ -29,6 +29,11 @@ const categories = [
         href: '/for/restaurants',
         desc: 'Templates for food quality, service, wait times, and ambiance feedback.',
       },
+      {
+        title: 'Spas',
+        href: '/for/spas',
+        desc: 'Responses for treatments, therapists, ambiance, booking, and relaxation feedback.',
+      },
     ],
   },
   {
@@ -39,6 +44,41 @@ const categories = [
         href: '/for/dentists',
         desc: 'HIPAA-conscious responses for patient care, procedures, and wait time reviews.',
       },
+      {
+        title: 'Medical Practices',
+        href: '/for/medical',
+        desc: 'HIPAA-conscious templates for patient care, wait times, billing, and staff feedback.',
+      },
+      {
+        title: 'Veterinary',
+        href: '/for/veterinary',
+        desc: 'Compassionate responses for pet care, emergency visits, costs, and communication.',
+      },
+    ],
+  },
+  {
+    name: 'Services',
+    businesses: [
+      {
+        title: 'Salons',
+        href: '/for/salons',
+        desc: 'Responses for hair stylists, color work, cut quality, wait times, and atmosphere.',
+      },
+      {
+        title: 'Auto Repair',
+        href: '/for/auto-repair',
+        desc: 'Templates for pricing transparency, repair quality, wait times, and communication.',
+      },
+      {
+        title: 'Gyms & Fitness',
+        href: '/for/gyms',
+        desc: 'Responses for equipment, cleanliness, staff, classes, and membership feedback.',
+      },
+      {
+        title: 'Law Firms',
+        href: '/for/law-firms',
+        desc: 'Professional templates for communication, billing, responsiveness, and outcomes.',
+      },
     ],
   },
   {
@@ -48,6 +88,11 @@ const categories = [
         title: 'Apartments',
         href: '/for/apartments',
         desc: 'Property manager responses for maintenance, noise, amenities, and management reviews.',
+      },
+      {
+        title: 'Car Dealerships',
+        href: '/for/car-dealerships',
+        desc: 'Responses for sales experience, pricing, service department, and follow-up.',
       },
     ],
   },

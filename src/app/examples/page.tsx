@@ -18,6 +18,18 @@ const byRating = [
     stars: 1,
   },
   {
+    title: '3 Star Review Responses',
+    href: '/examples/3-star-reviews',
+    desc: 'Balanced responses to mixed feedback. Acknowledge the good, address the bad, win back the undecided.',
+    stars: 3,
+  },
+  {
+    title: '4 Star Review Responses',
+    href: '/examples/4-star-reviews',
+    desc: 'Responses to almost-perfect reviews. Celebrate the praise and close the gap to five stars.',
+    stars: 4,
+  },
+  {
     title: '5 Star Review Responses',
     href: '/examples/5-star-reviews',
     desc: 'Warm, specific responses that go beyond generic thank-yous. Reinforce loyalty.',
@@ -30,6 +42,11 @@ const bySentiment = [
     title: 'Negative Review Responses',
     href: '/examples/negative-reviews',
     desc: 'Cross-industry examples for handling complaints, bad experiences, and angry customers with professionalism.',
+  },
+  {
+    title: 'Positive Review Responses',
+    href: '/examples/positive-reviews',
+    desc: 'Warm, specific responses to happy customers that go beyond a generic thank you. Build loyalty across industries.',
   },
 ]
 

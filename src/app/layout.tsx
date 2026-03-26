@@ -21,8 +21,8 @@ export default function RootLayout({
 
         <footer className="bg-navy-900 text-navy-300">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+              <div className="col-span-2 md:col-span-1">
                 <div className="flex items-center gap-2 mb-3">
                   <span className="text-xl">💬</span>
                   <span className="text-lg font-bold text-white">Reviewly</span>
@@ -36,14 +36,26 @@ export default function RootLayout({
                 <div className="space-y-2 text-sm">
                   <a href="/#pricing" className="block hover:text-white transition-colors">Pricing</a>
                   <a href="/#demo" className="block hover:text-white transition-colors">Live Demo</a>
-                  <a href="/#faq" className="block hover:text-white transition-colors">FAQ</a>
+                  <a href="/for" className="block hover:text-white transition-colors">For Businesses</a>
+                  <a href="/examples" className="block hover:text-white transition-colors">Examples</a>
                 </div>
               </div>
               <div>
-                <h4 className="font-semibold text-white mb-3">Account</h4>
+                <h4 className="font-semibold text-white mb-3">Business Types</h4>
                 <div className="space-y-2 text-sm">
-                  <a href="/login" className="block hover:text-white transition-colors">Log in</a>
-                  <a href="/signup" className="block hover:text-white transition-colors">Sign up</a>
+                  <a href="/for/restaurants" className="block hover:text-white transition-colors">Restaurants</a>
+                  <a href="/for/hotels" className="block hover:text-white transition-colors">Hotels</a>
+                  <a href="/for/dentists" className="block hover:text-white transition-colors">Dentists</a>
+                  <a href="/for/salons" className="block hover:text-white transition-colors">Salons</a>
+                  <a href="/for/auto-repair" className="block hover:text-white transition-colors">Auto Repair</a>
+                </div>
+              </div>
+              <div>
+                <h4 className="font-semibold text-white mb-3">Legal</h4>
+                <div className="space-y-2 text-sm">
+                  <a href="/terms" className="block hover:text-white transition-colors">Terms of Service</a>
+                  <a href="/privacy" className="block hover:text-white transition-colors">Privacy Policy</a>
+                  <a href="/cookies" className="block hover:text-white transition-colors">Cookie Policy</a>
                 </div>
               </div>
             </div>
