@@ -16,42 +16,49 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/cookies', changeFrequency: 'yearly' as const, priority: 0.2 },
   ]
 
-  const forPages = [
-    '/for',
-    '/for/hotels',
-    '/for/restaurants',
-    '/for/dentists',
-    '/for/apartments',
-    '/for/airbnb',
-    '/for/salons',
-    '/for/auto-repair',
-    '/for/medical',
-    '/for/veterinary',
-    '/for/gyms',
-    '/for/spas',
-    '/for/car-dealerships',
-    '/for/law-firms',
+  const usesPages = [
+    '/uses',
+    '/uses/hotel-review-response-examples',
+    '/uses/restaurant-review-response-examples',
+    '/uses/dental-review-response-examples',
+    '/uses/apartment-review-response-examples',
+    '/uses/airbnb-review-response-examples',
+    '/uses/salon-review-response-examples',
+    '/uses/auto-repair-review-response-examples',
+    '/uses/medical-practice-review-response-examples',
+    '/uses/veterinary-review-response-examples',
+    '/uses/gym-review-response-examples',
+    '/uses/spa-review-response-examples',
+    '/uses/car-dealership-review-response-examples',
+    '/uses/law-firm-review-response-examples',
+    '/uses/negative-review-response-examples',
+    '/uses/1-star-review-response-examples',
+    '/uses/3-star-review-response-examples',
+    '/uses/4-star-review-response-examples',
+    '/uses/5-star-review-response-examples',
+    '/uses/positive-review-response-examples',
+    '/uses/ai-review-response-generator',
+    '/uses/google-review-response-generator',
+    '/uses/free-review-response-generator',
+    '/uses/review-reply-generator',
   ].map((url) => ({
     url,
     changeFrequency: 'weekly' as const,
     priority: 0.8,
   }))
 
-  const examplePages = [
-    '/examples',
-    '/examples/1-star-reviews',
-    '/examples/3-star-reviews',
-    '/examples/4-star-reviews',
-    '/examples/5-star-reviews',
-    '/examples/negative-reviews',
-    '/examples/positive-reviews',
+  const blogPages = [
+    '/blog',
+    '/blog/how-to-respond-to-bad-reviews-on-google',
+    '/blog/does-responding-to-google-reviews-help-seo',
+    '/blog/how-to-respond-to-positive-reviews',
   ].map((url) => ({
     url,
     changeFrequency: 'weekly' as const,
     priority: 0.7,
   }))
 
-  return [...staticPages, ...forPages, ...examplePages].map((page) => ({
+  return [...staticPages, ...usesPages, ...blogPages].map((page) => ({
     url: `${BASE_URL}${page.url}`,
     lastModified: now,
     changeFrequency: page.changeFrequency,

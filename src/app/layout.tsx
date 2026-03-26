@@ -36,18 +36,18 @@ export default function RootLayout({
                 <div className="space-y-2 text-sm">
                   <a href="/#pricing" className="block hover:text-white transition-colors">Pricing</a>
                   <a href="/#demo" className="block hover:text-white transition-colors">Live Demo</a>
-                  <a href="/for" className="block hover:text-white transition-colors">For Businesses</a>
-                  <a href="/examples" className="block hover:text-white transition-colors">Examples</a>
+                  <a href="/uses" className="block hover:text-white transition-colors">Use Cases</a>
+                  <a href="/blog" className="block hover:text-white transition-colors">Blog</a>
                 </div>
               </div>
               <div>
                 <h4 className="font-semibold text-white mb-3">Business Types</h4>
                 <div className="space-y-2 text-sm">
-                  <a href="/for/restaurants" className="block hover:text-white transition-colors">Restaurants</a>
-                  <a href="/for/hotels" className="block hover:text-white transition-colors">Hotels</a>
-                  <a href="/for/dentists" className="block hover:text-white transition-colors">Dentists</a>
-                  <a href="/for/salons" className="block hover:text-white transition-colors">Salons</a>
-                  <a href="/for/auto-repair" className="block hover:text-white transition-colors">Auto Repair</a>
+                  <a href="/uses/restaurant-review-response-examples" className="block hover:text-white transition-colors">Restaurants</a>
+                  <a href="/uses/hotel-review-response-examples" className="block hover:text-white transition-colors">Hotels</a>
+                  <a href="/uses/dental-review-response-examples" className="block hover:text-white transition-colors">Dentists</a>
+                  <a href="/uses/salon-review-response-examples" className="block hover:text-white transition-colors">Salons</a>
+                  <a href="/uses/auto-repair-review-response-examples" className="block hover:text-white transition-colors">Auto Repair</a>
                 </div>
               </div>
               <div>
