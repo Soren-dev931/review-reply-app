@@ -29,8 +29,8 @@ export default function AIPoweredReviewResponse() {
       {/* IMAGE: AI analyzing a review — highlighting key phrases and generating a targeted response */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="AI reading a review and generating a targeted response - ai powered review response"
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly dashboard for managing AI-powered review review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -50,8 +50,8 @@ export default function AIPoweredReviewResponse() {
       {/* IMAGE: Two different reviews with two completely different AI responses */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="Two reviews with unique AI-powered responses - ai powered review response"
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Reviewly reviews dashboard for AI-powered review review management"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />

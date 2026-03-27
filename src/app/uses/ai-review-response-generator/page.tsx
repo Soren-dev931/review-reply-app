@@ -53,8 +53,8 @@ export default function AIReviewResponseGenerator() {
       {/* IMAGE: Before/after showing time spent: 15 min manual vs 1 min with Reviewly */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="Time comparison — manual review response vs Reviewly - ai review response generator"
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly dashboard for managing AI review response review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -89,8 +89,8 @@ export default function AIReviewResponseGenerator() {
       {/* IMAGE: Example showing a real review and Reviewly's response side by side */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="Real review with Reviewly's personalized AI response - ai review response generator"
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Reviewly reviews dashboard for AI review response review management"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />

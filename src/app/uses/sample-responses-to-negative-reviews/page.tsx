@@ -28,8 +28,8 @@ export default function SampleResponsesToNegativeReviews() {
 
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/dashboard-response-generated.webp"
-                  alt="Four common negative review types with sample responses - sample responses to negative reviews"
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly dashboard for managing negative review review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -73,8 +73,8 @@ export default function SampleResponsesToNegativeReviews() {
 
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="Business owner using sample responses as a starting point - sample responses to negative reviews"
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Reviewly reviews dashboard for negative review review management"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />

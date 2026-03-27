@@ -29,8 +29,8 @@ export default function HotelReviewResponseExamples() {
       {/* IMAGE: Screenshot of Reviewly generating a hotel review response, showing a pasted guest complaint about room cleanliness and the AI-generated reply */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/dashboard-response-generated.webp"
-                  alt="Reviewly generating a hotel review response - hotel review response examples"
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly dashboard for managing hotel review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -56,8 +56,8 @@ export default function HotelReviewResponseExamples() {
       {/* IMAGE: Example of a 2-star hotel review about slow check-in with Reviewly's generated response beside it */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/dashboard-response-generated.webp"
-                  alt="Side-by-side hotel review and generated response - hotel review response examples"
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Reviewly reviews dashboard for hotel review management"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -90,8 +90,8 @@ export default function HotelReviewResponseExamples() {
       {/* IMAGE: Dashboard showing multiple hotel reviews with generated responses queued up */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/dashboard-response-generated.webp"
-                  alt="Multiple hotel reviews with responses in Reviewly dashboard - hotel review response examples"
+                  src="/images/screenshots/mobile-dashboard.webp"
+                  alt="Reviewly mobile dashboard showing hotel review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />

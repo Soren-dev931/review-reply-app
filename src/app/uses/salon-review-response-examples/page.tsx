@@ -29,8 +29,8 @@ export default function SalonReviewResponseExamples() {
       {/* IMAGE: Reviewly generating a response to a hair salon review */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="Reviewly generating a salon review response - salon review response examples"
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly dashboard for managing salon review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />

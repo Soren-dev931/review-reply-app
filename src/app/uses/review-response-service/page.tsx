@@ -48,8 +48,8 @@ export default function ReviewResponseService() {
       {/* IMAGE: Reviewly responding to a review with AI — showing the personalized output */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="AI-generated review response showing personalization - review response service"
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly dashboard for managing review response review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />

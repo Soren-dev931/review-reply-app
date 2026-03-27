@@ -29,8 +29,8 @@ export default function AIReviewReply() {
       {/* IMAGE: AI review reply showing a 5-star review with warm, personalized response */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="AI-generated reply to a 5-star review - ai review reply"
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly dashboard for managing AI review reply review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -60,8 +60,8 @@ export default function AIReviewReply() {
       {/* IMAGE: Side-by-side comparison of template reply vs AI personalized reply */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="Template response vs AI personalized response comparison - ai review reply"
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Reviewly reviews dashboard for AI review reply review management"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />

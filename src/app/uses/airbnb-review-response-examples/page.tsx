@@ -29,8 +29,8 @@ export default function AirbnbReviewResponseExamples() {
       {/* IMAGE: Reviewly showing an Airbnb guest review with generated host response */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/dashboard-response-generated.webp"
-                  alt="Reviewly generating an Airbnb host response - airbnb review response examples"
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly dashboard for managing Airbnb review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />

@@ -29,8 +29,8 @@ export default function VeterinaryReviewResponseExamples() {
       {/* IMAGE: Reviewly generating a compassionate response to a vet clinic review */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="Reviewly generating a vet clinic review response - veterinary review response examples"
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly dashboard for managing veterinary practice review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -63,8 +63,8 @@ export default function VeterinaryReviewResponseExamples() {
       {/* IMAGE: Vet clinic review about costs with professional response */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/dashboard-response-generated.webp"
-                  alt="Vet review about costs with thoughtful response - veterinary review response examples"
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Reviewly reviews dashboard for veterinary practice review management"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />

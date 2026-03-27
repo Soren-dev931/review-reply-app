@@ -29,8 +29,8 @@ export default function AIReviewResponse() {
       {/* IMAGE: Reviewly generating an AI review response — before and after */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-review-pasted.webp"
-                  alt="Review input and AI response output side by side - ai review response"
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly dashboard for managing AI review response review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -50,8 +50,8 @@ export default function AIReviewResponse() {
       {/* IMAGE: Example comparison — generic template response vs AI personalized response */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="Generic vs AI-personalized review response - ai review response"
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Reviewly reviews dashboard for AI review response review management"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />

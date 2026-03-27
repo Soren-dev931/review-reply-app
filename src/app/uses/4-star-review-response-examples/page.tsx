@@ -29,8 +29,8 @@ export default function FourStarReviewResponseExamples() {
       {/* IMAGE: Reviewly generating a response to a 4-star review */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="Reviewly generating a 4-star review response - 4 star review response examples"
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly dashboard for managing 4-star review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -61,8 +61,8 @@ export default function FourStarReviewResponseExamples() {
       {/* IMAGE: 4-star review with a small critique and targeted response */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="4-star review with response addressing the missing star - 4 star review response examples"
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Reviewly reviews dashboard for 4-star review management"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -93,8 +93,8 @@ export default function FourStarReviewResponseExamples() {
       {/* IMAGE: Customer journey from 4-star to 5-star through good response */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="Turning 4-star reviewers into 5-star repeat customers - 4 star review response examples"
+                  src="/images/screenshots/mobile-dashboard.webp"
+                  alt="Reviewly mobile dashboard showing 4-star review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />

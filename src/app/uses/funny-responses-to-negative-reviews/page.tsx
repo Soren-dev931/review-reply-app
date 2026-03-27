@@ -28,8 +28,8 @@ export default function FunnyResponsesToNegativeReviews() {
 
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="A funny but professional review response example - funny responses to negative reviews"
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly dashboard for managing negative review review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -64,8 +64,8 @@ export default function FunnyResponsesToNegativeReviews() {
 
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="Examples of funny vs inappropriate review responses side by side - funny responses to negative reviews"
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Reviewly reviews dashboard for negative review review management"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />

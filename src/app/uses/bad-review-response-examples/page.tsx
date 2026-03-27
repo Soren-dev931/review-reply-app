@@ -28,8 +28,8 @@ export default function BadReviewResponseExamples() {
 
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/dashboard-response-generated.webp"
-                  alt="Reviewly generating a response to a bad review - bad review response examples"
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly dashboard for managing negative review review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -61,8 +61,8 @@ export default function BadReviewResponseExamples() {
 
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="Side-by-side comparison of a bad review and a professional response - bad review response examples"
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Reviewly reviews dashboard for negative review review management"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -92,8 +92,8 @@ export default function BadReviewResponseExamples() {
 
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/dashboard-response-generated.webp"
-                  alt="Reviewly dashboard showing multiple bad reviews with generated responses - bad review response examples"
+                  src="/images/screenshots/mobile-dashboard.webp"
+                  alt="Reviewly mobile dashboard showing negative review review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />

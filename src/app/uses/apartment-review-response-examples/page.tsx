@@ -29,8 +29,8 @@ export default function ApartmentReviewResponseExamples() {
       {/* IMAGE: Reviewly interface with an apartment review about maintenance delays */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="Reviewly generating an apartment review response - apartment review response examples"
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly dashboard for managing apartment review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -51,8 +51,8 @@ export default function ApartmentReviewResponseExamples() {
       {/* IMAGE: Side-by-side tenant complaint about parking and Reviewly's generated response */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/dashboard-response-generated.webp"
-                  alt="Apartment review and response side by side - apartment review response examples"
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Reviewly reviews dashboard for apartment review management"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -85,8 +85,8 @@ export default function ApartmentReviewResponseExamples() {
       {/* IMAGE: Property manager reviewing multiple apartment reviews on laptop */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/dashboard-response-generated.webp"
-                  alt="Property manager responding to apartment reviews - apartment review response examples"
+                  src="/images/screenshots/mobile-dashboard.webp"
+                  alt="Reviewly mobile dashboard showing apartment review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />

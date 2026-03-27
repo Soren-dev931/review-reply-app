@@ -29,8 +29,8 @@ export default function ThreeStarReviewResponseExamples() {
       {/* IMAGE: Reviewly generating a balanced response to a 3-star review */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="Reviewly generating a 3-star review response - 3 star review response examples"
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly dashboard for managing 3-star review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -61,8 +61,8 @@ export default function ThreeStarReviewResponseExamples() {
       {/* IMAGE: 3-star review showing mixed feelings with professional response */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/dashboard-response-generated.webp"
-                  alt="Mixed review with balanced response - 3 star review response examples"
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Reviewly reviews dashboard for 3-star review management"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -93,8 +93,8 @@ export default function ThreeStarReviewResponseExamples() {
       {/* IMAGE: 3-star review being converted to a return customer through a good response */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/dashboard-response-generated.webp"
-                  alt="Turning mixed reviews into return customers - 3 star review response examples"
+                  src="/images/screenshots/mobile-dashboard.webp"
+                  alt="Reviewly mobile dashboard showing 3-star review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />

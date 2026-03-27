@@ -54,8 +54,8 @@ export default function PositiveReviewResponseExamples() {
       {/* IMAGE: Generic vs specific positive review response comparison */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="Generic vs specific positive review response - positive review response examples"
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly dashboard for managing positive review review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />

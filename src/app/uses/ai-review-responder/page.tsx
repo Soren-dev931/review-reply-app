@@ -29,8 +29,8 @@ export default function AIReviewResponder() {
       {/* IMAGE: Reviewly generating a unique response to a customer review */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="AI review responder generating a personalized reply"
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly dashboard for managing AI review review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -51,8 +51,8 @@ export default function AIReviewResponder() {
       {/* IMAGE: Breakdown of AI analysis — sentiment, specifics, tone mapping */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="How the AI responder analyzes a review - ai review responder"
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Reviewly reviews dashboard for AI review review management"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />

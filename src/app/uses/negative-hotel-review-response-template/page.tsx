@@ -28,8 +28,8 @@ export default function NegativeHotelReviewResponseTemplate() {
 
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/dashboard-response-generated.webp"
-                  alt="Hotel front desk manager using templates to respond to reviews - negative hotel review response template"
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly dashboard for managing hotel review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -58,8 +58,8 @@ export default function NegativeHotelReviewResponseTemplate() {
 
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/dashboard-response-generated.webp"
-                  alt="Template being customized for a specific hotel review - negative hotel review response template"
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Reviewly reviews dashboard for hotel review management"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -84,8 +84,8 @@ export default function NegativeHotelReviewResponseTemplate() {
 
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/dashboard-response-generated.webp"
-                  alt="Reviewly generating a personalized hotel response vs a template - negative hotel review response template"
+                  src="/images/screenshots/mobile-dashboard.webp"
+                  alt="Reviewly mobile dashboard showing hotel review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />

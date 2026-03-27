@@ -29,8 +29,8 @@ export default function GoogleReviewResponseGenerator() {
       {/* IMAGE: Google Business Profile review with Reviewly generating a response */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="Google review with Reviewly response generator - google review response generator"
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly dashboard for managing Google review review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />

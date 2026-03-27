@@ -29,8 +29,8 @@ export default function AIGoogleReviewReply() {
       {/* IMAGE: Side-by-side of a Google review and Reviewly's AI-generated reply */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="Google review with AI-generated personalized reply - ai google review reply"
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly dashboard for managing Google review review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -49,8 +49,8 @@ export default function AIGoogleReviewReply() {
       {/* IMAGE: Example showing a negative review with empathetic AI response */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/dashboard-response-generated.webp"
-                  alt="Negative review with empathetic AI reply - ai google review reply"
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Reviewly reviews dashboard for Google review review management"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />

@@ -29,8 +29,8 @@ export default function OneStarReviewResponseExamples() {
       {/* IMAGE: Reviewly generating a response to a 1-star review */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="Reviewly generating a 1-star review response - 1 star review response examples"
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly dashboard for managing 1-star review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -49,8 +49,8 @@ export default function OneStarReviewResponseExamples() {
       {/* IMAGE: Side-by-side of a defensive response vs Reviewly's empathetic response */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="Defensive vs professional 1-star review response - 1 star review response examples"
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Reviewly reviews dashboard for 1-star review management"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -95,8 +95,8 @@ export default function OneStarReviewResponseExamples() {
       {/* IMAGE: Business owner staying calm while responding to harsh reviews */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/dashboard-response-generated.webp"
-                  alt="Business owner calmly responding to 1-star reviews - 1 star review response examples"
+                  src="/images/screenshots/mobile-dashboard.webp"
+                  alt="Reviewly mobile dashboard showing 1-star review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />

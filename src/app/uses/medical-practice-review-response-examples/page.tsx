@@ -29,8 +29,8 @@ export default function MedicalPracticeReviewResponseExamples() {
       {/* IMAGE: Reviewly generating a HIPAA-compliant medical review response */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="Reviewly generating a medical practice review response - medical practice review response examples"
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly dashboard for managing medical practice review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -55,8 +55,8 @@ export default function MedicalPracticeReviewResponseExamples() {
       {/* IMAGE: Example medical practice review with HIPAA-safe response */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/dashboard-response-generated.webp"
-                  alt="Medical review with HIPAA-compliant response - medical practice review response examples"
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Reviewly reviews dashboard for medical practice review management"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -89,8 +89,8 @@ export default function MedicalPracticeReviewResponseExamples() {
       {/* IMAGE: Medical office administrator using Reviewly on desktop */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/dashboard-response-generated.webp"
-                  alt="Medical office staff using Reviewly to respond to reviews - medical practice review response examples"
+                  src="/images/screenshots/mobile-dashboard.webp"
+                  alt="Reviewly mobile dashboard showing medical practice review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />

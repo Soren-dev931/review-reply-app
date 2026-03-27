@@ -29,8 +29,8 @@ export default function DentalReviewResponseExamples() {
       {/* IMAGE: Dental office review response being generated in Reviewly */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="Reviewly generating a dental office review response - dental review response examples"
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly dashboard for managing dental practice review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -51,8 +51,8 @@ export default function DentalReviewResponseExamples() {
       {/* IMAGE: Example dental review about anxiety with generated empathetic response */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/dashboard-response-generated.webp"
-                  alt="Dental review and empathetic AI response - dental review response examples"
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Reviewly reviews dashboard for dental practice review management"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -85,8 +85,8 @@ export default function DentalReviewResponseExamples() {
       {/* IMAGE: Dental office manager using Reviewly on a tablet between patients */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/dashboard-response-generated.webp"
-                  alt="Dental office manager replying to reviews on tablet - dental review response examples"
+                  src="/images/screenshots/mobile-dashboard.webp"
+                  alt="Reviewly mobile dashboard showing dental practice review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />

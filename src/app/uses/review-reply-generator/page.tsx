@@ -49,8 +49,8 @@ export default function ReviewReplyGenerator() {
       {/* IMAGE: Timeline showing response time impact on customer perception */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="Response time impact on customer perception - review reply generator"
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly dashboard for managing review reply review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />

@@ -49,8 +49,8 @@ export default function GoogleReviewAlerts() {
       {/* IMAGE: Timeline showing review posted → alert sent → response approved in under 2 hours */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/dashboard-response-generated.webp"
-                  alt="Review response timeline showing fast turnaround - google review alerts"
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly dashboard for managing Google review review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />

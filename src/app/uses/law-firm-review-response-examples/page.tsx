@@ -29,8 +29,8 @@ export default function LawFirmReviewResponseExamples() {
       {/* IMAGE: Reviewly generating a law firm review response */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="Reviewly generating a law firm review response - law firm review response examples"
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly dashboard for managing law firm review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -63,8 +63,8 @@ export default function LawFirmReviewResponseExamples() {
       {/* IMAGE: Positive law firm review with warm attorney response */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/dashboard-response-generated.webp"
-                  alt="Positive law firm review with professional response - law firm review response examples"
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Reviewly reviews dashboard for law firm review management"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -95,8 +95,8 @@ export default function LawFirmReviewResponseExamples() {
       {/* IMAGE: Attorney reviewing and responding to client feedback */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/dashboard-response-generated.webp"
-                  alt="Attorney responding to reviews with Reviewly - law firm review response examples"
+                  src="/images/screenshots/mobile-dashboard.webp"
+                  alt="Reviewly mobile dashboard showing law firm review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />

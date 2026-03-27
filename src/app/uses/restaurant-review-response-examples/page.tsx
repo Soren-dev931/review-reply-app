@@ -29,8 +29,8 @@ export default function RestaurantReviewResponseExamples() {
       {/* IMAGE: Reviewly interface showing a restaurant review being pasted with generated response */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="Reviewly generating a restaurant review response - restaurant review response examples"
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly dashboard for managing restaurant review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -57,8 +57,8 @@ export default function RestaurantReviewResponseExamples() {
       {/* IMAGE: Example restaurant review about slow service with AI-generated response */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="Restaurant review and response side by side - restaurant review response examples"
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Reviewly reviews dashboard for restaurant review management"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -91,8 +91,8 @@ export default function RestaurantReviewResponseExamples() {
       {/* IMAGE: Restaurant owner on phone replying to reviews quickly using Reviewly */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="Restaurant owner quickly replying to reviews - restaurant review response examples"
+                  src="/images/screenshots/mobile-dashboard.webp"
+                  alt="Reviewly mobile dashboard showing restaurant review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />

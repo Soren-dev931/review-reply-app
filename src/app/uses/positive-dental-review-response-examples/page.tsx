@@ -28,8 +28,8 @@ export default function PositiveDentalReviewResponseExamples() {
 
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/dashboard-response-generated.webp"
-                  alt="Dental office responding to a positive patient review - positive dental review response examples"
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly dashboard for managing dental practice review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />

@@ -29,8 +29,8 @@ export default function SpaReviewResponseExamples() {
       {/* IMAGE: Reviewly generating a spa review response */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="Reviewly generating a spa review response - spa review response examples"
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly dashboard for managing spa review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />

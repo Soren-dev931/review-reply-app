@@ -28,8 +28,8 @@ export default function GoogleReviewResponseExamples() {
 
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/dashboard-response-generated.webp"
-                  alt="Google Business Profile review section with owner responses - google review response examples"
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly dashboard for managing Google review review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -99,8 +99,8 @@ export default function GoogleReviewResponseExamples() {
 
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="Reviewly generating a Google review response with SEO context - google review response examples"
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Reviewly reviews dashboard for Google review review management"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />

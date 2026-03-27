@@ -28,8 +28,8 @@ export default function NegativeReviewResponseTemplate() {
 
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/dashboard-response-generated.webp"
-                  alt="The 5-step negative review response structure - negative review response template"
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly dashboard for managing negative review review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -70,8 +70,8 @@ export default function NegativeReviewResponseTemplate() {
 
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/dashboard-response-generated.webp"
-                  alt="Template filled in for a real negative review - negative review response template"
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Reviewly reviews dashboard for negative review review management"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />

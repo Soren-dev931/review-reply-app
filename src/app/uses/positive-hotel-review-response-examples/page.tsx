@@ -28,8 +28,8 @@ export default function PositiveHotelReviewResponseExamples() {
 
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="Hotel manager crafting a personalized response to a guest review - positive hotel review response examples"
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly dashboard for managing hotel review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -61,8 +61,8 @@ export default function PositiveHotelReviewResponseExamples() {
 
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="Side-by-side of a generic hotel response vs a personalized one - positive hotel review response examples"
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Reviewly reviews dashboard for hotel review management"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />

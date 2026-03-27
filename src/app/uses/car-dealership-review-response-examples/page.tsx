@@ -29,8 +29,8 @@ export default function CarDealershipReviewResponseExamples() {
       {/* IMAGE: Reviewly generating a response to a car dealership review */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="Reviewly generating a car dealership review response - car dealership review response examples"
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly dashboard for managing car dealership review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -95,8 +95,8 @@ export default function CarDealershipReviewResponseExamples() {
       {/* IMAGE: Dealership manager using Reviewly on tablet in showroom */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/dashboard-response-generated.webp"
-                  alt="Dealership manager responding to reviews on tablet - car dealership review response examples"
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Reviewly reviews dashboard for car dealership review management"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />

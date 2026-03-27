@@ -29,8 +29,8 @@ export default function NegativeReviewResponseExamples() {
       {/* IMAGE: Reviewly turning a negative review into a professional response */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/dashboard-response-generated.webp"
-                  alt="Reviewly generating a response to a negative review - negative review response examples"
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly dashboard for managing negative review review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -51,8 +51,8 @@ export default function NegativeReviewResponseExamples() {
       {/* IMAGE: Before/after showing a defensive response vs an empathetic one */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="Bad vs good negative review response comparison - negative review response examples"
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Reviewly reviews dashboard for negative review review management"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -97,8 +97,8 @@ export default function NegativeReviewResponseExamples() {
       {/* IMAGE: Business owner feeling confident responding to negative reviews */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/dashboard-response-generated.webp"
-                  alt="Business owner confidently responding to negative reviews - negative review response examples"
+                  src="/images/screenshots/mobile-dashboard.webp"
+                  alt="Reviewly mobile dashboard showing negative review review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
