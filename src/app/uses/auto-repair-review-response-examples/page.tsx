@@ -26,11 +26,11 @@ export default function AutoRepairReviewResponseExamples() {
         Generate a Response Free
       </a>
 
-      {/* IMAGE: Reviewly generating a response to an auto repair shop review */}
+      {/* IMAGE: Reviewly dashboard showing review responses */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/demo-response-generated.webp"
-                  alt="Reviewly generating an auto repair review response - auto repair review response examples"
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly dashboard for managing auto repair review responses"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -59,11 +59,11 @@ export default function AutoRepairReviewResponseExamples() {
         <p className="text-navy-700">"I understand the frustration — a higher-than-expected bill doesn't feel good. Our technician found additional issues during the brake job and should have called you before proceeding. That's our policy, and I'm sorry it wasn't followed. Please reach out so we can review the invoice together."</p>
       </div>
 
-      {/* IMAGE: Positive auto repair review with response mentioning the mechanic by name */}
+      {/* IMAGE: Reviews list in Reviewly app */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/dashboard-response-generated.webp"
-                  alt="Positive auto shop review with personalized response - auto repair review response examples"
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Reviewly reviews dashboard - manage and respond to auto shop reviews"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
@@ -91,11 +91,11 @@ export default function AutoRepairReviewResponseExamples() {
         Reviewly helps shop owners respond quickly between jobs. No drafting, no wordsmithing. Just paste, generate, and post.
       </p>
 
-      {/* IMAGE: Auto shop owner checking reviews on phone between repairs */}
+      {/* IMAGE: Mobile view of Reviewly */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
-                  src="/images/screenshots/dashboard-response-generated.webp"
-                  alt="Shop owner responding to reviews on phone - auto repair review response examples"
+                  src="/images/screenshots/mobile-dashboard.webp"
+                  alt="Reviewly mobile app - respond to auto shop reviews from your phone"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
