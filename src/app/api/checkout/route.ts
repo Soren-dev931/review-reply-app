@@ -85,8 +85,8 @@ export async function POST(request: Request) {
           quantity: 1,
         },
       ],
-      success_url: `${process.env.NEXT_PUBLIC_APP_URL || 'https://review-reply-app-nu.vercel.app'}/app?upgraded=true`,
-      cancel_url: `${process.env.NEXT_PUBLIC_APP_URL || 'https://review-reply-app-nu.vercel.app'}/app/settings`,
+      success_url: `${process.env.NEXT_PUBLIC_APP_URL || 'https://thereviewly.io'}/app?upgraded=true`,
+      cancel_url: `${process.env.NEXT_PUBLIC_APP_URL || 'https://thereviewly.io'}/app/settings`,
       metadata: {
         supabase_user_id: user.id,
         plan,
