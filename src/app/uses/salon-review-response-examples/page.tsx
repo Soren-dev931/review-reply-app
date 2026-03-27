@@ -27,9 +27,14 @@ export default function SalonReviewResponseExamples() {
       </a>
 
       {/* IMAGE: Reviewly generating a response to a hair salon review */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Reviewly generating a salon review response]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="Reviewly generating a salon review response - salon review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         What Salon Clients Mention in Reviews
@@ -56,9 +61,14 @@ export default function SalonReviewResponseExamples() {
       </div>
 
       {/* IMAGE: Glowing salon review with personalized response mentioning the stylist */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Positive salon review with personalized response]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-5star-response.webp"
+                  alt="Positive salon review with personalized response - salon review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Example: Stylist Shoutout
@@ -83,9 +93,14 @@ export default function SalonReviewResponseExamples() {
       </p>
 
       {/* IMAGE: Salon front desk using Reviewly to manage Google reviews */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Salon staff managing reviews with Reviewly]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Salon staff managing reviews with Reviewly - salon review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <a href="/#demo" className="btn-primary inline-block mb-12">
         Generate a Response Free

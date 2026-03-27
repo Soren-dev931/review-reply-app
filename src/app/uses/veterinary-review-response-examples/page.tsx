@@ -27,9 +27,14 @@ export default function VeterinaryReviewResponseExamples() {
       </a>
 
       {/* IMAGE: Reviewly generating a compassionate response to a vet clinic review */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Reviewly generating a vet clinic review response]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="Reviewly generating a vet clinic review response - veterinary review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         What Pet Owners Mention in Vet Reviews
@@ -56,9 +61,14 @@ export default function VeterinaryReviewResponseExamples() {
       </div>
 
       {/* IMAGE: Vet clinic review about costs with professional response */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Vet review about costs with thoughtful response]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-response-generated.webp"
+                  alt="Vet review about costs with thoughtful response - veterinary review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Example: Cost Concern
@@ -83,9 +93,14 @@ export default function VeterinaryReviewResponseExamples() {
       </p>
 
       {/* IMAGE: Vet clinic front desk staff using Reviewly between appointments */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Vet clinic staff managing reviews with Reviewly]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Vet clinic staff managing reviews with Reviewly - veterinary review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <a href="/#demo" className="btn-primary inline-block mb-12">
         Generate a Response Free

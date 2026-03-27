@@ -27,9 +27,14 @@ export default function GoogleReviewResponseGenerator() {
       </a>
 
       {/* IMAGE: Google Business Profile review with Reviewly generating a response */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Google review with Reviewly response generator]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="Google review with Reviewly response generator - google review response generator"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Why Google Reviews Specifically
@@ -45,9 +50,14 @@ export default function GoogleReviewResponseGenerator() {
       </ul>
 
       {/* IMAGE: Google Maps search results showing businesses with review responses */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Google Maps results showing review response activity]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/landing-hero.webp"
+                  alt="Google Maps results showing review response activity - google review response generator"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         How to Use Reviewly for Google Reviews
@@ -75,9 +85,14 @@ export default function GoogleReviewResponseGenerator() {
       </p>
 
       {/* IMAGE: Google local SEO ranking factors highlighting review responses */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Google local SEO factors including review responses]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/analytics-page.webp"
+                  alt="Google local SEO factors including review responses - google review response generator"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Stop Ignoring Your Google Reviews

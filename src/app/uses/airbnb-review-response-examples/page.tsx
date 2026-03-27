@@ -27,9 +27,14 @@ export default function AirbnbReviewResponseExamples() {
       </a>
 
       {/* IMAGE: Reviewly showing an Airbnb guest review with generated host response */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Reviewly generating an Airbnb host response]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-response-generated.webp"
+                  alt="Reviewly generating an Airbnb host response - airbnb review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         What Airbnb Guests Review
@@ -56,9 +61,14 @@ export default function AirbnbReviewResponseExamples() {
       </div>
 
       {/* IMAGE: Happy Airbnb guest review with warm host response */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Positive Airbnb review with host reply]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-5star-response.webp"
+                  alt="Positive Airbnb review with host reply - airbnb review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Example: Great Stay
@@ -83,9 +93,14 @@ export default function AirbnbReviewResponseExamples() {
       </p>
 
       {/* IMAGE: Airbnb host managing reviews for multiple properties */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Host managing multiple Airbnb listing reviews]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-recent-responses.webp"
+                  alt="Host managing multiple Airbnb listing reviews - airbnb review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <a href="/#demo" className="btn-primary inline-block mb-12">
         Generate a Response Free

@@ -27,9 +27,14 @@ export default function AIReviewResponse() {
       </a>
 
       {/* IMAGE: Reviewly generating an AI review response — before and after */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Review input and AI response output side by side]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-review-pasted.webp"
+                  alt="Review input and AI response output side by side - ai review response"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         What Makes a Good AI Review Response
@@ -43,9 +48,14 @@ export default function AIReviewResponse() {
       </ul>
 
       {/* IMAGE: Example comparison — generic template response vs AI personalized response */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Generic vs AI-personalized review response]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="Generic vs AI-personalized review response - ai review response"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Example: AI Response to a 1-Star Review

@@ -27,9 +27,14 @@ export default function GoogleReviewAlerts() {
       </a>
 
       {/* IMAGE: Email/push notification showing a new 4-star review with AI response ready */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Google review alert notification with AI response]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Google review alert notification with AI response - google review alerts"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Why Speed Matters
@@ -42,9 +47,14 @@ export default function GoogleReviewAlerts() {
       </p>
 
       {/* IMAGE: Timeline showing review posted → alert sent → response approved in under 2 hours */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Review response timeline showing fast turnaround]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-response-generated.webp"
+                  alt="Review response timeline showing fast turnaround - google review alerts"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         What Each Alert Includes

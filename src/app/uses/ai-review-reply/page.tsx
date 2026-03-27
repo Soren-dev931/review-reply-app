@@ -27,9 +27,14 @@ export default function AIReviewReply() {
       </a>
 
       {/* IMAGE: AI review reply showing a 5-star review with warm, personalized response */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: AI-generated reply to a 5-star review]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="AI-generated reply to a 5-star review - ai review reply"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         How the AI Adapts
@@ -53,9 +58,14 @@ export default function AIReviewReply() {
       </div>
 
       {/* IMAGE: Side-by-side comparison of template reply vs AI personalized reply */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Template response vs AI personalized response comparison]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="Template response vs AI personalized response comparison - ai review reply"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Free and Paid Options

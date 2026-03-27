@@ -27,9 +27,14 @@ export default function FourStarReviewResponseExamples() {
       </a>
 
       {/* IMAGE: Reviewly generating a response to a 4-star review */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Reviewly generating a 4-star review response]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="Reviewly generating a 4-star review response - 4 star review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         The Missing Star Matters
@@ -54,9 +59,14 @@ export default function FourStarReviewResponseExamples() {
       </div>
 
       {/* IMAGE: 4-star review with a small critique and targeted response */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: 4-star review with response addressing the missing star]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="4-star review with response addressing the missing star - 4 star review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Example: Almost Perfect
@@ -81,9 +91,14 @@ export default function FourStarReviewResponseExamples() {
       </p>
 
       {/* IMAGE: Customer journey from 4-star to 5-star through good response */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Turning 4-star reviewers into 5-star repeat customers]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="Turning 4-star reviewers into 5-star repeat customers - 4 star review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <a href="/#demo" className="btn-primary inline-block mb-12">
         Generate a Response Free

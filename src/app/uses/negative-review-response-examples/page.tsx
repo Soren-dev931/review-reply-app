@@ -27,9 +27,14 @@ export default function NegativeReviewResponseExamples() {
       </a>
 
       {/* IMAGE: Reviewly turning a negative review into a professional response */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Reviewly generating a response to a negative review]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-response-generated.webp"
+                  alt="Reviewly generating a response to a negative review - negative review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         What Makes a Good Negative Review Response
@@ -44,9 +49,14 @@ export default function NegativeReviewResponseExamples() {
       </ul>
 
       {/* IMAGE: Before/after showing a defensive response vs an empathetic one */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Bad vs good negative review response comparison]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="Bad vs good negative review response comparison - negative review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Example: Restaurant Complaint
@@ -85,9 +95,14 @@ export default function NegativeReviewResponseExamples() {
       </div>
 
       {/* IMAGE: Business owner feeling confident responding to negative reviews */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Business owner confidently responding to negative reviews]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-response-generated.webp"
+                  alt="Business owner confidently responding to negative reviews - negative review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Don't Let Negative Reviews Sit Unanswered

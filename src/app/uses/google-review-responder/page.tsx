@@ -27,9 +27,14 @@ export default function GoogleReviewResponder() {
       </a>
 
       {/* IMAGE: Reviewly dashboard showing a pending Google review with AI-drafted response and approve button */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Reviewly auto-response dashboard with approve button]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Reviewly auto-response dashboard with approve button - google review responder"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         How the Google Review Responder Works
@@ -46,9 +51,14 @@ export default function GoogleReviewResponder() {
       </p>
 
       {/* IMAGE: Email notification showing new review alert with AI response preview */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Email notification with new review and AI response preview]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Email notification with new review and AI response preview - google review responder"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Why Automatic Responses Matter

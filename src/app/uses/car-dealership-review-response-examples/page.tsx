@@ -27,9 +27,14 @@ export default function CarDealershipReviewResponseExamples() {
       </a>
 
       {/* IMAGE: Reviewly generating a response to a car dealership review */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Reviewly generating a car dealership review response]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="Reviewly generating a car dealership review response - car dealership review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         What Car Buyers Mention in Dealership Reviews
@@ -56,9 +61,14 @@ export default function CarDealershipReviewResponseExamples() {
       </div>
 
       {/* IMAGE: Happy car buyer review with personalized dealer response */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Positive dealership review with personal response]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-5star-response.webp"
+                  alt="Positive dealership review with personal response - car dealership review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Example: Great Sales Experience
@@ -83,9 +93,14 @@ export default function CarDealershipReviewResponseExamples() {
       </p>
 
       {/* IMAGE: Dealership manager using Reviewly on tablet in showroom */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Dealership manager responding to reviews on tablet]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-response-generated.webp"
+                  alt="Dealership manager responding to reviews on tablet - car dealership review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <a href="/#demo" className="btn-primary inline-block mb-12">
         Generate a Response Free

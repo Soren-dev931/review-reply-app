@@ -27,9 +27,14 @@ export default function MedicalPracticeReviewResponseExamples() {
       </a>
 
       {/* IMAGE: Reviewly generating a HIPAA-compliant medical review response */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Reviewly generating a medical practice review response]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="Reviewly generating a medical practice review response - medical practice review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         What Patients Mention in Medical Reviews
@@ -48,9 +53,14 @@ export default function MedicalPracticeReviewResponseExamples() {
       </div>
 
       {/* IMAGE: Example medical practice review with HIPAA-safe response */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Medical review with HIPAA-compliant response]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-response-generated.webp"
+                  alt="Medical review with HIPAA-compliant response - medical practice review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Example: Billing Frustration
@@ -77,9 +87,14 @@ export default function MedicalPracticeReviewResponseExamples() {
       </div>
 
       {/* IMAGE: Medical office administrator using Reviewly on desktop */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Medical office staff using Reviewly to respond to reviews]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-response-generated.webp"
+                  alt="Medical office staff using Reviewly to respond to reviews - medical practice review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Healthcare Reviews Require Extra Care

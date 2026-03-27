@@ -23,9 +23,14 @@ export default function HowToRespondToPositiveReviews() {
       </p>
 
       {/* IMAGE: Positive Google review with a warm, specific business response */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Positive review with a thoughtful business response]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-5star-response.webp"
+                  alt="Positive review with a thoughtful business response - how to respond to positive reviews"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Rule 1: Be Specific
@@ -50,9 +55,14 @@ export default function HowToRespondToPositiveReviews() {
       </p>
 
       {/* IMAGE: Short, warm review response examples for different businesses */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Short positive review response examples]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-5star-response.webp"
+                  alt="Short positive review response examples - how to respond to positive reviews"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Rule 3: Invite Them Back
@@ -87,9 +97,14 @@ export default function HowToRespondToPositiveReviews() {
       </div>
 
       {/* IMAGE: Reviewly generating positive review responses for multiple industries */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Reviewly generating positive review responses]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-5star-response.webp"
+                  alt="Reviewly generating positive review responses - how to respond to positive reviews"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Let Reviewly Handle It

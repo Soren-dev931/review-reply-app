@@ -23,9 +23,14 @@ export default function HowToRespondToBadReviewsOnGoogle() {
       </p>
 
       {/* IMAGE: Google Business Profile showing a negative review with no response */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Unanswered bad review on Google Business Profile]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-review-input.webp"
+                  alt="Unanswered bad review on Google Business Profile - how to respond to bad reviews on google"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Step 1: Don't Respond Angry
@@ -51,9 +56,14 @@ export default function HowToRespondToBadReviewsOnGoogle() {
       </ul>
 
       {/* IMAGE: Good vs bad response examples side by side */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Defensive vs empathetic response comparison]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="Defensive vs empathetic response comparison - how to respond to bad reviews on google"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Step 3: Be Specific
@@ -82,9 +92,14 @@ export default function HowToRespondToBadReviewsOnGoogle() {
       </div>
 
       {/* IMAGE: Reviewly generating a response to a bad Google review */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Reviewly generating a response to a bad Google review]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-response-generated.webp"
+                  alt="Reviewly generating a response to a bad Google review - how to respond to bad reviews on google"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Or Let Reviewly Write It for You

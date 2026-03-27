@@ -27,9 +27,14 @@ export default function ReviewMonitoringService() {
       </a>
 
       {/* IMAGE: Reviewly monitoring dashboard showing new reviews detected across locations */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Review monitoring dashboard with new review alerts]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Review monitoring dashboard with new review alerts - review monitoring service"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         What Gets Monitored
@@ -42,9 +47,14 @@ export default function ReviewMonitoringService() {
       </ul>
 
       {/* IMAGE: Analytics showing review volume trends and response rate over time */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Review monitoring analytics — volume and response rate]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/analytics-page.webp"
+                  alt="Review monitoring analytics — volume and response rate - review monitoring service"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         More Than Just Alerts

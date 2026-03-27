@@ -27,9 +27,14 @@ export default function PositiveReviewResponseExamples() {
       </a>
 
       {/* IMAGE: Reviewly generating a warm response to a positive review */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Reviewly generating a positive review response]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-5star-response.webp"
+                  alt="Reviewly generating a positive review response - positive review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         What Not to Do
@@ -47,9 +52,14 @@ export default function PositiveReviewResponseExamples() {
       </p>
 
       {/* IMAGE: Generic vs specific positive review response comparison */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Generic vs specific positive review response]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="Generic vs specific positive review response - positive review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Example: Hotel
@@ -88,9 +98,14 @@ export default function PositiveReviewResponseExamples() {
       </div>
 
       {/* IMAGE: Multiple positive reviews with unique, personalized responses */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Multiple positive reviews with unique responses]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-recent-responses.webp"
+                  alt="Multiple positive reviews with unique responses - positive review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Make Every Happy Customer Feel It

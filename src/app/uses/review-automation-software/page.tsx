@@ -27,9 +27,14 @@ export default function ReviewAutomationSoftware() {
       </a>
 
       {/* IMAGE: Reviewly software interface showing review automation in action */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Reviewly review automation software interface]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Reviewly review automation software interface"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         What the Software Does
@@ -44,9 +49,14 @@ export default function ReviewAutomationSoftware() {
       </ul>
 
       {/* IMAGE: Feature comparison — Reviewly vs enterprise review platforms */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Feature and price comparison vs enterprise tools]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/landing-pricing.webp"
+                  alt="Feature and price comparison vs enterprise tools - review automation software"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Reviewly vs Enterprise Platforms

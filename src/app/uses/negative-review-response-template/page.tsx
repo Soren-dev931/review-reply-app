@@ -26,9 +26,14 @@ export default function NegativeReviewResponseTemplate() {
         Generate a Response Free
       </a>
 
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: The 5-step negative review response structure]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-response-generated.webp"
+                  alt="The 5-step negative review response structure - negative review response template"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         The 5-Step Template
@@ -63,9 +68,14 @@ export default function NegativeReviewResponseTemplate() {
         <p className="text-navy-700">"Thank you for your feedback about the wait time. I understand how frustrating it is to be kept waiting past your scheduled appointment — your time matters. We've reviewed our scheduling process and made adjustments to prevent overbooking. We'd like to offer you a complimentary visit. Please contact Sarah at front@example.com so we can set that up."</p>
       </div>
 
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Template filled in for a real negative review]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-response-generated.webp"
+                  alt="Template filled in for a real negative review - negative review response template"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         The Problem With Templates

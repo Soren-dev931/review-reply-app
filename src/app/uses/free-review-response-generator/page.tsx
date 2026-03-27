@@ -27,9 +27,14 @@ export default function FreeReviewResponseGenerator() {
       </a>
 
       {/* IMAGE: Reviewly free demo showing no-signup-required interface */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Reviewly free demo interface — no signup needed]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly free demo interface — no signup needed - free review response generator"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         What You Get for Free
@@ -42,9 +47,14 @@ export default function FreeReviewResponseGenerator() {
       </ul>
 
       {/* IMAGE: Pricing comparison showing free vs paid plans */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Reviewly free vs paid plan comparison]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/landing-pricing.webp"
+                  alt="Reviewly free vs paid plan comparison - free review response generator"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Who the Free Plan Is For
@@ -67,9 +77,14 @@ export default function FreeReviewResponseGenerator() {
       </p>
 
       {/* IMAGE: User trying the demo with a real review, no signup form visible */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Trying Reviewly demo with no signup required]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Trying Reviewly demo with no signup required - free review response generator"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Upgrade When You're Ready

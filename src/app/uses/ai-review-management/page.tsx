@@ -27,9 +27,14 @@ export default function AIReviewManagement() {
       </a>
 
       {/* IMAGE: AI review management workflow — monitor, draft, approve, post */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: AI review management workflow diagram]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="AI review management workflow diagram"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         What AI Handles
@@ -43,9 +48,14 @@ export default function AIReviewManagement() {
       </ul>
 
       {/* IMAGE: Dashboard showing AI-managed reviews with sentiment indicators */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Dashboard with AI-managed reviews and sentiment tags]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Dashboard with AI-managed reviews and sentiment tags - ai review management"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Why AI Instead of Templates

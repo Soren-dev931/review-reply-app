@@ -27,9 +27,14 @@ export default function GoogleReviewResponseTool() {
       </a>
 
       {/* IMAGE: Reviewly as a Google review response tool — full workflow view */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Google review response tool workflow]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Google review response tool workflow"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         What the Tool Does
@@ -43,9 +48,14 @@ export default function GoogleReviewResponseTool() {
       </ul>
 
       {/* IMAGE: Review card with AI response and one-click approve */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Review card with approve button and AI response]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Review card with approve button and AI response - google review response tool"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Built for Google Specifically

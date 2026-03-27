@@ -27,9 +27,14 @@ export default function DentalReviewResponseExamples() {
       </a>
 
       {/* IMAGE: Dental office review response being generated in Reviewly */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Reviewly generating a dental office review response]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="Reviewly generating a dental office review response - dental review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         What Dental Patients Mention in Reviews
@@ -44,9 +49,14 @@ export default function DentalReviewResponseExamples() {
       </ul>
 
       {/* IMAGE: Example dental review about anxiety with generated empathetic response */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Dental review and empathetic AI response]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-response-generated.webp"
+                  alt="Dental review and empathetic AI response - dental review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Example: Patient With Dental Anxiety
@@ -73,9 +83,14 @@ export default function DentalReviewResponseExamples() {
       </div>
 
       {/* IMAGE: Dental office manager using Reviewly on a tablet between patients */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Dental office manager replying to reviews on tablet]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-response-generated.webp"
+                  alt="Dental office manager replying to reviews on tablet - dental review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Build Trust With Every Reply

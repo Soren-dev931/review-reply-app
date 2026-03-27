@@ -27,9 +27,14 @@ export default function ApartmentReviewResponseExamples() {
       </a>
 
       {/* IMAGE: Reviewly interface with an apartment review about maintenance delays */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Reviewly generating an apartment review response]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="Reviewly generating an apartment review response - apartment review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         What Tenants Mention in Apartment Reviews
@@ -44,9 +49,14 @@ export default function ApartmentReviewResponseExamples() {
       </ul>
 
       {/* IMAGE: Side-by-side tenant complaint about parking and Reviewly's generated response */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Apartment review and response side by side]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-response-generated.webp"
+                  alt="Apartment review and response side by side - apartment review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Example: Maintenance Complaint
@@ -73,9 +83,14 @@ export default function ApartmentReviewResponseExamples() {
       </div>
 
       {/* IMAGE: Property manager reviewing multiple apartment reviews on laptop */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Property manager responding to apartment reviews]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-response-generated.webp"
+                  alt="Property manager responding to apartment reviews - apartment review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Property Managers Manage Dozens of Reviews

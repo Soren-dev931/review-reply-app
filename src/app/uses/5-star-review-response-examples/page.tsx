@@ -27,9 +27,14 @@ export default function FiveStarReviewResponseExamples() {
       </a>
 
       {/* IMAGE: Reviewly generating a warm response to a 5-star review */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Reviewly generating a 5-star review response]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-5star-response.webp"
+                  alt="Reviewly generating a 5-star review response - 5 star review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Why Responding to 5-Star Reviews Matters
@@ -44,9 +49,14 @@ export default function FiveStarReviewResponseExamples() {
       </ul>
 
       {/* IMAGE: 5-star review from a restaurant with a warm, specific response */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: 5-star restaurant review with warm response]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-5star-response.webp"
+                  alt="5-star restaurant review with warm response - 5 star review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Example: Specific Praise
@@ -83,9 +93,14 @@ export default function FiveStarReviewResponseExamples() {
       </p>
 
       {/* IMAGE: Business owner quickly responding to positive reviews */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Business owner responding to positive reviews quickly]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-5star-response.webp"
+                  alt="Business owner responding to positive reviews quickly - 5 star review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <a href="/#demo" className="btn-primary inline-block mb-12">
         Generate a Response Free

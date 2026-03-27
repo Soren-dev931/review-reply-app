@@ -26,9 +26,14 @@ export default function CustomerServiceNegativeReviewResponseExamples() {
         Generate a Response Free
       </a>
 
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Customer service team member responding to reviews on a dashboard]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Customer service team member responding to reviews on a dashboard - customer service negative review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Example 1: The Empathetic Acknowledgment
@@ -54,9 +59,14 @@ export default function CustomerServiceNegativeReviewResponseExamples() {
         <p className="text-navy-700">"Wrong item and a long hold time — that's two problems that shouldn't have happened. We're sending the correct item today with expedited shipping at no cost. We've also added staff to our phone lines. Please check your email for a confirmation and a direct contact number for future orders."</p>
       </div>
 
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Consistent brand voice across multiple review responses]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-recent-responses.webp"
+                  alt="Consistent brand voice across multiple review responses - customer service negative review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         The Customer Service Difference

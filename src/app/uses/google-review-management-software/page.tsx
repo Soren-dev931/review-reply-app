@@ -27,9 +27,14 @@ export default function GoogleReviewManagementSoftware() {
       </a>
 
       {/* IMAGE: Reviewly as Google review management software — dashboard overview */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Google review management software dashboard]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Google review management software dashboard"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Core Features
@@ -44,9 +49,14 @@ export default function GoogleReviewManagementSoftware() {
       </ul>
 
       {/* IMAGE: Multi-location view showing reviews from different business locations */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Multi-location Google review management]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/locations-page.webp"
+                  alt="Multi-location Google review management - google review management software"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Why Google Reviews Need Dedicated Software

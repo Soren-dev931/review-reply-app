@@ -27,9 +27,14 @@ export default function BestReviewManagementSoftware() {
       </a>
 
       {/* IMAGE: Reviewly dashboard as a review management platform */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Reviewly review management dashboard]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly review management dashboard - best review management software"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         What to Look for in Review Management Software
@@ -43,9 +48,14 @@ export default function BestReviewManagementSoftware() {
       </ul>
 
       {/* IMAGE: Checklist comparing review management software features */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Review management software feature checklist]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Review management software feature checklist - best review management software"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         How Reviewly Compares

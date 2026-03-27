@@ -26,9 +26,14 @@ export default function PositiveReviewResponseTemplate() {
         Generate a Response Free
       </a>
 
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: The 4-step positive review response structure]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-5star-response.webp"
+                  alt="The 4-step positive review response structure - positive review response template"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         The 4-Step Template
@@ -60,9 +65,14 @@ export default function PositiveReviewResponseTemplate() {
         <p className="text-navy-700">"Thanks for coming in! Glad the burgers lived up to expectations — the kitchen takes pride in those. Jake's great at reading the table, so he'll appreciate the feedback. Next time, try the patio on a Thursday — we do live music. Hope to see you back."</p>
       </div>
 
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Positive review response template filled in for a real review]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-5star-response.webp"
+                  alt="Positive review response template filled in for a real review"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Why Respond to Positive Reviews at All?

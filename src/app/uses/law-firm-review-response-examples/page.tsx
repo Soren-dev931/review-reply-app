@@ -27,9 +27,14 @@ export default function LawFirmReviewResponseExamples() {
       </a>
 
       {/* IMAGE: Reviewly generating a law firm review response */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Reviewly generating a law firm review response]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="Reviewly generating a law firm review response - law firm review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         What Clients Mention in Law Firm Reviews
@@ -56,9 +61,14 @@ export default function LawFirmReviewResponseExamples() {
       </div>
 
       {/* IMAGE: Positive law firm review with warm attorney response */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Positive law firm review with professional response]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-response-generated.webp"
+                  alt="Positive law firm review with professional response - law firm review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Example: Grateful Client
@@ -83,9 +93,14 @@ export default function LawFirmReviewResponseExamples() {
       </p>
 
       {/* IMAGE: Attorney reviewing and responding to client feedback */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Attorney responding to reviews with Reviewly]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-response-generated.webp"
+                  alt="Attorney responding to reviews with Reviewly - law firm review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <a href="/#demo" className="btn-primary inline-block mb-12">
         Generate a Response Free

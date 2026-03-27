@@ -26,9 +26,14 @@ export default function PositiveDentalReviewResponseExamples() {
         Generate a Response Free
       </a>
 
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Dental office responding to a positive patient review]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-response-generated.webp"
+                  alt="Dental office responding to a positive patient review - positive dental review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Example 1: Cleaning and Hygienist Praise
@@ -54,9 +59,14 @@ export default function PositiveDentalReviewResponseExamples() {
         <p className="text-navy-700">"Dr. Patel appreciates the kind words. He's a firm believer in explaining what's happening during the procedure — it helps patients relax. Glad the crown went smoothly and we had you in and out quickly. Take care of that new crown!"</p>
       </div>
 
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Multiple positive dental reviews with personalized responses]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-5star-response.webp"
+                  alt="Multiple positive dental reviews with personalized responses - positive dental review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Why Dental Offices Should Respond to Positive Reviews

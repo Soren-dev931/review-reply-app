@@ -26,9 +26,14 @@ export default function GoogleReviewResponseExamples() {
         Generate a Response Free
       </a>
 
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Google Business Profile review section with owner responses]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-response-generated.webp"
+                  alt="Google Business Profile review section with owner responses - google review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Example 1: Positive Google Review
@@ -66,9 +71,14 @@ export default function GoogleReviewResponseExamples() {
         <p className="text-navy-700">"Glad the food hit the mark. You're not the first to mention the AC — we've adjusted the thermostat settings and added a check to our opening routine. Appreciate the feedback and hope you'll give us another visit."</p>
       </div>
 
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Google Maps local pack showing businesses with review responses]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/landing-hero.webp"
+                  alt="Google Maps local pack showing businesses with review responses - google review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Why Google Reviews Specifically Matter
@@ -87,9 +97,14 @@ export default function GoogleReviewResponseExamples() {
         Responding to every Google review signals to Google that your business is active and engaged. It won't skyrocket your ranking overnight, but it's one of many signals that compound over time.
       </p>
 
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Reviewly generating a Google review response with SEO context]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="Reviewly generating a Google review response with SEO context - google review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <a href="/#demo" className="btn-primary inline-block mb-12">
         Try Reviewly — Respond to Every Google Review

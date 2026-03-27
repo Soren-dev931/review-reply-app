@@ -26,9 +26,14 @@ export default function PositiveHotelReviewResponseExamples() {
         Generate a Response Free
       </a>
 
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Hotel manager crafting a personalized response to a guest review]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="Hotel manager crafting a personalized response to a guest review - positive hotel review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Example 1: Guest Praising Staff
@@ -54,9 +59,14 @@ export default function PositiveHotelReviewResponseExamples() {
         <p className="text-navy-700">"Room 412 is one of our favorites for that harbor view. Glad you took advantage of the pool and breakfast — the location really does make it easy to explore. Hope to see you back next time you're in town."</p>
       </div>
 
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Side-by-side of a generic hotel response vs a personalized one]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="Side-by-side of a generic hotel response vs a personalized one - positive hotel review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         What Makes a Positive Hotel Response Feel Real

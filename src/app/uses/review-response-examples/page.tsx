@@ -26,9 +26,14 @@ export default function ReviewResponseExamples() {
         Generate a Response Free
       </a>
 
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Multiple review responses across different business types]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-recent-responses.webp"
+                  alt="Multiple review responses across different business types - review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Restaurant: Handling a Food Complaint
@@ -66,9 +71,14 @@ export default function ReviewResponseExamples() {
         <p className="text-navy-700">"A broken AC for three nights isn't acceptable — that should have been escalated and resolved the first day. I've addressed this with our maintenance and front desk teams. Glad the location and room otherwise worked for you. We owe you a better stay."</p>
       </div>
 
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Reviewly generating responses for different business types]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-recent-responses.webp"
+                  alt="Reviewly generating responses for different business types - review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Auto Repair: Addressing a Billing Concern

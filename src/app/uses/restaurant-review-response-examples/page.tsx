@@ -27,9 +27,14 @@ export default function RestaurantReviewResponseExamples() {
       </a>
 
       {/* IMAGE: Reviewly interface showing a restaurant review being pasted with generated response */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Reviewly generating a restaurant review response]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="Reviewly generating a restaurant review response - restaurant review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         What Diners Talk About in Reviews
@@ -50,9 +55,14 @@ export default function RestaurantReviewResponseExamples() {
       </p>
 
       {/* IMAGE: Example restaurant review about slow service with AI-generated response */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Restaurant review and response side by side]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="Restaurant review and response side by side - restaurant review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Example: Responding to a Service Complaint
@@ -79,9 +89,14 @@ export default function RestaurantReviewResponseExamples() {
       </div>
 
       {/* IMAGE: Restaurant owner on phone replying to reviews quickly using Reviewly */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Restaurant owner quickly replying to reviews]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="Restaurant owner quickly replying to reviews - restaurant review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Restaurants Get More Reviews Than Most Businesses

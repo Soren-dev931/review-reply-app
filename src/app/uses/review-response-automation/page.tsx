@@ -27,9 +27,14 @@ export default function ReviewResponseAutomation() {
       </a>
 
       {/* IMAGE: Automation flow — review detected → AI drafts → auto-posted to Google */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Review response automation workflow]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Review response automation workflow"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         What Gets Automated
@@ -42,9 +47,14 @@ export default function ReviewResponseAutomation() {
       </ul>
 
       {/* IMAGE: Email notification with review and one-click approve button */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Automated review response email with approve button]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Automated review response email with approve button - review response automation"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Why Automate Review Responses

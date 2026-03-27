@@ -27,9 +27,14 @@ export default function AutoRepairReviewResponseExamples() {
       </a>
 
       {/* IMAGE: Reviewly generating a response to an auto repair shop review */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Reviewly generating an auto repair review response]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="Reviewly generating an auto repair review response - auto repair review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         What Customers Mention in Auto Repair Reviews
@@ -55,9 +60,14 @@ export default function AutoRepairReviewResponseExamples() {
       </div>
 
       {/* IMAGE: Positive auto repair review with response mentioning the mechanic by name */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Positive auto shop review with personalized response]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-response-generated.webp"
+                  alt="Positive auto shop review with personalized response - auto repair review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Example: Loyal Customer
@@ -82,9 +92,14 @@ export default function AutoRepairReviewResponseExamples() {
       </p>
 
       {/* IMAGE: Auto shop owner checking reviews on phone between repairs */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Shop owner responding to reviews on phone]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-response-generated.webp"
+                  alt="Shop owner responding to reviews on phone - auto repair review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <a href="/#demo" className="btn-primary inline-block mb-12">
         Generate a Response Free

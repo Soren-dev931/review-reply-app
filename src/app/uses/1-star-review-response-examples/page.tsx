@@ -27,9 +27,14 @@ export default function OneStarReviewResponseExamples() {
       </a>
 
       {/* IMAGE: Reviewly generating a response to a 1-star review */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Reviewly generating a 1-star review response]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="Reviewly generating a 1-star review response - 1 star review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Rules for Responding to 1-Star Reviews
@@ -42,9 +47,14 @@ export default function OneStarReviewResponseExamples() {
       </ul>
 
       {/* IMAGE: Side-by-side of a defensive response vs Reviewly's empathetic response */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Defensive vs professional 1-star review response]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="Defensive vs professional 1-star review response - 1 star review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Example: Angry Customer, Professional Reply
@@ -83,9 +93,14 @@ export default function OneStarReviewResponseExamples() {
       </div>
 
       {/* IMAGE: Business owner staying calm while responding to harsh reviews */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Business owner calmly responding to 1-star reviews]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-response-generated.webp"
+                  alt="Business owner calmly responding to 1-star reviews - 1 star review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         The Response Matters More Than the Review

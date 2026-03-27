@@ -26,9 +26,14 @@ export default function FunnyResponsesToNegativeReviews() {
         Generate a Response Free
       </a>
 
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: A funny but professional review response example]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="A funny but professional review response example - funny responses to negative reviews"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Example 1: The Light Touch
@@ -57,9 +62,14 @@ export default function FunnyResponsesToNegativeReviews() {
         <p className="text-navy-700">"We'd argue with the dog but he's probably right — that batch was off. We've fixed the recipe issue and would love for you (and the dog) to try again. First round on us."</p>
       </div>
 
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Examples of funny vs inappropriate review responses side by side]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="Examples of funny vs inappropriate review responses side by side - funny responses to negative reviews"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         When Humor Backfires
@@ -86,9 +96,14 @@ export default function FunnyResponsesToNegativeReviews() {
         Reviewly can match your brand voice — including casual and witty tones. Set your preferred style and it'll generate responses that sound like you, not a corporate template.
       </p>
 
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Reviewly tone settings showing casual and witty options]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/settings-tone.webp"
+                  alt="Reviewly tone settings showing casual and witty options - funny responses to negative reviews"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <a href="/#demo" className="btn-primary inline-block mb-12">
         Try Reviewly — Match Your Brand Voice

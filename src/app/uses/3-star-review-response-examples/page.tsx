@@ -27,9 +27,14 @@ export default function ThreeStarReviewResponseExamples() {
       </a>
 
       {/* IMAGE: Reviewly generating a balanced response to a 3-star review */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Reviewly generating a 3-star review response]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="Reviewly generating a 3-star review response - 3 star review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Why 3-Star Reviews Are Tricky
@@ -54,9 +59,14 @@ export default function ThreeStarReviewResponseExamples() {
       </div>
 
       {/* IMAGE: 3-star review showing mixed feelings with professional response */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Mixed review with balanced response]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-response-generated.webp"
+                  alt="Mixed review with balanced response - 3 star review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Example: Some Things Worked, Some Didn't
@@ -81,9 +91,14 @@ export default function ThreeStarReviewResponseExamples() {
       </p>
 
       {/* IMAGE: 3-star review being converted to a return customer through a good response */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Turning mixed reviews into return customers]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-response-generated.webp"
+                  alt="Turning mixed reviews into return customers - 3 star review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <a href="/#demo" className="btn-primary inline-block mb-12">
         Generate a Response Free

@@ -27,9 +27,14 @@ export default function GoogleReviewDashboard() {
       </a>
 
       {/* IMAGE: Reviewly dashboard showing reviews filtered by rating with status badges */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Reviewly Google review dashboard with filters]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Reviewly Google review dashboard with filters"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         What You See in the Dashboard
@@ -43,9 +48,14 @@ export default function GoogleReviewDashboard() {
       </ul>
 
       {/* IMAGE: Close-up of a single review card with approve/edit/skip buttons */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Review card with approve, edit, and skip actions]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Review card with approve, edit, and skip actions - google review dashboard"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Multi-Location Support

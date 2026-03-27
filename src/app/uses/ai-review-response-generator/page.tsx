@@ -27,9 +27,14 @@ export default function AIReviewResponseGenerator() {
       </a>
 
       {/* IMAGE: Reviewly interface showing the paste-review-and-generate flow */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Reviewly AI review response generator interface]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly AI review response generator interface"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         How Reviewly Works
@@ -46,9 +51,14 @@ export default function AIReviewResponseGenerator() {
       </p>
 
       {/* IMAGE: Before/after showing time spent: 15 min manual vs 1 min with Reviewly */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Time comparison — manual review response vs Reviewly]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="Time comparison — manual review response vs Reviewly - ai review response generator"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Why Not Just Use ChatGPT?
@@ -77,9 +87,14 @@ export default function AIReviewResponseGenerator() {
       </ul>
 
       {/* IMAGE: Example showing a real review and Reviewly's response side by side */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Real review with Reviewly's personalized AI response]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="Real review with Reviewly's personalized AI response - ai review response generator"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Works for Every Business Type

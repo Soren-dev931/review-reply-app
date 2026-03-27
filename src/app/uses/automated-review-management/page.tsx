@@ -27,9 +27,14 @@ export default function AutomatedReviewManagement() {
       </a>
 
       {/* IMAGE: Dashboard showing multiple reviews being managed automatically with status badges */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Reviewly automated review management dashboard]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Reviewly automated review management dashboard"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         What Gets Automated
@@ -43,9 +48,14 @@ export default function AutomatedReviewManagement() {
       </ul>
 
       {/* IMAGE: Flow diagram: New Review → AI Draft → Approve → Posted to Google */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Automated review management workflow]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Automated review management workflow"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Manual vs Automated

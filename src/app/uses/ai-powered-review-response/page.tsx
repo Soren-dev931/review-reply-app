@@ -27,9 +27,14 @@ export default function AIPoweredReviewResponse() {
       </a>
 
       {/* IMAGE: AI analyzing a review — highlighting key phrases and generating a targeted response */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: AI reading a review and generating a targeted response]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="AI reading a review and generating a targeted response - ai powered review response"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         What the AI Understands
@@ -43,9 +48,14 @@ export default function AIPoweredReviewResponse() {
       </ul>
 
       {/* IMAGE: Two different reviews with two completely different AI responses */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Two reviews with unique AI-powered responses]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="Two reviews with unique AI-powered responses - ai powered review response"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Powered by Claude AI

@@ -26,9 +26,14 @@ export default function BadReviewResponseExamples() {
         Generate a Response Free
       </a>
 
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Reviewly generating a response to a bad review]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-response-generated.webp"
+                  alt="Reviewly generating a response to a bad review - bad review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Example 1: Bad Restaurant Review
@@ -54,9 +59,14 @@ export default function BadReviewResponseExamples() {
         <p className="text-navy-700">"Brake work should last longer than a week, full stop. That's not the experience we want for anyone. Please call and ask for Mike — we'll take another look at no charge and get this sorted."</p>
       </div>
 
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Side-by-side comparison of a bad review and a professional response]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="Side-by-side comparison of a bad review and a professional response - bad review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Example 3: Bad Salon Review
@@ -80,9 +90,14 @@ export default function BadReviewResponseExamples() {
         The hard part is doing this consistently for every review without sounding robotic. That's where Reviewly comes in — it reads each review and writes a response that references the actual complaint.
       </p>
 
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Reviewly dashboard showing multiple bad reviews with generated responses]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-response-generated.webp"
+                  alt="Reviewly dashboard showing multiple bad reviews with generated responses - bad review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <a href="/#demo" className="btn-primary inline-block mb-12">
         Try Reviewly — Generate a Response Free

@@ -27,9 +27,14 @@ export default function ReviewReplyGenerator() {
       </a>
 
       {/* IMAGE: Reviewly review reply generator in action */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Reviewly review reply generator interface]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Reviewly review reply generator interface"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Why Speed Matters
@@ -42,9 +47,14 @@ export default function ReviewReplyGenerator() {
       </p>
 
       {/* IMAGE: Timeline showing response time impact on customer perception */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Response time impact on customer perception]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="Response time impact on customer perception - review reply generator"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Paste, Generate, Post
@@ -72,9 +82,14 @@ export default function ReviewReplyGenerator() {
       </ul>
 
       {/* IMAGE: Different star ratings being handled by Reviewly's reply generator */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Reviewly handling reviews of different star ratings]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-recent-responses.webp"
+                  alt="Reviewly handling reviews of different star ratings - review reply generator"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Stop Putting Off Review Replies

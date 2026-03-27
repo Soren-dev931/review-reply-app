@@ -26,9 +26,14 @@ export default function SampleResponsesToNegativeReviews() {
         Generate a Response Free
       </a>
 
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Four common negative review types with sample responses]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-response-generated.webp"
+                  alt="Four common negative review types with sample responses - sample responses to negative reviews"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Sample 1: Bad Service Quality
@@ -66,9 +71,14 @@ export default function SampleResponsesToNegativeReviews() {
         <p className="text-navy-700">"I understand the frustration with a bill that's nearly double the quote. We should have contacted you before proceeding with any work beyond the original estimate. Please reach out to our office and ask for the manager — we'll review the charges and make this right."</p>
       </div>
 
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Business owner using sample responses as a starting point]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="Business owner using sample responses as a starting point - sample responses to negative reviews"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Sample 4: Rude Staff

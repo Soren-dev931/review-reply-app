@@ -23,9 +23,14 @@ export default function DoesRespondingToGoogleReviewsHelpSEO() {
       </p>
 
       {/* IMAGE: Google's own documentation stating that review responses improve visibility */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Google documentation about review responses and visibility]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="Google documentation about review responses and visibility - does responding to google reviews help seo"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         How Review Responses Affect Local Rankings
@@ -40,9 +45,14 @@ export default function DoesRespondingToGoogleReviewsHelpSEO() {
       </ul>
 
       {/* IMAGE: Local search ranking factors showing review responses as a factor */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Local SEO ranking factors including review activity]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/analytics-page.webp"
+                  alt="Local SEO ranking factors including review activity - does responding to google reviews help seo"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         It's Not Just About Rankings
@@ -69,9 +79,14 @@ export default function DoesRespondingToGoogleReviewsHelpSEO() {
       </p>
 
       {/* IMAGE: Google search results showing a local business with active review responses */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Google search results featuring engaged business]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/landing-hero.webp"
+                  alt="Google search results featuring engaged business - does responding to google reviews help seo"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Reviewly Makes Consistent Responding Easy

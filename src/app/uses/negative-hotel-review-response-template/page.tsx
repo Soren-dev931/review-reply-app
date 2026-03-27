@@ -26,9 +26,14 @@ export default function NegativeHotelReviewResponseTemplate() {
         Generate a Response Free
       </a>
 
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Hotel front desk manager using templates to respond to reviews]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-response-generated.webp"
+                  alt="Hotel front desk manager using templates to respond to reviews - negative hotel review response template"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Template 1: Room Complaints
@@ -51,9 +56,14 @@ export default function NegativeHotelReviewResponseTemplate() {
         <p className="text-navy-700">"This is not the service standard we hold ourselves to. I've spoken with the team member involved. Every guest deserves to be treated with courtesy, and I'm sorry that wasn't your experience. Please reach out to me directly at [contact] — I'd like to make this up to you."</p>
       </div>
 
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Template being customized for a specific hotel review]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-response-generated.webp"
+                  alt="Template being customized for a specific hotel review - negative hotel review response template"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Template 4: Billing Disputes
@@ -72,9 +82,14 @@ export default function NegativeHotelReviewResponseTemplate() {
         Reviewly reads each review individually and generates a unique response that references the guest's specific complaint. No brackets to fill in. No copy-paste fatigue. Just paste the review and get a response that sounds like a real person wrote it.
       </p>
 
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Reviewly generating a personalized hotel response vs a template]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-response-generated.webp"
+                  alt="Reviewly generating a personalized hotel response vs a template - negative hotel review response template"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <a href="/#demo" className="btn-primary inline-block mb-12">
         Try Reviewly — No More Templates

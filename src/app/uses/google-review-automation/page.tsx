@@ -27,9 +27,14 @@ export default function GoogleReviewAutomation() {
       </a>
 
       {/* IMAGE: Google review automation pipeline — detect → generate → approve → post */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Google review automation pipeline diagram]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Google review automation pipeline diagram"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         What Reviewly Automates
@@ -43,9 +48,14 @@ export default function GoogleReviewAutomation() {
       </ul>
 
       {/* IMAGE: Dashboard showing automated reviews with status badges */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Automated review management dashboard]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/reviews-dashboard.webp"
+                  alt="Automated review management dashboard - google review automation"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         SEO Benefits of Automation

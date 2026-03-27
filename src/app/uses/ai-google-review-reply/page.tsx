@@ -27,9 +27,14 @@ export default function AIGoogleReviewReply() {
       </a>
 
       {/* IMAGE: Side-by-side of a Google review and Reviewly's AI-generated reply */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Google review with AI-generated personalized reply]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="Google review with AI-generated personalized reply - ai google review reply"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         What Makes These Replies Different
@@ -42,9 +47,14 @@ export default function AIGoogleReviewReply() {
       </ul>
 
       {/* IMAGE: Example showing a negative review with empathetic AI response */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Negative review with empathetic AI reply]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-response-generated.webp"
+                  alt="Negative review with empathetic AI reply - ai google review reply"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Two Ways to Use It

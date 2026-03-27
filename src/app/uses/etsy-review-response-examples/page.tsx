@@ -26,9 +26,14 @@ export default function EtsyReviewResponseExamples() {
         Generate a Response Free
       </a>
 
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Etsy seller reviewing product feedback on their shop dashboard]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Etsy seller reviewing product feedback on their shop dashboard - etsy review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Example 1: Shipping Complaint
@@ -54,9 +59,14 @@ export default function EtsyReviewResponseExamples() {
         <p className="text-navy-700">"You're right — personalized items should look exactly right. I do each engraving by hand so small variations can happen, but off-center isn't acceptable to me either. I'd like to redo this one at no charge. Please send me a message and I'll get a replacement started."</p>
       </div>
 
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Example Etsy review with a personalized seller response]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-main.webp"
+                  alt="Example Etsy review with a personalized seller response - etsy review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         What Makes Etsy Responses Different

@@ -27,9 +27,14 @@ export default function AIReviewResponder() {
       </a>
 
       {/* IMAGE: Reviewly generating a unique response to a customer review */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: AI review responder generating a personalized reply]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="AI review responder generating a personalized reply"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         How It Reads Reviews
@@ -44,9 +49,14 @@ export default function AIReviewResponder() {
       </ul>
 
       {/* IMAGE: Breakdown of AI analysis — sentiment, specifics, tone mapping */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: How the AI responder analyzes a review]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="How the AI responder analyzes a review - ai review responder"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Templates vs AI

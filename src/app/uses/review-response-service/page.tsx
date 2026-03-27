@@ -27,9 +27,14 @@ export default function ReviewResponseService() {
       </a>
 
       {/* IMAGE: Comparison table — VA vs Agency vs Reviewly for review responses */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Cost comparison — virtual assistant vs agency vs Reviewly]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/landing-pricing.webp"
+                  alt="Cost comparison — virtual assistant vs agency vs Reviewly - review response service"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Reviewly vs Hiring Someone
@@ -41,9 +46,14 @@ export default function ReviewResponseService() {
       </ul>
 
       {/* IMAGE: Reviewly responding to a review with AI — showing the personalized output */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: AI-generated review response showing personalization]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/demo-response-generated.webp"
+                  alt="AI-generated review response showing personalization - review response service"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         How the Service Works

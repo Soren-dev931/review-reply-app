@@ -7,6 +7,7 @@ const NAV_ITEMS = [
   { href: '/app/locations', label: 'Locations' },
   { href: '/app/analytics', label: 'Analytics' },
   { href: '/app/settings', label: 'Settings' },
+  { href: '/app/support', label: 'Support' },
 ]
 
 const PLAN_BADGES: Record<string, { label: string; className: string }> = {

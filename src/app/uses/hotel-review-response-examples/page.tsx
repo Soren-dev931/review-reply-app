@@ -27,9 +27,14 @@ export default function HotelReviewResponseExamples() {
       </a>
 
       {/* IMAGE: Screenshot of Reviewly generating a hotel review response, showing a pasted guest complaint about room cleanliness and the AI-generated reply */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Reviewly generating a hotel review response]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-response-generated.webp"
+                  alt="Reviewly generating a hotel review response - hotel review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         What Hotel Guests Actually Mention in Reviews
@@ -49,9 +54,14 @@ export default function HotelReviewResponseExamples() {
       </p>
 
       {/* IMAGE: Example of a 2-star hotel review about slow check-in with Reviewly's generated response beside it */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Side-by-side hotel review and generated response]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-response-generated.webp"
+                  alt="Side-by-side hotel review and generated response - hotel review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Example: Responding to a Complaint About Cleanliness
@@ -78,9 +88,14 @@ export default function HotelReviewResponseExamples() {
       </div>
 
       {/* IMAGE: Dashboard showing multiple hotel reviews with generated responses queued up */}
-      <div className="bg-navy-100 rounded-lg h-48 flex items-center justify-center text-navy-400 text-sm mb-12">
-        [Image: Multiple hotel reviews with responses in Reviewly dashboard]
-      </div>
+      <div className="rounded-lg overflow-hidden mb-12">
+                <img
+                  src="/images/screenshots/dashboard-response-generated.webp"
+                  alt="Multiple hotel reviews with responses in Reviewly dashboard - hotel review response examples"
+                  className="w-full h-auto rounded-lg"
+                  loading="lazy"
+                />
+              </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
         Why Hotels Need Fast Review Responses
