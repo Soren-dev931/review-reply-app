@@ -5,6 +5,9 @@ import NavBar from "@/components/NavBar";
 export const metadata: Metadata = {
   title: "Reviewly — AI Review Response Generator",
   description: "Generate thoughtful, personalized responses to Google reviews in seconds. Not generic AI slop — real responses that sound like you.",
+  verification: {
+    google: "-KSVZVUBBqLmOjFo7WMUs-njzctGSF7Tp5q_wr5Wqg0",
+  },
 };
 
 export default function RootLayout({
