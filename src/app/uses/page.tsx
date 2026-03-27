@@ -16,6 +16,8 @@ const categories = [
       { href: "/uses/restaurant-review-response-examples", label: "Restaurant Review Responses" },
       { href: "/uses/airbnb-review-response-examples", label: "Airbnb Review Responses" },
       { href: "/uses/spa-review-response-examples", label: "Spa Review Responses" },
+      { href: "/uses/positive-hotel-review-response-examples", label: "Positive Hotel Review Responses" },
+      { href: "/uses/negative-hotel-review-response-template", label: "Negative Hotel Review Response Template" },
     ],
   },
   {
@@ -24,6 +26,7 @@ const categories = [
       { href: "/uses/dental-review-response-examples", label: "Dental Review Responses" },
       { href: "/uses/medical-practice-review-response-examples", label: "Medical Practice Review Responses" },
       { href: "/uses/veterinary-review-response-examples", label: "Veterinary Review Responses" },
+      { href: "/uses/positive-dental-review-response-examples", label: "Positive Dental Review Responses" },
     ],
   },
   {
@@ -52,10 +55,34 @@ const categories = [
     ],
   },
   {
+    title: "E-Commerce",
+    pages: [
+      { href: "/uses/etsy-review-response-examples", label: "Etsy Review Responses" },
+    ],
+  },
+  {
     title: "By Review Type",
     pages: [
       { href: "/uses/negative-review-response-examples", label: "Negative Review Responses" },
       { href: "/uses/positive-review-response-examples", label: "Positive Review Responses" },
+      { href: "/uses/bad-review-response-examples", label: "Bad Review Response Examples" },
+      { href: "/uses/funny-responses-to-negative-reviews", label: "Funny Responses to Negative Reviews" },
+      { href: "/uses/customer-service-negative-review-response-examples", label: "Customer Service Negative Review Responses" },
+      { href: "/uses/sample-responses-to-negative-reviews", label: "Sample Responses to Negative Reviews" },
+    ],
+  },
+  {
+    title: "Templates",
+    pages: [
+      { href: "/uses/negative-review-response-template", label: "Negative Review Response Template" },
+      { href: "/uses/positive-review-response-template", label: "Positive Review Response Template" },
+    ],
+  },
+  {
+    title: "Examples",
+    pages: [
+      { href: "/uses/review-response-examples", label: "Review Response Examples" },
+      { href: "/uses/google-review-response-examples", label: "Google Review Response Examples" },
     ],
   },
   {
