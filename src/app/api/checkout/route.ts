@@ -2,7 +2,24 @@ import { NextResponse } from 'next/server'
 import { stripe } from '@/lib/stripe'
 import { createClient } from '@/lib/supabase/server'
 
-export async function POST() {
+const PLANS = {
+  starter: {
+    name: 'Reviewly Starter',
+    description: '1 location, 50 AI responses/mo, auto-monitor, email alerts',
+    monthly: 2900, // $29
+    annual: 27800, // $278/yr (20% off)
+  },
+  pro: {
+    name: 'Reviewly Pro',
+    description: 'Unlimited locations & responses, auto-post, analytics, custom brand voice',
+    monthly: 7900, // $79
+    annual: 75800, // $758/yr (20% off)
+  },
+} as const
+
+type PlanKey = keyof typeof PLANS
+
+export async function POST(request: Request) {
   try {
     const supabase = createClient()
     const { data: { user } } = await supabase.auth.getUser()
@@ -10,6 +27,19 @@ export async function POST() {
     if (!user) {
       return NextResponse.json({ error: 'Not authenticated' }, { status: 401 })
     }
+
+    const body = await request.json()
+    const plan = (body.plan || 'starter') as PlanKey
+    const period = body.period || 'monthly'
+
+    if (!PLANS[plan]) {
+      return NextResponse.json({ error: 'Invalid plan' }, { status: 400 })
+    }
+    if (period !== 'monthly' && period !== 'annual') {
+      return NextResponse.json({ error: 'Invalid billing period' }, { status: 400 })
+    }
+
+    const planConfig = PLANS[plan]
 
     // Get or create Stripe customer
     const { data: profile } = await supabase
@@ -33,6 +63,8 @@ export async function POST() {
         .eq('id', user.id)
     }
 
+    const isAnnual = period === 'annual'
+
     // Create checkout session
     const session = await stripe.checkout.sessions.create({
       customer: customerId,
@@ -42,18 +74,24 @@ export async function POST() {
           price_data: {
             currency: 'usd',
             product_data: {
-              name: 'Reviewly Pro',
-              description: 'Unlimited AI review responses, tone customization, Google Business Profile integration',
+              name: planConfig.name,
+              description: planConfig.description,
             },
-            unit_amount: 4900, // $49.00
-            recurring: { interval: 'month' },
+            unit_amount: isAnnual ? planConfig.annual : planConfig.monthly,
+            recurring: {
+              interval: isAnnual ? 'year' : 'month',
+            },
           },
           quantity: 1,
         },
       ],
       success_url: `${process.env.NEXT_PUBLIC_APP_URL || 'https://review-reply-app-nu.vercel.app'}/app?upgraded=true`,
       cancel_url: `${process.env.NEXT_PUBLIC_APP_URL || 'https://review-reply-app-nu.vercel.app'}/app/settings`,
-      metadata: { supabase_user_id: user.id },
+      metadata: {
+        supabase_user_id: user.id,
+        plan,
+        billing_period: period,
+      },
     })
 
     return NextResponse.json({ url: session.url })

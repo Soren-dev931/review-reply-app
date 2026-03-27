@@ -53,7 +53,7 @@ export default function FreeReviewResponseGenerator() {
         The free plan works for businesses that get a handful of reviews per month. If you're a small shop with 3-5 new reviews monthly, the free tier might be all you need.
       </p>
       <p className="text-navy-700 mb-8">
-        For busier businesses — restaurants, hotels, multi-location brands — the paid plan gives you unlimited responses.
+        For busier businesses — restaurants, hotels, multi-location brands — the Starter plan ($29/mo) adds auto-monitoring for 1 location, and Pro ($79/mo) gives you unlimited locations and responses.
       </p>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
@@ -75,7 +75,7 @@ export default function FreeReviewResponseGenerator() {
         Upgrade When You're Ready
       </h2>
       <p className="text-navy-700 mb-8">
-        When 5 responses per month isn't enough, upgrade to unlimited. Most businesses upgrade after the first month because responding to reviews becomes a habit — a good one.
+        When 5 responses per month isn't enough, the Starter plan at $29/mo gives you 50 AI responses and automatic review monitoring. Pro at $79/mo unlocks unlimited responses, unlimited locations, and auto-posting directly to Google. Save 20% with annual billing on either plan.
       </p>
 
       <a href="/#demo" className="btn-primary inline-block mb-12">

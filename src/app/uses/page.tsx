@@ -65,6 +65,39 @@ const categories = [
       { href: "/uses/google-review-response-generator", label: "Google Review Response Generator" },
       { href: "/uses/free-review-response-generator", label: "Free Review Response Generator" },
       { href: "/uses/review-reply-generator", label: "Review Reply Generator" },
+      { href: "/uses/google-review-response-tool", label: "Google Review Response Tool" },
+    ],
+  },
+  {
+    title: "Automation",
+    pages: [
+      { href: "/uses/google-review-automation", label: "Google Review Automation" },
+      { href: "/uses/review-response-automation", label: "Review Response Automation" },
+      { href: "/uses/automated-review-management", label: "Automated Review Management" },
+      { href: "/uses/review-automation-software", label: "Review Automation Software" },
+      { href: "/uses/google-review-responder", label: "Google Review Responder" },
+      { href: "/uses/google-review-alerts", label: "Google Review Alerts" },
+      { href: "/uses/google-review-dashboard", label: "Google Review Dashboard" },
+      { href: "/uses/review-monitoring-service", label: "Review Monitoring Service" },
+    ],
+  },
+  {
+    title: "AI Review Tools",
+    pages: [
+      { href: "/uses/ai-review-response", label: "AI Review Response" },
+      { href: "/uses/ai-review-responder", label: "AI Review Responder" },
+      { href: "/uses/ai-review-reply", label: "AI Review Reply" },
+      { href: "/uses/ai-google-review-reply", label: "AI Google Review Reply" },
+      { href: "/uses/ai-powered-review-response", label: "AI Powered Review Response" },
+      { href: "/uses/ai-review-management", label: "AI Review Management" },
+      { href: "/uses/review-response-service", label: "Review Response Service" },
+    ],
+  },
+  {
+    title: "Software",
+    pages: [
+      { href: "/uses/google-review-management-software", label: "Google Review Management Software" },
+      { href: "/uses/best-review-management-software", label: "Best Review Management Software" },
     ],
   },
 ];
