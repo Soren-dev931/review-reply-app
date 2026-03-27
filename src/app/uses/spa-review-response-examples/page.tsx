@@ -1,125 +1,58 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Spa Review Response Examples — Replies for Spas and Wellness | Reviewly",
-    description: "Spa review response examples covering treatments, therapists, and ambiance. Generate spa and wellness review replies in 10 seconds with Reviewly.",
+    title: "Spa Review Response Examples | Reviewly",
+    description: "See how spas should respond to Google reviews. Real examples for handling service complaints, therapist issues, and glowing guest experiences.",
   };
 }
 
 export default function SpaReviewResponseExamples() {
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
-      <h1 className="text-4xl font-bold text-navy-900 mb-6">
-        Spa Review Response Examples
-      </h1>
-
-      <p className="text-lg text-navy-700 mb-2">
-        Spa review responses set the tone before a client even walks through the door. When someone reads a warm, personal reply to a review, they already feel the experience starting.
-      </p>
-      <p className="text-lg text-navy-700 mb-8">
-        Reviewly generates responses for spa reviews that mention the treatment, the therapist, the ambiance — whatever made the visit memorable. Paste the review, get a reply in seconds.
-      </p>
-
-      <a href="/#demo" className="btn-primary inline-block mb-12">
-        Generate a Response Free
-      </a>
-
-      {/* IMAGE: Reviewly generating a spa review response */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/dashboard-main.webp"
-                  alt="Reviewly dashboard for managing spa review responses"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        What Clients Mention in Spa Reviews
-      </h2>
-      <ul className="list-disc pl-6 text-navy-700 space-y-1 mb-8">
-        <li>Treatment quality — massage, facial, body work</li>
-        <li>Therapist skill and attentiveness</li>
-        <li>Ambiance — lighting, music, scent</li>
-        <li>Relaxation level and overall vibe</li>
-        <li>Booking ease and availability</li>
-        <li>Value for the price</li>
-      </ul>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Example: Disappointed Client
-      </h2>
-      <div className="card p-6 mb-4">
-        <p className="text-sm font-semibold text-navy-500 mb-2">⭐⭐ Review:</p>
-        <p className="text-navy-700 italic">"Booked a deep tissue massage. It was way too light — told the therapist twice and nothing changed. For $150 I expected more."</p>
-      </div>
-      <div className="card p-6 mb-8">
-        <p className="text-sm font-semibold text-emerald-600 mb-2">✅ Generated Response:</p>
-        <p className="text-navy-700">"When you ask for more pressure, you should get it. I'm sorry that didn't happen. We'll address this with the therapist directly. If you're open to it, we'd like to offer a complimentary session with a different therapist who specializes in deep tissue."</p>
-      </div>
-
-      {/* IMAGE: Glowing spa review with response mentioning the therapist by name */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/dashboard-5star-response.webp"
-                  alt="Positive spa review with personalized therapist response - spa review response examples"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Example: Repeat Client
-      </h2>
-      <div className="card p-6 mb-4">
-        <p className="text-sm font-semibold text-navy-500 mb-2">⭐⭐⭐⭐⭐ Review:</p>
-        <p className="text-navy-700 italic">"Third time here and Kira is always incredible. The hot stone massage was exactly what I needed. The room smelled amazing. This is my happy place."</p>
-      </div>
-      <div className="card p-6 mb-8">
-        <p className="text-sm font-semibold text-emerald-600 mb-2">✅ Generated Response:</p>
-        <p className="text-navy-700">"Kira will be thrilled to hear she's part of your happy place. She puts a lot of care into every session. We'll make sure the hot stones are ready for visit number four."</p>
-      </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Spas Sell an Experience — Your Replies Are Part of It
-      </h2>
-      <p className="text-navy-700 mb-4">
-        People choosing a spa want to feel taken care of before they even book. A thoughtful review response does that. A missing response doesn't.
-      </p>
-      <p className="text-navy-700 mb-8">
-        Reviewly helps spa owners and managers reply to every review with the same warmth clients expect from the spa itself. No templates. No generic copy.
-      </p>
-
-      {/* IMAGE: Spa front desk using Reviewly to manage online reviews */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/reviews-dashboard.webp"
-                  alt="Spa staff managing reviews with Reviewly - spa review response examples"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <a href="/#demo" className="btn-primary inline-block mb-12">
-        Generate a Response Free
-      </a>
-
-      <div className="border-t border-navy-100 pt-8 mt-8">
-        <p className="text-sm text-navy-500 mb-2">Related:</p>
-        <div className="flex flex-wrap gap-4">
-          <Link href="/uses/salon-review-response-examples" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Salon Review Response Examples →
-          </Link>
-          <Link href="/uses/5-star-review-response-examples" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            5-Star Review Response Examples →
-          </Link>
-          <Link href="/uses/negative-review-response-examples" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Negative Review Response Examples →
-          </Link>
-        </div>
-      </div>
-    </div>
+    <UsesPageLayout
+      badge="Spas & Wellness"
+      h1="Spa Review Response Examples"
+      tagline="Spa guests come to relax and feel cared for. When something goes wrong — or when everything goes right — how you respond shapes your reputation with every future guest."
+      featureHeading="What Guests Mention in Spa Reviews"
+      featureBody="Spa reviews reflect the quality of the experience on an emotional level. Guests who feel truly taken care of become loyal advocates — and those who felt let down are equally vocal."
+      featurePoints={[
+        "Therapist skill level and attentiveness to preferences",
+        "Booking process and intake form experience",
+        "Cleanliness and ambiance of the facilities",
+        "Whether service time was cut short",
+        "Product quality and appropriateness for skin/body type",
+        "Value for money relative to other spa experiences",
+      ]}
+      examples={[
+        {
+          stars: 2,
+          review: "Booked a 90-minute deep tissue massage but it was more like 70 minutes. The therapist seemed to be going through the motions and barely addressed the areas I asked her to focus on.",
+          response: "We're sorry your experience didn't reflect what you asked for — a 90-minute service should be 90 minutes, and your focus areas should have been the priority. This is something we want to address directly. Please contact our spa manager at wellness@spa.com and we'll rebook you with a senior therapist at no charge. Thank you for letting us know.",
+        },
+        {
+          stars: 5,
+          review: "The most relaxing two hours of my year. From the moment I walked in, every detail was perfect — the aromatherapy, the temperature, the therapist's attentiveness. I didn't want to leave.",
+          response: "Not wanting to leave is the highest compliment a spa can receive — thank you! We put so much care into every detail of the experience, and knowing it all came together for you means the world to our team. We'd love to recreate that feeling on your next visit. See you soon!",
+        },
+      ]}
+      whyHeading="Why Spa Review Responses Protect Your Premium Reputation"
+      whyBody={[
+        "Spa guests are paying for an elevated experience — and they hold that standard in their reviews. A negative review from a disappointed spa guest who felt rushed or uncared for is particularly damaging because it directly contradicts the core promise of your business. A thoughtful, empathetic response doesn't erase that — but it demonstrates that the standard you promise is one you genuinely care about protecting.",
+        "Positive spa reviews are equally powerful marketing. When a new guest reads that someone had the most relaxing two hours of their year — and sees the spa respond warmly and personally — it creates an aspiration before they've even booked. That emotional pull drives bookings more than any ad.",
+      ]}
+      heroImage="/images/screenshots/dashboard-main.webp"
+      featureImage="/images/screenshots/reviews-dashboard.webp"
+      mobileImage="/images/screenshots/mobile-dashboard.webp"
+      heroImageAlt="Spa review response dashboard"
+      featureImageAlt="Managing spa guest reviews in Reviewly"
+      mobileImageAlt="Respond to spa reviews from your phone"
+      related={[
+        { href: "/uses/salon-review-response-examples", label: "Salon Review Response Examples" },
+        { href: "/uses/negative-review-response-examples", label: "Negative Review Response Examples" },
+        { href: "/uses/positive-review-response-examples", label: "Positive Review Response Examples" },
+        { href: "/uses/hotel-review-response-examples", label: "Hotel Review Response Examples" },
+      ]}
+    />
   );
 }

@@ -1,97 +1,58 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Google Review Alerts — Get Notified When New Reviews Come In | Reviewly",
-    description: "Google review alerts notify you the moment a new review is posted. AI drafts a response automatically so you can approve and reply in seconds.",
+    title: "Google Review Alerts | Reviewly",
+    description: "Get instant alerts when a new Google review comes in. Never miss a review — and respond faster with AI-generated draft responses ready when you are.",
   };
 }
 
 export default function GoogleReviewAlerts() {
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
-      <h1 className="text-4xl font-bold text-navy-900 mb-6">
-        Google Review Alerts
-      </h1>
-
-      <p className="text-lg text-navy-700 mb-2">
-        Google review alerts tell you the moment a customer leaves a review on your Business Profile. Reviewly monitors your listing, detects new reviews, and sends you a notification with the review text, star rating, and an AI-drafted response ready to approve.
-      </p>
-      <p className="text-lg text-navy-700 mb-8">
-        No need to check Google every day. The alert comes to you. Open it, read the review, approve the AI response or make an edit, and the reply posts to Google.
-      </p>
-
-      <a href="/signup" className="btn-primary inline-block mb-12">
-        Turn On Review Alerts
-      </a>
-
-      {/* IMAGE: Email/push notification showing a new 4-star review with AI response ready */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/reviews-dashboard.webp"
-                  alt="Google review alert notification with AI response - google review alerts"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Why Speed Matters
-      </h2>
-      <p className="text-navy-700 mb-4">
-        Customers notice how fast you respond. A reply within a few hours shows you are paying attention. A reply after two weeks — or no reply at all — sends the opposite message.
-      </p>
-      <p className="text-navy-700 mb-8">
-        Google review alerts cut your response time from days to hours. The AI drafts the response before you even open the notification. You just approve it.
-      </p>
-
-      {/* IMAGE: Timeline showing review posted → alert sent → response approved in under 2 hours */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/dashboard-main.webp"
-                  alt="Reviewly dashboard for managing Google review review responses"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        What Each Alert Includes
-      </h2>
-      <ul className="list-disc pl-6 text-navy-700 space-y-2 mb-8">
-        <li>Reviewer name and star rating</li>
-        <li>Full review text</li>
-        <li>Which location the review is for</li>
-        <li>AI-drafted response personalized to the review</li>
-        <li>One-click approve, edit, or skip</li>
-      </ul>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Catch Negative Reviews Early
-      </h2>
-      <p className="text-navy-700 mb-8">
-        A 1-star review sitting unanswered for a week does real damage. Google review alerts let you catch it within hours and respond before other customers see it without a reply. The AI adjusts its tone for negative reviews — empathetic, specific, and professional.
-      </p>
-
-      <a href="/signup" className="btn-primary inline-block mb-12">
-        Turn On Review Alerts
-      </a>
-
-      <div className="border-t border-navy-100 pt-8 mt-8">
-        <p className="text-sm text-navy-500 mb-2">Related:</p>
-        <div className="flex flex-wrap gap-4">
-          <Link href="/uses/google-review-responder" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Google Review Responder →
-          </Link>
-          <Link href="/uses/google-review-dashboard" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Google Review Dashboard →
-          </Link>
-          <Link href="/uses/review-monitoring-service" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Review Monitoring Service →
-          </Link>
-        </div>
-      </div>
-    </div>
+    <UsesPageLayout
+      badge="Automation"
+      h1="Google Review Alerts — Get Notified Instantly"
+      tagline="Know the moment a new Google review is posted. Reviewly sends instant alerts so you can respond before the day is over — not days later."
+      featureHeading="What Google Review Alerts Give You"
+      featureBody="Speed matters in review response. Businesses that respond within hours get better outcomes than those that respond weeks later — or not at all. Reviewly keeps you informed in real time."
+      featurePoints={[
+        "Instant notifications when a new Google review is posted",
+        "Alerts for all your locations in one feed",
+        "AI-generated response draft ready with each alert",
+        "Never lose track of an unanswered review",
+        "Review history and response tracking in one place",
+        "Free to start — no setup complexity",
+      ]}
+      examples={[
+        {
+          stars: 1,
+          review: "Left a 1-star review and the business responded the same day with an apology and offered to fix it. I'm honestly changing this to 4 stars — that kind of response is impressive.",
+          response: "Thank you so much for giving us the chance to make it right — and for updating your review. Hearing back from you means a lot. We're glad we could turn this around and we look forward to showing you what we're really about on your next visit.",
+        },
+        {
+          stars: 5,
+          review: "I love that every time I leave a review here, they actually respond. Shows they're paying attention and care about their customers. It's a small thing but it makes me trust them more.",
+          response: "Noticing and responding to every review is something we genuinely prioritize — so hearing that it registers with you is really encouraging. Thank you for being the kind of customer who leaves thoughtful feedback. It helps us more than you know!",
+        },
+      ]}
+      whyHeading="Why Fast Review Alerts Change Your Response Rate"
+      whyBody={[
+        "Most businesses that check their Google reviews manually do it sporadically — maybe once a week, maybe less. That means a damaging 1-star review can sit unanswered for days or weeks, visible to every potential customer who searches for you. Real-time alerts fix that. The moment a review comes in, you know about it.",
+        "Response speed also affects the outcome of negative reviews. When you respond within a few hours, there's a much better chance the customer is still in the mindset of your interaction — and a thoughtful response can change how they feel before they've completely moved on. Reviewly makes that speed possible without requiring you to constantly refresh your Google listing.",
+      ]}
+      heroImage="/images/screenshots/dashboard-recent-responses.webp"
+      featureImage="/images/screenshots/analytics-page.webp"
+      mobileImage="/images/screenshots/mobile-dashboard.webp"
+      heroImageAlt="Google review alerts dashboard"
+      featureImageAlt="Review alert and response tracking analytics"
+      mobileImageAlt="Google review alerts on mobile"
+      related={[
+        { href: "/uses/google-review-automation", label: "Google Review Automation" },
+        { href: "/uses/google-review-dashboard", label: "Google Review Dashboard" },
+        { href: "/uses/review-monitoring-service", label: "Review Monitoring Service" },
+        { href: "/uses/automated-review-management", label: "Automated Review Management" },
+      ]}
+    />
   );
 }

@@ -1,101 +1,58 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Google Review Management Software — Monitor & Respond with AI | Reviewly",
-    description: "Google review management software with AI-powered responses, automatic monitoring, and analytics. Built for small businesses at $29-79/mo, not $300+.",
+    title: "Google Review Management Software | Reviewly",
+    description: "The best Google review management software for local businesses. Monitor, respond, and analyze all your Google reviews from one simple dashboard.",
   };
 }
 
 export default function GoogleReviewManagementSoftware() {
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
-      <h1 className="text-4xl font-bold text-navy-900 mb-6">
-        Google Review Management Software
-      </h1>
-
-      <p className="text-lg text-navy-700 mb-2">
-        Google review management software gives businesses a single tool to monitor, respond to, and analyze their Google reviews. Reviewly is Google review management software built around AI — it detects new reviews, writes personalized responses, and posts replies to your Business Profile automatically.
-      </p>
-      <p className="text-lg text-navy-700 mb-8">
-        Most review management platforms charge $200-500 per month and bury the features you actually need under enterprise tooling. Reviewly starts at $29/mo and focuses on what matters: monitoring, responding, and tracking.
-      </p>
-
-      <a href="/signup" className="btn-primary inline-block mb-12">
-        Try Google Review Management
-      </a>
-
-      {/* IMAGE: Reviewly as Google review management software — dashboard overview */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/dashboard-main.webp"
-                  alt="Google review management software dashboard"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Core Features
-      </h2>
-      <ul className="list-disc pl-6 text-navy-700 space-y-2 mb-8">
-        <li><strong>Review monitoring:</strong> New reviews detected every few hours from your Google Business Profile</li>
-        <li><strong>AI responses:</strong> Personalized replies written by AI, not templates</li>
-        <li><strong>Approval workflow:</strong> Review the AI draft, edit if needed, approve with one click</li>
-        <li><strong>Direct posting:</strong> Approved replies go straight to Google</li>
-        <li><strong>Multi-location:</strong> Manage reviews across all locations from one dashboard</li>
-        <li><strong>Analytics:</strong> Response rate, average reply time, review volume, rating trends</li>
-      </ul>
-
-      {/* IMAGE: Multi-location view showing reviews from different business locations */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/locations-page.webp"
-                  alt="Multi-location Google review management - google review management software"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Why Google Reviews Need Dedicated Software
-      </h2>
-      <p className="text-navy-700 mb-4">
-        Google is the most important review platform for local businesses. Reviews show up in search results and Maps. Responding to reviews is a local SEO ranking factor. And 77% of consumers read Google reviews before visiting a business.
-      </p>
-      <p className="text-navy-700 mb-8">
-        Managing Google reviews through the Business Profile interface is slow and manual. Software automates the workflow so no review goes unanswered.
-      </p>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Pricing Built for Small Businesses
-      </h2>
-      <ul className="list-disc pl-6 text-navy-700 space-y-2 mb-8">
-        <li><strong>Free:</strong> 5 manual responses per month using paste-and-generate</li>
-        <li><strong>Starter ($29/mo):</strong> 1 location, 50 AI responses, monitoring, email alerts</li>
-        <li><strong>Pro ($79/mo):</strong> Unlimited locations and responses, auto-post, analytics, custom brand voice</li>
-        <li>Annual billing saves 20% — Starter at $23/mo, Pro at $63/mo</li>
-      </ul>
-
-      <a href="/signup" className="btn-primary inline-block mb-12">
-        Try Google Review Management
-      </a>
-
-      <div className="border-t border-navy-100 pt-8 mt-8">
-        <p className="text-sm text-navy-500 mb-2">Related:</p>
-        <div className="flex flex-wrap gap-4">
-          <Link href="/uses/best-review-management-software" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Best Review Management Software →
-          </Link>
-          <Link href="/uses/google-review-automation" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Google Review Automation →
-          </Link>
-          <Link href="/uses/google-review-dashboard" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Google Review Dashboard →
-          </Link>
-        </div>
-      </div>
-    </div>
+    <UsesPageLayout
+      badge="Review Management"
+      h1="Google Review Management Software"
+      tagline="Reviewly is the simplest way to manage all your Google reviews — monitor new reviews, generate AI responses, and track your reputation over time."
+      featureHeading="Everything in One Google Review Management Tool"
+      featureBody="From the moment a review is posted to the second you hit publish on a response, Reviewly handles the entire Google review management workflow — without the complexity of enterprise software."
+      featurePoints={[
+        "Real-time monitoring across all your Google Business locations",
+        "AI-generated responses for every review, any star rating",
+        "Response tracking so nothing gets missed",
+        "Rating and trend analytics over time",
+        "Multi-location support for franchises and chains",
+        "Free to start — no commitment required",
+      ]}
+      examples={[
+        {
+          stars: 2,
+          review: "Used a competitor's tool for two years. It was expensive and the responses it generated were obviously templated. Switched to Reviewly and the difference in response quality is immediately obvious.",
+          response: "We're really glad you made the switch and that the quality difference is coming through. We obsess over making responses feel specific and human — not like they came from a template. If there's ever anything we can improve, we want to hear it directly.",
+        },
+        {
+          stars: 5,
+          review: "Managing 8 locations used to mean 8 logins and an hour of my morning. Now it's one screen and 10 minutes. Reviewly is genuinely one of the best tools in our stack.",
+          response: "Eight locations and one screen — that's exactly the efficiency we aim for. Thank you for trusting Reviewly with such an important part of your reputation. We'll keep building to make those 10 minutes even more productive.",
+        },
+      ]}
+      whyHeading="Why Google Review Management Software Pays for Itself"
+      whyBody={[
+        "Your Google reviews directly affect whether new customers choose you or a competitor. Businesses with more reviews, higher ratings, and active response histories consistently outperform those that neglect their profiles. Google review management software makes the consistent work of building that profile possible without hours of manual effort each week.",
+        "For multi-location businesses, the ROI is even clearer. Without a centralized tool, managing reviews across locations means inconsistent coverage — some locations get responses, others don't. Reviewly standardizes the experience across your entire portfolio.",
+      ]}
+      heroImage="/images/screenshots/dashboard-recent-responses.webp"
+      featureImage="/images/screenshots/analytics-page.webp"
+      mobileImage="/images/screenshots/mobile-dashboard.webp"
+      heroImageAlt="Google review management software dashboard"
+      featureImageAlt="Review management analytics and multi-location tracking"
+      mobileImageAlt="Google review management on mobile"
+      related={[
+        { href: "/uses/best-review-management-software", label: "Best Review Management Software" },
+        { href: "/uses/google-review-dashboard", label: "Google Review Dashboard" },
+        { href: "/uses/ai-review-management", label: "AI Review Management" },
+        { href: "/uses/review-automation-software", label: "Review Automation Software" },
+      ]}
+    />
   );
 }

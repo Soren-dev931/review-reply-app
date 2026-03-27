@@ -1,121 +1,58 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Review Reply Generator — Fast, Personalized Review Replies | Reviewly",
-    description: "Review reply generator that creates personalized responses to customer reviews in 10 seconds. Paste a review, get a reply. Works for any business.",
+    title: "Review Reply Generator | Reviewly",
+    description: "Generate professional replies to Google reviews in seconds. Paste any review and get a personalized, ready-to-post response — free to start.",
   };
 }
 
 export default function ReviewReplyGenerator() {
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
-      <h1 className="text-4xl font-bold text-navy-900 mb-6">
-        Review Reply Generator
-      </h1>
-
-      <p className="text-lg text-navy-700 mb-2">
-        A review reply generator takes the work out of responding to customer reviews. Instead of staring at a review for 10 minutes trying to figure out what to say, you paste it in and get a reply back in seconds.
-      </p>
-      <p className="text-lg text-navy-700 mb-8">
-        Reviewly is a review reply generator that writes responses sounding like they came from you — not from a robot. It reads the review, picks up on the details, and generates a reply that's specific and professional.
-      </p>
-
-      <a href="/#demo" className="btn-primary inline-block mb-12">
-        Generate a Response Free
-      </a>
-
-      {/* IMAGE: Reviewly review reply generator in action */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/dashboard-main.webp"
-                  alt="Reviewly review reply generator interface"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Why Speed Matters
-      </h2>
-      <p className="text-navy-700 mb-4">
-        The faster you reply to a review, the more it matters. A response within 24 hours shows the customer you're paying attention. A response a month later looks like damage control.
-      </p>
-      <p className="text-navy-700 mb-8">
-        Reviewly generates replies in 10 seconds. You can respond to every review the day it comes in without carving out a big chunk of time.
-      </p>
-
-      {/* IMAGE: Timeline showing response time impact on customer perception */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/dashboard-main.webp"
-                  alt="Reviewly dashboard for managing review reply review responses"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Paste, Generate, Post
-      </h2>
-      <p className="text-navy-700 mb-4">
-        Three steps. That's it.
-      </p>
-      <ul className="list-decimal pl-6 text-navy-700 space-y-2 mb-8">
-        <li><strong>Paste</strong> the review into Reviewly</li>
-        <li><strong>Generate</strong> a personalized reply in 10 seconds</li>
-        <li><strong>Post</strong> it back to Google (or wherever the review lives)</li>
-      </ul>
-      <p className="text-navy-700 mb-8">
-        No prompting. No editing. No template libraries to scroll through. The reply is ready to go as-is.
-      </p>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Works for Every Type of Review
-      </h2>
-      <ul className="list-disc pl-6 text-navy-700 space-y-1 mb-8">
-        <li>1-star angry rants — calm, empathetic replies</li>
-        <li>3-star mixed feedback — balanced acknowledgment</li>
-        <li>5-star praise — warm, specific thanks</li>
-        <li>Vague reviews — professional responses that still sound personal</li>
-      </ul>
-
-      {/* IMAGE: Different star ratings being handled by Reviewly's reply generator */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/dashboard-recent-responses.webp"
-                  alt="Reviewly handling reviews of different star ratings - review reply generator"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Stop Putting Off Review Replies
-      </h2>
-      <p className="text-navy-700 mb-8">
-        Every business owner knows they should respond to reviews. Most don't because it takes too long. Reviewly makes it fast enough to actually do it. Every review. Every time.
-      </p>
-
-      <a href="/#demo" className="btn-primary inline-block mb-12">
-        Generate a Response Free
-      </a>
-
-      <div className="border-t border-navy-100 pt-8 mt-8">
-        <p className="text-sm text-navy-500 mb-2">Related:</p>
-        <div className="flex flex-wrap gap-4">
-          <Link href="/uses/ai-review-response-generator" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            AI Review Response Generator →
-          </Link>
-          <Link href="/uses/free-review-response-generator" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Free Review Response Generator →
-          </Link>
-          <Link href="/uses/google-review-response-generator" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Google Review Response Generator →
-          </Link>
-        </div>
-      </div>
-    </div>
+    <UsesPageLayout
+      badge="AI Tools"
+      h1="Review Reply Generator — Respond to Any Review in Seconds"
+      tagline="Paste any Google review and get a professional, personalized reply in seconds. No templates, no copy-paste — just a response that sounds like you."
+      featureHeading="How the Review Reply Generator Works"
+      featureBody="Reviewly reads the content of each review — the rating, the specific feedback, the tone — and generates a reply that's tailored to what was actually said. Not a fill-in-the-blank template."
+      featurePoints={[
+        "Paste any review and generate a response instantly",
+        "Context-aware: reads the full review before generating",
+        "Handles every star rating from 1 to 5",
+        "Edit before posting — you control the final output",
+        "Works for any business type or industry",
+        "Free to start — no account required",
+      ]}
+      examples={[
+        {
+          stars: 3,
+          review: "The service was good and staff was helpful. My only issue is the parking situation — it's really hard to find a spot nearby and it deters me from visiting more often.",
+          response: "Thanks for the kind words about our team! You're right about parking — it's been one of the most consistent pieces of feedback we receive. We've partnered with the garage on Oak Street for validated parking and would be happy to share the details next time you visit. We'd love to make it easier for you to come back more often.",
+        },
+        {
+          stars: 5,
+          review: "Every single time I've ordered from this bakery, the product has been exactly right. The attention to detail on custom orders is impressive and the taste is even better.",
+          response: "Consistency on custom orders is something we really care about — it's hard to get right every time and we're genuinely proud of our team for maintaining it. Thank you for trusting us with your custom orders and for taking the time to say so. We'd love to make your next one even better!",
+        },
+      ]}
+      whyHeading="Why a Review Reply Generator Saves More Than Time"
+      whyBody={[
+        "Consistency is the hardest part of review management. Writing unique, thoughtful responses to every review — especially when you're getting multiple per week — is genuinely hard to sustain. A reply generator doesn't just save time; it saves the consistency you'd otherwise lose when you're tired, busy, or out of ideas.",
+        "The best generators also improve your average response quality. Instead of defaulting to the same phrases when you're in a hurry, you're working from AI drafts that are already personalized to each review. Your edits make them better — and over time, your entire review response history looks more thoughtful and engaged.",
+      ]}
+      heroImage="/images/screenshots/dashboard-review-input.webp"
+      featureImage="/images/screenshots/dashboard-main.webp"
+      mobileImage="/images/screenshots/mobile-dashboard.webp"
+      heroImageAlt="Review reply generator interface"
+      featureImageAlt="Reviewly reply generator dashboard"
+      mobileImageAlt="Generate review replies on mobile"
+      related={[
+        { href: "/uses/ai-review-reply", label: "AI Review Reply" },
+        { href: "/uses/google-review-response-generator", label: "Google Review Response Generator" },
+        { href: "/uses/free-review-response-generator", label: "Free Review Response Generator" },
+        { href: "/uses/ai-review-response-generator", label: "AI Review Response Generator" },
+      ]}
+    />
   );
 }

@@ -1,125 +1,58 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Salon Review Response Examples — Replies for Hair Salons | Reviewly",
-    description: "Salon review response examples for stylists, color, cuts, and booking. Generate personalized hair salon review replies in 10 seconds with Reviewly.",
+    title: "Salon Review Response Examples | Reviewly",
+    description: "See how hair salons and beauty salons should respond to Google reviews. Real examples for handling client complaints, color issues, and 5-star praise.",
   };
 }
 
 export default function SalonReviewResponseExamples() {
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
-      <h1 className="text-4xl font-bold text-navy-900 mb-6">
-        Salon Review Response Examples
-      </h1>
-
-      <p className="text-lg text-navy-700 mb-2">
-        Salon review responses build loyalty and attract new clients. When someone raves about their stylist, a personal reply turns them into a repeat customer. When someone's unhappy with a cut, a professional response can save the relationship.
-      </p>
-      <p className="text-lg text-navy-700 mb-8">
-        Reviewly generates responses for salon reviews in seconds. It picks up on the stylist's name, the service, the vibe — whatever the client talked about.
-      </p>
-
-      <a href="/#demo" className="btn-primary inline-block mb-12">
-        Generate a Response Free
-      </a>
-
-      {/* IMAGE: Reviewly generating a response to a hair salon review */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/dashboard-main.webp"
-                  alt="Reviewly dashboard for managing salon review responses"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        What Salon Clients Mention in Reviews
-      </h2>
-      <ul className="list-disc pl-6 text-navy-700 space-y-1 mb-8">
-        <li>Stylist skill and personality</li>
-        <li>Hair color accuracy</li>
-        <li>Cut quality and style</li>
-        <li>Wait times and booking ease</li>
-        <li>Salon atmosphere and cleanliness</li>
-        <li>Pricing and value</li>
-      </ul>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Example: Color Gone Wrong
-      </h2>
-      <div className="card p-6 mb-4">
-        <p className="text-sm font-semibold text-navy-500 mb-2">⭐⭐ Review:</p>
-        <p className="text-navy-700 italic">"Asked for ash blonde and left with orange. Had to go somewhere else to fix it. Spent double what I planned."</p>
-      </div>
-      <div className="card p-6 mb-8">
-        <p className="text-sm font-semibold text-emerald-600 mb-2">✅ Generated Response:</p>
-        <p className="text-navy-700">"I'm sorry the color didn't come out as expected. Ash blonde can be tricky depending on the starting shade, but the result should still match what you asked for. I'd like to make this right — please reach out so we can discuss a correction at no additional cost."</p>
-      </div>
-
-      {/* IMAGE: Glowing salon review with personalized response mentioning the stylist */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/dashboard-5star-response.webp"
-                  alt="Positive salon review with personalized response - salon review response examples"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Example: Stylist Shoutout
-      </h2>
-      <div className="card p-6 mb-4">
-        <p className="text-sm font-semibold text-navy-500 mb-2">⭐⭐⭐⭐⭐ Review:</p>
-        <p className="text-navy-700 italic">"Maria is amazing. She listened to what I wanted and nailed it. The salon is cute and everyone is so friendly. Already booked my next appointment."</p>
-      </div>
-      <div className="card p-6 mb-8">
-        <p className="text-sm font-semibold text-emerald-600 mb-2">✅ Generated Response:</p>
-        <p className="text-navy-700">"Maria is going to love hearing this. She really does listen — it's her thing. Glad you're already booked for next time. See you then!"</p>
-      </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Salons Run on Referrals and Reviews
-      </h2>
-      <p className="text-navy-700 mb-4">
-        New clients Google "hair salon near me" and pick based on reviews. Responding to those reviews makes your salon look active and personal. Ignoring them makes it look like you don't care.
-      </p>
-      <p className="text-navy-700 mb-8">
-        Reviewly helps salon owners and front desk staff respond to every review without slowing down the day. Paste, generate, post.
-      </p>
-
-      {/* IMAGE: Salon front desk using Reviewly to manage Google reviews */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/reviews-dashboard.webp"
-                  alt="Salon staff managing reviews with Reviewly - salon review response examples"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <a href="/#demo" className="btn-primary inline-block mb-12">
-        Generate a Response Free
-      </a>
-
-      <div className="border-t border-navy-100 pt-8 mt-8">
-        <p className="text-sm text-navy-500 mb-2">Related:</p>
-        <div className="flex flex-wrap gap-4">
-          <Link href="/uses/spa-review-response-examples" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Spa Review Response Examples →
-          </Link>
-          <Link href="/uses/negative-review-response-examples" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Negative Review Response Examples →
-          </Link>
-          <Link href="/uses/positive-review-response-examples" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Positive Review Response Examples →
-          </Link>
-        </div>
-      </div>
-    </div>
+    <UsesPageLayout
+      badge="Salons & Beauty"
+      h1="Salon Review Response Examples for Hair and Beauty"
+      tagline="Salon clients are loyal when they find the right fit — and brutally honest when they don't. How you respond to their reviews shapes your reputation with every prospective client."
+      featureHeading="What Clients Mention in Salon Reviews"
+      featureBody="Salon reviews are deeply personal — they reflect how clients feel about their appearance and the relationship with their stylist. These are the themes that come up most often."
+      featurePoints={[
+        "Hair color result vs. what was shown or discussed",
+        "Haircut accuracy and listening to client requests",
+        "Wait time and appointment scheduling",
+        "Stylist attentiveness and consultation quality",
+        "Pricing vs. expectations for the service received",
+        "Atmosphere, cleanliness, and overall experience",
+      ]}
+      examples={[
+        {
+          stars: 1,
+          review: "Showed my stylist exactly what I wanted and she did the complete opposite. My hair is now three shades darker than requested and completely different from the reference photo. Completely devastated.",
+          response: "We are so sorry — feeling devastated after a haircut that didn't match what you wanted is heartbreaking, and your frustration is completely valid. This shouldn't have happened, and we want to make it right. Please call us at 555-0120 and ask to speak with our salon manager. We'll schedule a correction appointment at no charge as soon as possible.",
+        },
+        {
+          stars: 5,
+          review: "Found Sofia through a friend recommendation and I will never go anywhere else. She listens carefully, remembers my preferences from last time, and the color always comes out exactly right. Book her now.",
+          response: "Sofia is going to love seeing this — thank you! Remembering preferences and getting the color right every time is exactly what she works toward, and hearing it from a client means the world to her. We're so glad the recommendation brought you to us. See you at your next appointment!",
+        },
+      ]}
+      whyHeading="Why Salon Review Responses Build a Clientele"
+      whyBody={[
+        "Salons live and die by their reputation and word of mouth. When someone is looking for a new salon, they read reviews like they're getting a recommendation from a friend. A salon that responds professionally to every review — including clients who were disappointed — signals that they take pride in their work and care about every client's experience.",
+        "Responding to positive reviews is equally important in the salon industry. When you thank a client publicly for recommending a specific stylist, it reinforces that stylist's reputation and makes new clients specifically seek them out. It's free marketing for your best team members.",
+      ]}
+      heroImage="/images/screenshots/dashboard-main.webp"
+      featureImage="/images/screenshots/reviews-dashboard.webp"
+      mobileImage="/images/screenshots/mobile-dashboard.webp"
+      heroImageAlt="Salon review response dashboard"
+      featureImageAlt="Managing salon client reviews in Reviewly"
+      mobileImageAlt="Respond to salon reviews on your phone"
+      related={[
+        { href: "/uses/spa-review-response-examples", label: "Spa Review Response Examples" },
+        { href: "/uses/negative-review-response-examples", label: "Negative Review Response Examples" },
+        { href: "/uses/positive-review-response-examples", label: "Positive Review Response Examples" },
+        { href: "/uses/google-review-response-examples", label: "Google Review Response Examples" },
+      ]}
+    />
   );
 }

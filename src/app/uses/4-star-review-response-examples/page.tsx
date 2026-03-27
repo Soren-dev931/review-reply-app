@@ -1,123 +1,58 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "4-Star Review Response Examples — Almost Perfect Reviews | Reviewly",
-    description: "4-star review response examples that thank customers and address the missing star. Generate personalized replies in 10 seconds with Reviewly.",
+    title: "4-Star Review Response Examples | Reviewly",
+    description: "See how to respond to 4-star Google reviews. These near-perfect ratings deserve thoughtful replies that encourage return visits and 5-star upgrades.",
   };
 }
 
 export default function FourStarReviewResponseExamples() {
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
-      <h1 className="text-4xl font-bold text-navy-900 mb-6">
-        4-Star Review Response Examples
-      </h1>
-
-      <p className="text-lg text-navy-700 mb-2">
-        4-star review responses are about the missing star. The customer had a good experience — just not a perfect one. Your response should thank them and show you noticed the gap.
-      </p>
-      <p className="text-lg text-navy-700 mb-8">
-        Reviewly generates responses for 4-star reviews that feel personal. It picks up on what the customer praised and what they held back on.
-      </p>
-
-      <a href="/#demo" className="btn-primary inline-block mb-12">
-        Generate a Response Free
-      </a>
-
-      {/* IMAGE: Reviewly generating a response to a 4-star review */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/dashboard-main.webp"
-                  alt="Reviewly dashboard for managing 4-star review responses"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        The Missing Star Matters
-      </h2>
-      <p className="text-navy-700 mb-4">
-        4-star reviews often contain a small critique buried in the praise. "Everything was great except..." That "except" is valuable feedback. Acknowledging it shows you're paying attention.
-      </p>
-      <p className="text-navy-700 mb-8">
-        Don't just thank them and move on. Address the small thing. That's how you earn the fifth star next time.
-      </p>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Example: Great But Not Quite
-      </h2>
-      <div className="card p-6 mb-4">
-        <p className="text-sm font-semibold text-navy-500 mb-2">⭐⭐⭐⭐ Review:</p>
-        <p className="text-navy-700 italic">"Really enjoyed the experience. Staff was friendly and the work was solid. Only reason it's not 5 stars is the parking situation — took 15 minutes to find a spot."</p>
-      </div>
-      <div className="card p-6 mb-8">
-        <p className="text-sm font-semibold text-emerald-600 mb-2">✅ Generated Response:</p>
-        <p className="text-navy-700">"Glad the experience was solid. Parking is a real pain point and something we hear about — we're looking into options to make it easier. Thanks for the honest feedback. Hoping to earn that fifth star next visit."</p>
-      </div>
-
-      {/* IMAGE: 4-star review with a small critique and targeted response */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/reviews-dashboard.webp"
-                  alt="Reviewly reviews dashboard for 4-star review management"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Example: Almost Perfect
-      </h2>
-      <div className="card p-6 mb-4">
-        <p className="text-sm font-semibold text-navy-500 mb-2">⭐⭐⭐⭐ Review:</p>
-        <p className="text-navy-700 italic">"Great service, fair price, done on time. Communication could've been a little better — had to call for updates instead of getting them. But overall very happy."</p>
-      </div>
-      <div className="card p-6 mb-8">
-        <p className="text-sm font-semibold text-emerald-600 mb-2">✅ Generated Response:</p>
-        <p className="text-navy-700">"Glad the service, price, and timing all worked out. You're right about the communication — proactive updates are something we're adding to our process. Appreciate you pointing that out."</p>
-      </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        4-Star Reviewers Are Your Future 5-Star Reviewers
-      </h2>
-      <p className="text-navy-700 mb-4">
-        These customers liked you. They just need one thing fixed. Respond well, fix the thing, and they come back with a 5-star review next time. That's how you build a review profile.
-      </p>
-      <p className="text-navy-700 mb-8">
-        Reviewly helps you respond to 4-star reviews without overthinking. Paste, generate, post. The response will feel personal because it references their specific feedback.
-      </p>
-
-      {/* IMAGE: Customer journey from 4-star to 5-star through good response */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/mobile-dashboard.webp"
-                  alt="Reviewly mobile dashboard showing 4-star review responses"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <a href="/#demo" className="btn-primary inline-block mb-12">
-        Generate a Response Free
-      </a>
-
-      <div className="border-t border-navy-100 pt-8 mt-8">
-        <p className="text-sm text-navy-500 mb-2">Related:</p>
-        <div className="flex flex-wrap gap-4">
-          <Link href="/uses/5-star-review-response-examples" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            5-Star Review Response Examples →
-          </Link>
-          <Link href="/uses/3-star-review-response-examples" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            3-Star Review Response Examples →
-          </Link>
-          <Link href="/uses/positive-review-response-examples" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Positive Review Response Examples →
-          </Link>
-        </div>
-      </div>
-    </div>
+    <UsesPageLayout
+      badge="Star Ratings"
+      h1="4-Star Review Response Examples"
+      tagline="Four stars is almost perfect — but that one missing star is a clue. Respond well, fix the gap, and you've got a customer for life."
+      featureHeading="Making the Most of 4-Star Feedback"
+      featureBody="Four-star reviewers are happy customers who noticed something small that held them back from a perfect rating. These are your best opportunities — they're already fans. A great response nudges them to 5 stars next time."
+      featurePoints={[
+        "Express genuine gratitude — 4 stars is still a strong endorsement",
+        "Acknowledge the specific thing they mentioned as a drawback",
+        "Invite them back to experience the improvement",
+        "Keep it brief and warm — this isn't damage control",
+        "Personalize with the reviewer's name if available",
+        "Mention any changes or improvements you've made since their visit",
+      ]}
+      examples={[
+        {
+          stars: 4,
+          review: "Really enjoyed the atmosphere and the food was excellent. Only giving 4 stars because parking was a nightmare and we had to walk quite a distance. Will definitely be back though!",
+          response: "Thank you so much — we're really glad the food and atmosphere hit the mark! The parking situation is something we hear about and we're actively looking at solutions, including a validated parking option nearby. We'll make sure your next visit is even smoother. Can't wait to see you again!",
+        },
+        {
+          stars: 4,
+          review: "Great service and the staff was super helpful. Room was clean and comfortable. Lost a star because the Wi-Fi was painfully slow the whole stay.",
+          response: "Thanks for the kind words about our team and room comfort — that really means a lot! You're right about the Wi-Fi and we've already been in touch with our provider to get it upgraded. We hope you'll give us another shot on your next trip through the area — we'd love to earn that 5th star!",
+        },
+      ]}
+      whyHeading="Why You Shouldn't Ignore 4-Star Reviews"
+      whyBody={[
+        "It's easy to focus on your worst reviews and forget about the ones that are almost great. But 4-star reviewers are your most valuable segment — they already like you and just need one more positive experience to become loyal advocates.",
+        "A thoughtful response to a 4-star review also signals to prospective customers that you're listening and continuously improving. That kind of attentiveness is a competitive advantage in any industry.",
+      ]}
+      heroImage="/images/screenshots/dashboard-5star-response.webp"
+      featureImage="/images/screenshots/reviews-dashboard.webp"
+      mobileImage="/images/screenshots/mobile-dashboard.webp"
+      heroImageAlt="Responding to 4-star reviews with AI"
+      featureImageAlt="Review list showing 4-star ratings"
+      mobileImageAlt="Managing 4-star reviews from your phone"
+      related={[
+        { href: "/uses/5-star-review-response-examples", label: "5-Star Review Response Examples" },
+        { href: "/uses/3-star-review-response-examples", label: "3-Star Review Response Examples" },
+        { href: "/uses/positive-review-response-examples", label: "Positive Review Response Examples" },
+        { href: "/uses/google-review-response-examples", label: "Google Review Response Examples" },
+      ]}
+    />
   );
 }

@@ -1,135 +1,58 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "1-Star Review Response Examples — Professional Replies to the Worst Reviews | Reviewly",
-    description: "1-star review response examples that stay professional and avoid getting defensive. Generate calm, empathetic replies in 10 seconds with Reviewly.",
+    title: "1-Star Review Response Examples | Reviewly",
+    description: "See real examples of how to respond to 1-star Google reviews. Turn your worst ratings into trust-building moments with AI-generated responses.",
   };
 }
 
 export default function OneStarReviewResponseExamples() {
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
-      <h1 className="text-4xl font-bold text-navy-900 mb-6">
-        1-Star Review Response Examples
-      </h1>
-
-      <p className="text-lg text-navy-700 mb-2">
-        1-star review responses are the hardest to write. The customer is furious, the review feels unfair, and your first instinct is to defend yourself. Don't. The response isn't for the reviewer — it's for everyone who reads it after.
-      </p>
-      <p className="text-lg text-navy-700 mb-8">
-        Reviewly generates calm, professional responses to 1-star reviews. No defensiveness. No corporate speak. Just acknowledgment, empathy, and an invitation to make it right.
-      </p>
-
-      <a href="/#demo" className="btn-primary inline-block mb-12">
-        Generate a Response Free
-      </a>
-
-      {/* IMAGE: Reviewly generating a response to a 1-star review */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/dashboard-main.webp"
-                  alt="Reviewly dashboard for managing 1-star review responses"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Rules for Responding to 1-Star Reviews
-      </h2>
-      <ul className="list-disc pl-6 text-navy-700 space-y-2 mb-8">
-        <li><strong>Don't argue.</strong> You won't win in public. Take the conversation offline.</li>
-        <li><strong>Don't be sarcastic.</strong> Future customers don't know the context. Sarcasm reads as petty.</li>
-        <li><strong>Acknowledge the pain.</strong> Something went wrong. Say so.</li>
-        <li><strong>Offer a path forward.</strong> Contact info, a callback, a redo. Give them somewhere to go.</li>
-      </ul>
-
-      {/* IMAGE: Side-by-side of a defensive response vs Reviewly's empathetic response */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/reviews-dashboard.webp"
-                  alt="Reviewly reviews dashboard for 1-star review management"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Example: Angry Customer, Professional Reply
-      </h2>
-      <div className="card p-6 mb-4">
-        <p className="text-sm font-semibold text-navy-500 mb-2">⭐ Review:</p>
-        <p className="text-navy-700 italic">"Absolute worst experience. Staff was rude, waited forever, and the end result was terrible. I want my money back. DO NOT GO HERE."</p>
-      </div>
-      <div className="card p-6 mb-8">
-        <p className="text-sm font-semibold text-emerald-600 mb-2">✅ Generated Response:</p>
-        <p className="text-navy-700">"I'm sorry you had this experience. That's not the standard we hold ourselves to. I'd like to understand what happened and make it right — please reach out to us at [phone/email] so we can discuss this directly."</p>
-      </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Example: Vague 1-Star Review
-      </h2>
-      <div className="card p-6 mb-4">
-        <p className="text-sm font-semibold text-navy-500 mb-2">⭐ Review:</p>
-        <p className="text-navy-700 italic">"Terrible. Just terrible."</p>
-      </div>
-      <div className="card p-6 mb-8">
-        <p className="text-sm font-semibold text-emerald-600 mb-2">✅ Generated Response:</p>
-        <p className="text-navy-700">"We're sorry to hear that. We'd like to know more about what went wrong so we can address it. Please contact us directly — we want to make this right."</p>
-      </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Example: Detailed Complaint
-      </h2>
-      <div className="card p-6 mb-4">
-        <p className="text-sm font-semibold text-navy-500 mb-2">⭐ Review:</p>
-        <p className="text-navy-700 italic">"Made an appointment for 10am. Wasn't seen until 11:30. When I finally got in, the person was rushed and made mistakes. Then they tried to charge me for extra services I didn't ask for. Never again."</p>
-      </div>
-      <div className="card p-6 mb-8">
-        <p className="text-sm font-semibold text-emerald-600 mb-2">✅ Generated Response:</p>
-        <p className="text-navy-700">"A 90-minute wait, a rushed service, and surprise charges — that's a bad visit from start to finish, and I take full responsibility. I've reviewed what happened and am addressing each issue with the team. I'd like to discuss the charges and offer to make this right. Please contact me directly."</p>
-      </div>
-
-      {/* IMAGE: Business owner staying calm while responding to harsh reviews */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/mobile-dashboard.webp"
-                  alt="Reviewly mobile dashboard showing 1-star review responses"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        The Response Matters More Than the Review
-      </h2>
-      <p className="text-navy-700 mb-4">
-        Future customers expect to see some bad reviews. What they're actually judging is how you handled them. A professional, empathetic response to a 1-star review can actually increase trust.
-      </p>
-      <p className="text-navy-700 mb-8">
-        Reviewly removes the emotional reaction from the equation. You paste the worst review you've ever gotten, and it generates something you'd be proud to have public.
-      </p>
-
-      <a href="/#demo" className="btn-primary inline-block mb-12">
-        Generate a Response Free
-      </a>
-
-      <div className="border-t border-navy-100 pt-8 mt-8">
-        <p className="text-sm text-navy-500 mb-2">Related:</p>
-        <div className="flex flex-wrap gap-4">
-          <Link href="/uses/negative-review-response-examples" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Negative Review Response Examples →
-          </Link>
-          <Link href="/uses/3-star-review-response-examples" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            3-Star Review Response Examples →
-          </Link>
-          <Link href="/blog/how-to-respond-to-bad-reviews-on-google" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            How to Respond to Bad Reviews on Google →
-          </Link>
-        </div>
-      </div>
-    </div>
+    <UsesPageLayout
+      badge="Star Ratings"
+      h1="1-Star Review Response Examples"
+      tagline="A 1-star review doesn't have to end badly. With the right response, you can show future customers you care — and sometimes even win back the unhappy one."
+      featureHeading="What Makes a Good 1-Star Response"
+      featureBody="The worst thing you can do with a 1-star review is ignore it — or respond defensively. The best responses acknowledge the problem, apologize sincerely, and invite the customer back."
+      featurePoints={[
+        "Acknowledge the specific complaint — don't use a generic apology",
+        "Avoid being defensive or making excuses",
+        "Offer a concrete next step (refund, call, revisit)",
+        "Keep it short — long responses can seem argumentative",
+        "Sign with a name to humanize the response",
+        "Invite them to contact you offline to resolve the issue",
+      ]}
+      examples={[
+        {
+          stars: 1,
+          review: "Waited over an hour for my food and it came out cold. Nobody came to check on us the entire time. Completely unacceptable for the prices they charge.",
+          response: "We're so sorry about your experience — an hour wait followed by cold food is not what we want for any guest, and we completely understand your frustration. We'd love the chance to make this right. Please reach out to us directly at hello@restaurant.com and we'll take care of you. Thank you for taking the time to let us know.",
+        },
+        {
+          stars: 1,
+          review: "The technician showed up two hours late with no call or notice. When he finally arrived, he couldn't even fix the problem and said he'd need to come back. Still haven't heard anything.",
+          response: "Thank you for letting us know, and we sincerely apologize. Showing up late without notice and leaving without a resolution is not our standard — and we should have followed up immediately. Please call us at 555-0100 and ask for the service manager. We'll prioritize getting this resolved for you at no additional charge.",
+        },
+      ]}
+      whyHeading="Why Responding to 1-Star Reviews Matters"
+      whyBody={[
+        "Potential customers read 1-star reviews closely — but they also read how you respond. A thoughtful, professional reply to a harsh review actually builds trust with people who haven't visited yet. It shows you take feedback seriously and treat customers with respect.",
+        "Ignoring bad reviews signals that you don't care. Responding defensively makes things worse. But a calm, empathetic response can neutralize the damage — and sometimes even turn a critic into a returning customer.",
+      ]}
+      heroImage="/images/screenshots/dashboard-5star-response.webp"
+      featureImage="/images/screenshots/reviews-dashboard.webp"
+      mobileImage="/images/screenshots/mobile-dashboard.webp"
+      heroImageAlt="AI-generated response to a 1-star review"
+      featureImageAlt="Review dashboard showing 1-star reviews"
+      mobileImageAlt="Responding to 1-star reviews on mobile"
+      related={[
+        { href: "/uses/negative-review-response-examples", label: "Negative Review Response Examples" },
+        { href: "/uses/bad-review-response-examples", label: "Bad Review Response Examples" },
+        { href: "/uses/3-star-review-response-examples", label: "3-Star Review Response Examples" },
+        { href: "/uses/google-review-response-examples", label: "Google Review Response Examples" },
+      ]}
+    />
   );
 }

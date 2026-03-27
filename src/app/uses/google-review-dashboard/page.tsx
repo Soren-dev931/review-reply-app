@@ -1,97 +1,58 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Google Review Dashboard — All Your Reviews in One Place | Reviewly",
-    description: "Google review dashboard that shows all reviews across locations in one view. Filter by rating, status, and location. Respond with AI in one click.",
+    title: "Google Review Dashboard | Reviewly",
+    description: "Manage all your Google reviews from one clean dashboard. View, respond, track, and analyze reviews across all your locations — in one place.",
   };
 }
 
 export default function GoogleReviewDashboard() {
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
-      <h1 className="text-4xl font-bold text-navy-900 mb-6">
-        Google Review Dashboard
-      </h1>
-
-      <p className="text-lg text-navy-700 mb-2">
-        A Google review dashboard puts every review from every location into a single view. No switching between tabs. No logging into Google Business Profile for each location. Reviewly pulls your reviews in and lets you respond from one screen.
-      </p>
-      <p className="text-lg text-navy-700 mb-8">
-        Filter by star rating, response status, location, or date. See which reviews need attention and which ones already have a reply. AI drafts the response — you approve or edit before it posts.
-      </p>
-
-      <a href="/signup" className="btn-primary inline-block mb-12">
-        See Your Reviews in One Place
-      </a>
-
-      {/* IMAGE: Reviewly dashboard showing reviews filtered by rating with status badges */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/reviews-dashboard.webp"
-                  alt="Reviewly Google review dashboard with filters"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        What You See in the Dashboard
-      </h2>
-      <ul className="list-disc pl-6 text-navy-700 space-y-2 mb-8">
-        <li>Reviewer name, star rating, and full review text</li>
-        <li>AI-drafted response ready for approval</li>
-        <li>Status badge: pending, approved, posted, or skipped</li>
-        <li>Location name for multi-location businesses</li>
-        <li>Date and time the review was posted</li>
-      </ul>
-
-      {/* IMAGE: Close-up of a single review card with approve/edit/skip buttons */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/reviews-dashboard.webp"
-                  alt="Review card with approve, edit, and skip actions - google review dashboard"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Multi-Location Support
-      </h2>
-      <p className="text-navy-700 mb-4">
-        Businesses with multiple locations spend the most time managing reviews. A dashboard eliminates the need to check each location separately.
-      </p>
-      <p className="text-navy-700 mb-8">
-        The Pro plan supports unlimited locations. Filter by a single location or view everything at once. Analytics show trends across all locations or broken down by each one.
-      </p>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Analytics Built In
-      </h2>
-      <p className="text-navy-700 mb-8">
-        The Pro plan includes response rate tracking, average response time, review volume trends, and rating distribution. See whether your review scores are going up or down and how quickly your team is responding.
-      </p>
-
-      <a href="/signup" className="btn-primary inline-block mb-12">
-        See Your Reviews in One Place
-      </a>
-
-      <div className="border-t border-navy-100 pt-8 mt-8">
-        <p className="text-sm text-navy-500 mb-2">Related:</p>
-        <div className="flex flex-wrap gap-4">
-          <Link href="/uses/google-review-alerts" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Google Review Alerts →
-          </Link>
-          <Link href="/uses/google-review-management-software" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Google Review Management Software →
-          </Link>
-          <Link href="/uses/review-monitoring-service" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Review Monitoring Service →
-          </Link>
-        </div>
-      </div>
-    </div>
+    <UsesPageLayout
+      badge="Review Management"
+      h1="Google Review Dashboard for Local Businesses"
+      tagline="See all your Google reviews in one place — and respond to each one with AI-generated drafts that are ready in seconds."
+      featureHeading="What the Google Review Dashboard Shows You"
+      featureBody="Reviewly's dashboard gives you a complete view of your review activity: new reviews, response status, rating trends, and AI-generated drafts — all in one simple interface."
+      featurePoints={[
+        "All reviews visible at a glance — sorted by date and star rating",
+        "Response status tracking — see what's been answered and what hasn't",
+        "AI-generated response drafts for every review",
+        "Rating trend charts to spot changes over time",
+        "Multi-location view for businesses with more than one address",
+        "Simple interface — no learning curve required",
+      ]}
+      examples={[
+        {
+          stars: 3,
+          review: "The dashboard view is helpful but I wish I could filter by star rating more easily. Otherwise great tool for managing reviews across my two locations.",
+          response: "Thank you for the feedback — filtering by star rating is actually on our roadmap! We're building it out based on exactly this kind of input. We're really glad the multi-location view is working well for you. Stay tuned for that update!",
+        },
+        {
+          stars: 5,
+          review: "Finally I can see all my reviews in one place without logging into Google separately. The AI response drafts alone save me 30 minutes a day.",
+          response: "That's exactly the kind of efficiency win we built this for — thank you! Thirty minutes a day adds up to real time you get back in your week. We're really glad the dashboard is working for you. Let us know if there's anything else we can add to make it even better.",
+        },
+      ]}
+      whyHeading="Why a Centralized Dashboard Changes Everything"
+      whyBody={[
+        "Without a dedicated dashboard, review management means logging into your Google Business Profile, finding the review section, writing a response, and repeating that for every location. For businesses with one location, it's annoying. For businesses with multiple locations, it's a full-time job. A centralized review dashboard compresses all of that into a single screen.",
+        "Beyond convenience, a dashboard gives you visibility that manual checking doesn't. You can see your rating trend over the last 90 days, spot a sudden drop before it becomes a crisis, and track whether your response rate is improving. That kind of data turns review management from reactive to proactive.",
+      ]}
+      heroImage="/images/screenshots/dashboard-recent-responses.webp"
+      featureImage="/images/screenshots/analytics-page.webp"
+      mobileImage="/images/screenshots/mobile-dashboard.webp"
+      heroImageAlt="Google review dashboard overview"
+      featureImageAlt="Review analytics and tracking dashboard"
+      mobileImageAlt="Google review dashboard on mobile"
+      related={[
+        { href: "/uses/google-review-management-software", label: "Google Review Management Software" },
+        { href: "/uses/google-review-alerts", label: "Google Review Alerts" },
+        { href: "/uses/review-monitoring-service", label: "Review Monitoring Service" },
+        { href: "/uses/best-review-management-software", label: "Best Review Management Software" },
+      ]}
+    />
   );
 }

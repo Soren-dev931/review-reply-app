@@ -1,129 +1,58 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "AI Review Response Generator — Personalized Replies in Seconds | Reviewly",
-    description: "AI review response generator that creates personalized, professional replies to Google reviews in 10 seconds. Not ChatGPT — built for business owners.",
+    title: "AI Review Response Generator | Reviewly",
+    description: "The best AI review response generator for Google reviews. Generate unique, professional responses to any review — free to start, no card required.",
   };
 }
 
-export default function AIReviewResponseGenerator() {
+export default function AiReviewResponseGenerator() {
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
-      <h1 className="text-4xl font-bold text-navy-900 mb-6">
-        AI Review Response Generator
-      </h1>
-
-      <p className="text-lg text-navy-700 mb-2">
-        An AI review response generator should do one thing well: read a customer review and write a reply that sounds like you wrote it. Not a generic template. Not ChatGPT output with "I appreciate your feedback" on repeat.
-      </p>
-      <p className="text-lg text-navy-700 mb-8">
-        Reviewly is an AI review response generator built for business owners. Paste a review, select the star rating, and get a personalized response in 10 seconds. It references the specific details the customer mentioned — the room, the stylist, the wait time, the dish.
-      </p>
-
-      <a href="/#demo" className="btn-primary inline-block mb-12">
-        Generate a Response Free
-      </a>
-
-      {/* IMAGE: Reviewly interface showing the paste-review-and-generate flow */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/dashboard-main.webp"
-                  alt="Reviewly AI review response generator interface"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        How Reviewly Works
-      </h2>
-      <ul className="list-decimal pl-6 text-navy-700 space-y-2 mb-8">
-        <li>Copy a review from Google (or any platform)</li>
-        <li>Paste it into Reviewly</li>
-        <li>Select the star rating</li>
-        <li>Get a personalized response in ~10 seconds</li>
-        <li>Copy and post it back</li>
-      </ul>
-      <p className="text-navy-700 mb-8">
-        The whole process takes under a minute. Most business owners spend 10-15 minutes per review when writing by hand.
-      </p>
-
-      {/* IMAGE: Before/after showing time spent: 15 min manual vs 1 min with Reviewly */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/dashboard-main.webp"
-                  alt="Reviewly dashboard for managing AI review response review responses"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Why Not Just Use ChatGPT?
-      </h2>
-      <p className="text-navy-700 mb-4">
-        You can. But here's what happens:
-      </p>
-      <ul className="list-disc pl-6 text-navy-700 space-y-1 mb-8">
-        <li>You write a long prompt explaining the context</li>
-        <li>ChatGPT gives you something that starts with "Thank you for taking the time to share your experience"</li>
-        <li>You edit it to sound less robotic</li>
-        <li>Total time: 5-8 minutes per review</li>
-      </ul>
-      <p className="text-navy-700 mb-8">
-        Reviewly is purpose-built. No prompting needed. It already knows how to write review responses that sound human. Paste and go.
-      </p>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        What Makes Reviewly Different
-      </h2>
-      <ul className="list-disc pl-6 text-navy-700 space-y-2 mb-8">
-        <li><strong>Specific, not generic.</strong> References the actual details in the review.</li>
-        <li><strong>Tone-aware.</strong> Empathetic for complaints, warm for praise, balanced for mixed reviews.</li>
-        <li><strong>No AI slop.</strong> No "In today's competitive landscape" or "We value your patronage." Real language.</li>
-        <li><strong>Fast.</strong> 10 seconds. No prompt engineering. No back-and-forth.</li>
-      </ul>
-
-      {/* IMAGE: Example showing a real review and Reviewly's response side by side */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/reviews-dashboard.webp"
-                  alt="Reviewly reviews dashboard for AI review response review management"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Works for Every Business Type
-      </h2>
-      <p className="text-navy-700 mb-4">
-        Restaurants, hotels, dental offices, salons, auto shops, law firms — Reviewly handles them all. The AI adapts to the industry context based on what's in the review.
-      </p>
-      <p className="text-navy-700 mb-8">
-        No setup. No industry selection. Just paste the review and it figures it out.
-      </p>
-
-      <a href="/#demo" className="btn-primary inline-block mb-12">
-        Generate a Response Free
-      </a>
-
-      <div className="border-t border-navy-100 pt-8 mt-8">
-        <p className="text-sm text-navy-500 mb-2">Related:</p>
-        <div className="flex flex-wrap gap-4">
-          <Link href="/uses/google-review-response-generator" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Google Review Response Generator →
-          </Link>
-          <Link href="/uses/free-review-response-generator" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Free Review Response Generator →
-          </Link>
-          <Link href="/uses/negative-review-response-examples" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Negative Review Response Examples →
-          </Link>
-        </div>
-      </div>
-    </div>
+    <UsesPageLayout
+      badge="AI Tools"
+      h1="AI Review Response Generator"
+      tagline="The fastest way to respond to every Google review. Paste the review, get a tailored response in seconds, and post it — done."
+      featureHeading="Why Reviewly's AI Generator Is Different"
+      featureBody="Most AI generators produce the same template with a few words swapped. Reviewly actually reads the review and writes a response that addresses what the customer said — so it doesn't read like a bot."
+      featurePoints={[
+        "Reads the full review for context before generating",
+        "Unique responses — not recycled templates",
+        "Handles 1-star to 5-star reviews equally well",
+        "Adjusts formality and tone based on your business type",
+        "Instant results — try it free without an account",
+        "Edit and customize before you post",
+      ]}
+      examples={[
+        {
+          stars: 2,
+          review: "The spa looked beautiful online but the actual experience was rushed. My massage was cut 15 minutes short because they 'had another client.' No apology, nothing.",
+          response: "We're so sorry — cutting a service short without explanation or apology is not something we ever want a guest to experience. You came here to relax, and we let you down. Please reach out to our spa manager directly at manager@spa.com and we'll make this right with a complimentary rebook. Thank you for telling us.",
+        },
+        {
+          stars: 5,
+          review: "I've been coming here every month for two years and the quality has never dropped. That consistency is rare and it's why I keep coming back. Highly recommend.",
+          response: "Two years of monthly visits — that means everything to us. Thank you for your loyalty and for this kind review. Consistency is something our whole team works hard at, and it's incredibly motivating to hear that it shows. We'll see you next month!",
+        },
+      ]}
+      whyHeading="Why You Need an AI Review Response Generator"
+      whyBody={[
+        "Even businesses with great customer service struggle to keep up with reviews. Writing a thoughtful, individual response to every review — especially when you're getting dozens a month — isn't realistic without help. An AI generator closes that gap and makes it possible to respond to every single review, every time.",
+        "But the generator is only as good as the responses it produces. Reviewly generates replies that are specific, human-sounding, and reflect your brand voice — so you can post them with confidence, not embarrassment.",
+      ]}
+      heroImage="/images/screenshots/dashboard-review-input.webp"
+      featureImage="/images/screenshots/dashboard-main.webp"
+      mobileImage="/images/screenshots/mobile-dashboard.webp"
+      heroImageAlt="AI review response generator tool"
+      featureImageAlt="Reviewly AI generator dashboard"
+      mobileImageAlt="AI review response generator on mobile"
+      related={[
+        { href: "/uses/free-review-response-generator", label: "Free Review Response Generator" },
+        { href: "/uses/google-review-response-generator", label: "Google Review Response Generator" },
+        { href: "/uses/ai-review-response", label: "AI Review Response" },
+        { href: "/uses/review-reply-generator", label: "Review Reply Generator" },
+      ]}
+    />
   );
 }

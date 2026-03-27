@@ -1,102 +1,58 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Google Review Responder — Auto-Reply to Every Google Review | Reviewly",
-    description: "Google review responder that monitors your Business Profile and drafts personalized replies automatically. Approve with one click and post to Google.",
+    title: "Google Review Responder | Reviewly",
+    description: "Respond to all your Google reviews faster with AI. Reviewly generates professional, personalized responses for every review — ready to post in seconds.",
   };
 }
 
 export default function GoogleReviewResponder() {
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
-      <h1 className="text-4xl font-bold text-navy-900 mb-6">
-        Google Review Responder
-      </h1>
-
-      <p className="text-lg text-navy-700 mb-2">
-        A Google review responder watches your Business Profile and handles replies so you don&apos;t have to check manually. When a new review comes in, Reviewly reads it, drafts a personalized response, and sends you a notification.
-      </p>
-      <p className="text-lg text-navy-700 mb-8">
-        You approve with one click or edit it first. The reply goes straight to Google. No copy-pasting. No logging into your Business Profile every day.
-      </p>
-
-      <a href="/signup" className="btn-primary inline-block mb-12">
-        Start Responding Automatically
-      </a>
-
-      {/* IMAGE: Reviewly dashboard showing a pending Google review with AI-drafted response and approve button */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/reviews-dashboard.webp"
-                  alt="Reviewly auto-response dashboard with approve button - google review responder"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        How the Google Review Responder Works
-      </h2>
-      <ul className="list-decimal pl-6 text-navy-700 space-y-2 mb-8">
-        <li>Connect your Google Business Profile to Reviewly</li>
-        <li>Reviewly checks for new reviews every few hours</li>
-        <li>AI reads the review and drafts a reply that references specific details</li>
-        <li>You get a notification with the draft</li>
-        <li>Approve, edit, or skip — one click</li>
-      </ul>
-      <p className="text-navy-700 mb-8">
-        On the Pro plan, you can turn on auto-post. Responses go live without waiting for your approval. Useful when you trust the AI and want zero friction.
-      </p>
-
-      {/* IMAGE: Email notification showing new review alert with AI response preview */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/reviews-dashboard.webp"
-                  alt="Email notification with new review and AI response preview - google review responder"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Why Automatic Responses Matter
-      </h2>
-      <p className="text-navy-700 mb-4">
-        Google has confirmed that responding to reviews helps your local search ranking. Businesses that reply to every review show up higher in Maps and local search results.
-      </p>
-      <p className="text-navy-700 mb-8">
-        Most businesses reply to a few reviews and then stop. A Google review responder keeps your response rate at 100% without any effort.
-      </p>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Starter vs Pro
-      </h2>
-      <ul className="list-disc pl-6 text-navy-700 space-y-2 mb-8">
-        <li><strong>Starter ($29/mo):</strong> 1 location, 50 responses/month, review with approval</li>
-        <li><strong>Pro ($79/mo):</strong> Unlimited locations and responses, auto-post, analytics, custom brand voice</li>
-        <li>Save 20% with annual billing on either plan</li>
-      </ul>
-
-      <a href="/signup" className="btn-primary inline-block mb-12">
-        Start Responding Automatically
-      </a>
-
-      <div className="border-t border-navy-100 pt-8 mt-8">
-        <p className="text-sm text-navy-500 mb-2">Related:</p>
-        <div className="flex flex-wrap gap-4">
-          <Link href="/uses/google-review-automation" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Google Review Automation →
-          </Link>
-          <Link href="/uses/review-response-automation" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Review Response Automation →
-          </Link>
-          <Link href="/uses/google-review-alerts" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Google Review Alerts →
-          </Link>
-        </div>
-      </div>
-    </div>
+    <UsesPageLayout
+      badge="AI Tools"
+      h1="Google Review Responder — Reply to Every Review Faster"
+      tagline="Reviewly's AI-powered Google review responder generates professional replies for every review — so you can stay on top of your reputation without the time drain."
+      featureHeading="How the Google Review Responder Works"
+      featureBody="Paste any Google review — or connect your Google Business Profile — and Reviewly generates a response that's personalized, professional, and ready to post in seconds."
+      featurePoints={[
+        "AI reads the full review before generating a response",
+        "Tailored to the star rating and review content",
+        "Handles complaints with empathy, praise with warmth",
+        "Edit any response before posting",
+        "Works for any business category",
+        "Free to start — no card needed",
+      ]}
+      examples={[
+        {
+          stars: 2,
+          review: "The instructor canceled class 20 minutes before it started and I had already driven 40 minutes. No email, no text. Just a sign on the door.",
+          response: "We are so sorry — driving 40 minutes to find a cancellation notice on the door is inexcusable, and there's no good explanation for not contacting you ahead of time. Please reach out to us at studio@fitnesscenter.com and we'll comp your next class and cover what we can. Thank you for letting us know.",
+        },
+        {
+          stars: 5,
+          review: "My go-to gym for two years. The trainers know my goals, the equipment is always maintained, and it doesn't feel like a factory. Worth every dollar.",
+          response: "Two years — thank you! Knowing the trainers understand your goals and that it feels personal rather than like a factory is exactly what we work toward every day. We're grateful to have you as a member and we'll keep earning your trust.",
+        },
+      ]}
+      whyHeading="Why a Dedicated Google Review Responder Matters"
+      whyBody={[
+        "Google specifically rewards businesses that respond to reviews. An active response history improves your visibility in local search and signals to the algorithm that you're an engaged, credible business. A dedicated review responder tool makes that activity consistent — not something you get to when you have time.",
+        "More importantly, every response you post is read by prospective customers. When they see a business that engages thoughtfully with both happy and unhappy customers, they feel more confident choosing you over a competitor with no responses at all.",
+      ]}
+      heroImage="/images/screenshots/dashboard-review-input.webp"
+      featureImage="/images/screenshots/dashboard-main.webp"
+      mobileImage="/images/screenshots/mobile-dashboard.webp"
+      heroImageAlt="Google review responder interface"
+      featureImageAlt="Reviewly Google review responder dashboard"
+      mobileImageAlt="Google review responder on mobile"
+      related={[
+        { href: "/uses/ai-review-responder", label: "AI Review Responder" },
+        { href: "/uses/google-review-response-tool", label: "Google Review Response Tool" },
+        { href: "/uses/ai-google-review-reply", label: "AI Google Review Reply" },
+        { href: "/uses/google-review-response-examples", label: "Google Review Response Examples" },
+      ]}
+    />
   );
 }

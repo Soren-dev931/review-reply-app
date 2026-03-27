@@ -1,127 +1,58 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Review Response Examples — Templates & Replies for Every Business Type | Reviewly",
-    description: "Review response examples for restaurants, dental offices, hotels, and auto shops. See real responses across star ratings and generate your own in 10 seconds.",
+    title: "Review Response Examples | Reviewly",
+    description: "See real review response examples for any star rating or industry. Use them as inspiration or generate your own instantly with Reviewly's AI.",
   };
 }
 
 export default function ReviewResponseExamples() {
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
-      <h1 className="text-4xl font-bold text-navy-900 mb-6">
-        Review Response Examples
-      </h1>
-
-      <p className="text-lg text-navy-700 mb-2">
-        Review response examples across different business types and star ratings. This page collects the responses people actually need — from thanking a happy customer to handling an angry one. Each example is different because each business type has its own concerns.
-      </p>
-      <p className="text-lg text-navy-700 mb-8">
-        Want responses for your own reviews? Reviewly generates them in 10 seconds. Paste a review, get a reply.
-      </p>
-
-      <a href="/#demo" className="btn-primary inline-block mb-12">
-        Generate a Response Free
-      </a>
-
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/dashboard-recent-responses.webp"
-                  alt="Multiple review responses across different business types - review response examples"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Restaurant: Handling a Food Complaint
-      </h2>
-      <div className="card p-6 mb-4">
-        <p className="text-sm font-semibold text-navy-500 mb-2">⭐⭐ Review:</p>
-        <p className="text-navy-700 italic">"The pasta was overcooked and the sauce tasted like it came from a jar. Disappointing for the price."</p>
-      </div>
-      <div className="card p-6 mb-8">
-        <p className="text-sm font-semibold text-emerald-600 mb-2">✅ Response:</p>
-        <p className="text-navy-700">"Overcooked pasta isn't what we're about — thanks for the honest feedback. I've passed this along to our kitchen team. If you come back, let the host know and your meal is on us."</p>
-      </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Dental Office: Thanking a Patient
-      </h2>
-      <div className="card p-6 mb-4">
-        <p className="text-sm font-semibold text-navy-500 mb-2">⭐⭐⭐⭐⭐ Review:</p>
-        <p className="text-navy-700 italic">"Dr. Kim was patient and explained everything before the procedure. No pain at all. The office is clean and the staff is welcoming."</p>
-      </div>
-      <div className="card p-6 mb-8">
-        <p className="text-sm font-semibold text-emerald-600 mb-2">✅ Response:</p>
-        <p className="text-navy-700">"Dr. Kim always takes the time to explain what's happening — glad that made the difference for you. We work hard to keep the office comfortable and welcoming. See you at your next appointment!"</p>
-      </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Hotel: Responding to a Mixed Review
-      </h2>
-      <div className="card p-6 mb-4">
-        <p className="text-sm font-semibold text-navy-500 mb-2">⭐⭐⭐ Review:</p>
-        <p className="text-navy-700 italic">"Location was perfect and the bed was comfortable. But the AC didn't work and nobody fixed it during our 3-night stay."</p>
-      </div>
-      <div className="card p-6 mb-8">
-        <p className="text-sm font-semibold text-emerald-600 mb-2">✅ Response:</p>
-        <p className="text-navy-700">"A broken AC for three nights isn't acceptable — that should have been escalated and resolved the first day. I've addressed this with our maintenance and front desk teams. Glad the location and room otherwise worked for you. We owe you a better stay."</p>
-      </div>
-
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/dashboard-recent-responses.webp"
-                  alt="Reviewly generating responses for different business types - review response examples"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Auto Repair: Addressing a Billing Concern
-      </h2>
-      <div className="card p-6 mb-4">
-        <p className="text-sm font-semibold text-navy-500 mb-2">⭐⭐ Review:</p>
-        <p className="text-navy-700 italic">"Went in for an oil change and left with a $600 bill. They found 'additional issues' that I'm not convinced were real."</p>
-      </div>
-      <div className="card p-6 mb-8">
-        <p className="text-sm font-semibold text-emerald-600 mb-2">✅ Response:</p>
-        <p className="text-navy-700">"I understand the frustration with unexpected costs. We should have walked you through the findings before any additional work. Please call and ask for Dave — he can review the invoice with you and make sure everything was warranted."</p>
-      </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Find Examples for Your Industry
-      </h2>
-      <div className="space-y-2 mb-8">
-        <Link href="/uses/google-review-response-examples" className="block text-emerald-600 hover:text-emerald-700 font-medium">Google Review Response Examples →</Link>
-        <Link href="/uses/hotel-review-response-examples" className="block text-emerald-600 hover:text-emerald-700 font-medium">Hotel Review Response Examples →</Link>
-        <Link href="/uses/dental-review-response-examples" className="block text-emerald-600 hover:text-emerald-700 font-medium">Dental Review Response Examples →</Link>
-        <Link href="/uses/restaurant-review-response-examples" className="block text-emerald-600 hover:text-emerald-700 font-medium">Restaurant Review Response Examples →</Link>
-        <Link href="/uses/negative-review-response-examples" className="block text-emerald-600 hover:text-emerald-700 font-medium">Negative Review Response Examples →</Link>
-        <Link href="/uses/positive-review-response-examples" className="block text-emerald-600 hover:text-emerald-700 font-medium">Positive Review Response Examples →</Link>
-      </div>
-
-      <a href="/#demo" className="btn-primary inline-block mb-12">
-        Try Reviewly — Generate Responses in 10 Seconds
-      </a>
-
-      <div className="border-t border-navy-100 pt-8 mt-8">
-        <p className="text-sm text-navy-500 mb-2">Related:</p>
-        <div className="flex flex-wrap gap-4">
-          <Link href="/uses/google-review-response-examples" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Google Review Response Examples →
-          </Link>
-          <Link href="/uses/negative-review-response-examples" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Negative Review Response Examples →
-          </Link>
-          <Link href="/uses/positive-review-response-examples" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Positive Review Response Examples →
-          </Link>
-        </div>
-      </div>
-    </div>
+    <UsesPageLayout
+      badge="Examples & Templates"
+      h1="Review Response Examples for Any Business"
+      tagline="See what a great review response actually looks like — positive, negative, or mixed. Use these as inspiration or generate your own in seconds with AI."
+      featureHeading="What Great Review Responses Have in Common"
+      featureBody="Whether you're responding to a 1-star complaint or a glowing 5-star review, the best responses share a few qualities: they're specific, they're genuine, and they move the relationship forward."
+      featurePoints={[
+        "Acknowledge the specific experience — not just 'your feedback'",
+        "Respond to the emotion, not just the facts",
+        "Offer a path forward for unresolved issues",
+        "Keep it concise — under 100 words in most cases",
+        "Never copy-paste the same response to different reviews",
+        "Include a name or contact for follow-up on complaints",
+      ]}
+      examples={[
+        {
+          stars: 1,
+          review: "The contractor showed up without the right materials, did half the job, and never came back. It's been six weeks. I've been left with a half-finished kitchen.",
+          response: "We are deeply sorry — leaving a job unfinished for six weeks is not acceptable under any circumstances, and we understand how disruptive this has been for your family. Please call our project manager directly at 555-0199 and we will prioritize getting your kitchen completed immediately. Thank you for your patience and we're sorry for letting you down.",
+        },
+        {
+          stars: 5,
+          review: "Clean, organized, and the staff went out of their way to help me find exactly what I needed. Spent less than I expected and left happier than I arrived. That's rare.",
+          response: "Leaving happier than you arrived — that's the goal! We're really glad the team came through and the value was there too. It's genuinely our favorite thing to hear. Thank you for taking the time to share it and we hope to see you again soon!",
+        },
+      ]}
+      whyHeading="How Review Response Examples Help You Get Better"
+      whyBody={[
+        "Seeing strong review response examples is one of the fastest ways to improve your own. Most business owners have never been formally taught how to respond to reviews — they default to what feels natural, which is often either too formal or too defensive. Good examples recalibrate your instincts.",
+        "The even faster path is using Reviewly's AI generator to create responses tailored to each actual review. You still benefit from seeing examples — they help you recognize quality and know when to adjust a generated response — but you don't have to write from scratch every time.",
+      ]}
+      heroImage="/images/screenshots/dashboard-main.webp"
+      featureImage="/images/screenshots/dashboard-5star-response.webp"
+      mobileImage="/images/screenshots/mobile-dashboard.webp"
+      heroImageAlt="Review response examples library"
+      featureImageAlt="Example review responses in Reviewly"
+      mobileImageAlt="Browse review response examples on mobile"
+      related={[
+        { href: "/uses/google-review-response-examples", label: "Google Review Response Examples" },
+        { href: "/uses/negative-review-response-examples", label: "Negative Review Response Examples" },
+        { href: "/uses/positive-review-response-examples", label: "Positive Review Response Examples" },
+        { href: "/uses/ai-review-response-generator", label: "AI Review Response Generator" },
+      ]}
+    />
   );
 }

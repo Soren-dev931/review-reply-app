@@ -1,97 +1,58 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Automated Review Management — Monitor & Respond on Autopilot | Reviewly",
-    description: "Automated review management that monitors Google reviews and generates personalized AI responses. Approve or auto-post replies without lifting a finger.",
+    title: "Automated Review Management | Reviewly",
+    description: "Automate your Google review management workflow. Get instant alerts, AI-generated responses, and a centralized dashboard — all without the manual effort.",
   };
 }
 
 export default function AutomatedReviewManagement() {
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
-      <h1 className="text-4xl font-bold text-navy-900 mb-6">
-        Automated Review Management
-      </h1>
-
-      <p className="text-lg text-navy-700 mb-2">
-        Automated review management takes the daily chore of checking and responding to reviews off your plate. Reviewly connects to your Google Business Profile, detects new reviews the moment they appear, and drafts a response using AI.
-      </p>
-      <p className="text-lg text-navy-700 mb-8">
-        You review and approve the draft, or let it post automatically. Either way, every customer gets a reply — and your local SEO ranking benefits from the consistency.
-      </p>
-
-      <a href="/signup" className="btn-primary inline-block mb-12">
-        Automate Your Reviews
-      </a>
-
-      {/* IMAGE: Dashboard showing multiple reviews being managed automatically with status badges */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/reviews-dashboard.webp"
-                  alt="Reviewly automated review management dashboard"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        What Gets Automated
-      </h2>
-      <ul className="list-disc pl-6 text-navy-700 space-y-2 mb-8">
-        <li><strong>Monitoring:</strong> New reviews detected automatically every few hours</li>
-        <li><strong>Response drafting:</strong> AI writes a personalized reply referencing what the customer said</li>
-        <li><strong>Notifications:</strong> Email alert when a new review needs your attention</li>
-        <li><strong>Posting:</strong> Approved responses go directly to Google</li>
-        <li><strong>Tracking:</strong> See response rates, average reply time, and rating trends</li>
-      </ul>
-
-      {/* IMAGE: Flow diagram: New Review → AI Draft → Approve → Posted to Google */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/reviews-dashboard.webp"
-                  alt="Automated review management workflow"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Manual vs Automated
-      </h2>
-      <p className="text-navy-700 mb-4">
-        Manual review management means logging into Google, reading each review, writing a reply, and posting it. For a business with 10-20 reviews per month, that is 2-3 hours of work.
-      </p>
-      <p className="text-navy-700 mb-8">
-        Automated review management brings that down to a few minutes. The AI handles the writing. You handle the final approval. Or skip even that with auto-post on the Pro plan.
-      </p>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Built for Small Businesses
-      </h2>
-      <p className="text-navy-700 mb-8">
-        Enterprise reputation platforms charge $300-500 per month. Reviewly starts at $29/mo for a single location with 50 AI responses. Pro at $79/mo covers unlimited locations and unlimited responses. Save 20% on annual billing.
-      </p>
-
-      <a href="/signup" className="btn-primary inline-block mb-12">
-        Automate Your Reviews
-      </a>
-
-      <div className="border-t border-navy-100 pt-8 mt-8">
-        <p className="text-sm text-navy-500 mb-2">Related:</p>
-        <div className="flex flex-wrap gap-4">
-          <Link href="/uses/review-automation-software" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Review Automation Software →
-          </Link>
-          <Link href="/uses/ai-review-management" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            AI Review Management →
-          </Link>
-          <Link href="/uses/google-review-management-software" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Google Review Management Software →
-          </Link>
-        </div>
-      </div>
-    </div>
+    <UsesPageLayout
+      badge="Automation"
+      h1="Automated Review Management for Google Reviews"
+      tagline="Stop manually checking for new reviews. Reviewly automates the alerts, the responses, and the tracking — so your reputation runs on autopilot."
+      featureHeading="What Automated Review Management Covers"
+      featureBody="Reviewly automates the most time-consuming parts of review management: knowing when a review comes in, figuring out what to say, and keeping track of what's been handled."
+      featurePoints={[
+        "Instant alerts the moment a new Google review is posted",
+        "AI-generated draft responses ready for review",
+        "Centralized dashboard across all your locations",
+        "Review trend tracking to catch recurring issues",
+        "Customizable tone settings for consistent brand voice",
+        "Free to start — no complex setup required",
+      ]}
+      examples={[
+        {
+          stars: 2,
+          review: "I've left three reviews across different locations of this chain and never gotten a response. If you don't care enough to reply, why should I keep coming back?",
+          response: "You're completely right — no response is a bad response. We appreciate you letting us know, and we're working to ensure every review gets the attention it deserves. Thank you for your patience, and please know your feedback genuinely helps us improve.",
+        },
+        {
+          stars: 5,
+          review: "I manage a chain of five coffee shops and Reviewly has been a game-changer. New review comes in, I get a ping, and there's already a draft response waiting. Takes me 30 seconds now.",
+          response: "That's exactly what we built this for! Five locations is a lot to stay on top of, and we're so glad Reviewly is making the review workflow actually manageable. If you ever want to share feedback on how we can make it even better for multi-location operators, we're all ears.",
+        },
+      ]}
+      whyHeading="Why Automation Is the Key to Consistent Review Management"
+      whyBody={[
+        "The biggest enemy of review management isn't effort — it's inconsistency. Businesses that respond to reviews some of the time, but miss weeks or months during busy periods, send a mixed signal to both customers and Google. Automation makes consistency possible without burning out your team.",
+        "Automated review management also catches problems faster. When a negative review comes in and you respond within hours instead of days, you have a much better chance of resolving the situation before it escalates — and other readers can see that you acted quickly.",
+      ]}
+      heroImage="/images/screenshots/dashboard-recent-responses.webp"
+      featureImage="/images/screenshots/analytics-page.webp"
+      mobileImage="/images/screenshots/mobile-dashboard.webp"
+      heroImageAlt="Automated review management dashboard"
+      featureImageAlt="Review management automation analytics"
+      mobileImageAlt="Manage automated review responses on mobile"
+      related={[
+        { href: "/uses/review-response-automation", label: "Review Response Automation" },
+        { href: "/uses/review-automation-software", label: "Review Automation Software" },
+        { href: "/uses/google-review-automation", label: "Google Review Automation" },
+        { href: "/uses/ai-review-management", label: "AI Review Management" },
+      ]}
+    />
   );
 }

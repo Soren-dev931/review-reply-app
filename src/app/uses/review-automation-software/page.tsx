@@ -1,100 +1,58 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Review Automation Software — Automate Review Monitoring & Responses | Reviewly",
-    description: "Review automation software that monitors Google reviews and generates personalized AI responses. Built for small businesses, not enterprise budgets.",
+    title: "Review Automation Software | Reviewly",
+    description: "Automate your Google review management with smart software. Get notified, generate AI responses, and track your reputation — without manual monitoring.",
   };
 }
 
 export default function ReviewAutomationSoftware() {
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
-      <h1 className="text-4xl font-bold text-navy-900 mb-6">
-        Review Automation Software
-      </h1>
-
-      <p className="text-lg text-navy-700 mb-2">
-        Review automation software handles the repetitive parts of managing your online reviews — monitoring for new ones, writing responses, and posting them. Reviewly is review automation software built for small businesses. It connects to Google Business Profile, generates personalized AI responses, and posts replies with your approval.
-      </p>
-      <p className="text-lg text-navy-700 mb-8">
-        Enterprise tools like Birdeye and Podium charge $300-500 per month. Reviewly starts at $29/mo and does the core job — monitoring and responding — without the bloat.
-      </p>
-
-      <a href="/signup" className="btn-primary inline-block mb-12">
-        Try Review Automation
-      </a>
-
-      {/* IMAGE: Reviewly software interface showing review automation in action */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/reviews-dashboard.webp"
-                  alt="Reviewly review automation software interface"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        What the Software Does
-      </h2>
-      <ul className="list-disc pl-6 text-navy-700 space-y-2 mb-8">
-        <li>Connects to Google Business Profile via API</li>
-        <li>Checks for new reviews every few hours</li>
-        <li>AI reads each review and writes a personalized response</li>
-        <li>Email notifications when new reviews need attention</li>
-        <li>One-click approve or edit before posting</li>
-        <li>Analytics dashboard with response rate and rating trends</li>
-      </ul>
-
-      {/* IMAGE: Feature comparison — Reviewly vs enterprise review platforms */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/landing-pricing.webp"
-                  alt="Feature and price comparison vs enterprise tools - review automation software"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Reviewly vs Enterprise Platforms
-      </h2>
-      <ul className="list-disc pl-6 text-navy-700 space-y-2 mb-8">
-        <li><strong>Birdeye ($299+/mo):</strong> Full reputation suite, review generation, surveys — most features unused by small businesses</li>
-        <li><strong>Podium ($399+/mo):</strong> Reviews + messaging + payments — overkill for review management</li>
-        <li><strong>Reviewly ($29-79/mo):</strong> Review monitoring + AI responses + analytics. The core features at a fraction of the price.</li>
-      </ul>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Two Plans
-      </h2>
-      <p className="text-navy-700 mb-4">
-        <strong>Starter ($29/mo):</strong> 1 location, 50 AI responses per month, monitoring, email alerts, approval workflow.
-      </p>
-      <p className="text-navy-700 mb-8">
-        <strong>Pro ($79/mo):</strong> Unlimited locations and responses, auto-post, full analytics, custom brand voice, priority support. Save 20% with annual billing on either plan.
-      </p>
-
-      <a href="/signup" className="btn-primary inline-block mb-12">
-        Try Review Automation
-      </a>
-
-      <div className="border-t border-navy-100 pt-8 mt-8">
-        <p className="text-sm text-navy-500 mb-2">Related:</p>
-        <div className="flex flex-wrap gap-4">
-          <Link href="/uses/google-review-automation" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Google Review Automation →
-          </Link>
-          <Link href="/uses/google-review-management-software" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Google Review Management Software →
-          </Link>
-          <Link href="/uses/review-response-automation" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Review Response Automation →
-          </Link>
-        </div>
-      </div>
-    </div>
+    <UsesPageLayout
+      badge="Automation"
+      h1="Review Automation Software for Google Reviews"
+      tagline="Reviewly automates the most time-consuming parts of review management — alerts, response drafts, and tracking — so your reputation stays protected without constant attention."
+      featureHeading="What Review Automation Software Does"
+      featureBody="Review automation software isn't about removing your judgment — it's about removing the friction. Reviewly handles the monitoring and draft generation so you can spend your limited time on the decision, not the process."
+      featurePoints={[
+        "Automatic review monitoring — no manual checking required",
+        "Instant alerts when a new review is posted",
+        "AI-generated response drafts ready for your approval",
+        "Multi-location management from one dashboard",
+        "Response history and review tracking",
+        "Free to start — upgrade as your review volume grows",
+      ]}
+      examples={[
+        {
+          stars: 2,
+          review: "A business that actually uses review automation should be embarrassed when their automated response doesn't even match the content of my review. Mine was clearly not read.",
+          response: "That's a fair and important critique — an automated-sounding response that ignores the actual review content is worse than no response. Reviewly is built specifically to address this: every response is generated from the actual review text, so it reflects what was said. We're committed to automation that still feels human.",
+        },
+        {
+          stars: 5,
+          review: "Using review automation has saved my team hours every week. The quality of the responses is good enough that I rarely edit before posting. It's become part of our weekly routine.",
+          response: "That's exactly the integration we aim for — part of the routine, not another thing on the to-do list. We're glad the quality is meeting the bar. If you ever have feedback on how we can raise it further, we genuinely want to hear it. Thanks for trusting us with your reputation!",
+        },
+      ]}
+      whyHeading="Why Review Automation Software Beats Manual Management"
+      whyBody={[
+        "Manual review management fails silently. Businesses miss reviews during busy periods, respond to them days or weeks late, and never realize how much reputation ground they're losing. Review automation software creates a system that works even when you're too busy to think about it.",
+        "The best review automation tools don't sacrifice quality for speed. Reviewly's AI generates responses that are specific to each review — not templated — so you never have to apologize for a response that didn't address the actual complaint. The automation is invisible to the customer.",
+      ]}
+      heroImage="/images/screenshots/dashboard-recent-responses.webp"
+      featureImage="/images/screenshots/analytics-page.webp"
+      mobileImage="/images/screenshots/mobile-dashboard.webp"
+      heroImageAlt="Review automation software dashboard"
+      featureImageAlt="Review automation analytics and reporting"
+      mobileImageAlt="Manage automated review responses on mobile"
+      related={[
+        { href: "/uses/automated-review-management", label: "Automated Review Management" },
+        { href: "/uses/review-response-automation", label: "Review Response Automation" },
+        { href: "/uses/google-review-automation", label: "Google Review Automation" },
+        { href: "/uses/best-review-management-software", label: "Best Review Management Software" },
+      ]}
+    />
   );
 }

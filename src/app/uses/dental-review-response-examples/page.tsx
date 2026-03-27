@@ -1,125 +1,58 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Dental Review Response Examples — Replies for Dental Offices | Reviewly",
-    description: "Dental review response examples for patient care, anxiety, and wait times. Generate professional dental office review replies in 10 seconds.",
+    title: "Dental Review Response Examples | Reviewly",
+    description: "See how dental practices should respond to Google reviews. Real examples for handling pain complaints, billing issues, and 5-star patient praise.",
   };
 }
 
 export default function DentalReviewResponseExamples() {
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
-      <h1 className="text-4xl font-bold text-navy-900 mb-6">
-        Dental Review Response Examples
-      </h1>
-
-      <p className="text-lg text-navy-700 mb-2">
-        Dental review responses matter more than most offices realize. Patients choosing a new dentist read reviews first — especially the ones about pain, anxiety, and how the staff treated them.
-      </p>
-      <p className="text-lg text-navy-700 mb-8">
-        Reviewly generates responses for dental reviews that reference the specific procedure, the hygienist, or whatever the patient mentioned. Paste the review, get a reply in 10 seconds.
-      </p>
-
-      <a href="/#demo" className="btn-primary inline-block mb-12">
-        Generate a Response Free
-      </a>
-
-      {/* IMAGE: Dental office review response being generated in Reviewly */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/dashboard-main.webp"
-                  alt="Reviewly dashboard for managing dental practice review responses"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        What Dental Patients Mention in Reviews
-      </h2>
-      <ul className="list-disc pl-6 text-navy-700 space-y-1 mb-8">
-        <li>Patient care and bedside manner</li>
-        <li>Dental anxiety and how staff handled it</li>
-        <li>Wait times in the lobby</li>
-        <li>Specific procedures — cleanings, fillings, crowns</li>
-        <li>Staff friendliness at the front desk</li>
-        <li>Billing and insurance confusion</li>
-      </ul>
-
-      {/* IMAGE: Example dental review about anxiety with generated empathetic response */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/reviews-dashboard.webp"
-                  alt="Reviewly reviews dashboard for dental practice review management"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Example: Patient With Dental Anxiety
-      </h2>
-      <div className="card p-6 mb-4">
-        <p className="text-sm font-semibold text-navy-500 mb-2">⭐⭐⭐⭐⭐ Review:</p>
-        <p className="text-navy-700 italic">"I have terrible dental anxiety and haven't been in 3 years. Dr. Patel and Lisa made me feel so comfortable. They explained every step. No judgment at all."</p>
-      </div>
-      <div className="card p-6 mb-8">
-        <p className="text-sm font-semibold text-emerald-600 mb-2">✅ Generated Response:</p>
-        <p className="text-navy-700">"Coming back after 3 years takes courage, and we're glad you trusted us with that step. Dr. Patel and Lisa always make a point to explain everything along the way. We'll see you at your next visit — no judgment, ever."</p>
-      </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Example: Wait Time Complaint
-      </h2>
-      <div className="card p-6 mb-4">
-        <p className="text-sm font-semibold text-navy-500 mb-2">⭐⭐ Review:</p>
-        <p className="text-navy-700 italic">"Waited over 40 minutes past my appointment time. No explanation. The cleaning itself was fine but I had to get back to work."</p>
-      </div>
-      <div className="card p-6 mb-8">
-        <p className="text-sm font-semibold text-emerald-600 mb-2">✅ Generated Response:</p>
-        <p className="text-navy-700">"A 40-minute wait with no heads-up is frustrating, especially when you're on a work schedule. That's on us. We're working on better communication when we're running behind. Glad the cleaning went well — we'll do better on the timing next visit."</p>
-      </div>
-
-      {/* IMAGE: Dental office manager using Reviewly on a tablet between patients */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/mobile-dashboard.webp"
-                  alt="Reviewly mobile dashboard showing dental practice review responses"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Build Trust With Every Reply
-      </h2>
-      <p className="text-navy-700 mb-4">
-        People pick their dentist based on trust. Responding to reviews — especially the nervous patients — shows potential patients they'll be treated well too.
-      </p>
-      <p className="text-navy-700 mb-8">
-        Reviewly helps dental offices reply to every review without taking time away from patients. Quick, specific, professional.
-      </p>
-
-      <a href="/#demo" className="btn-primary inline-block mb-12">
-        Generate a Response Free
-      </a>
-
-      <div className="border-t border-navy-100 pt-8 mt-8">
-        <p className="text-sm text-navy-500 mb-2">Related:</p>
-        <div className="flex flex-wrap gap-4">
-          <Link href="/uses/medical-practice-review-response-examples" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Medical Practice Review Response Examples →
-          </Link>
-          <Link href="/uses/negative-review-response-examples" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Negative Review Response Examples →
-          </Link>
-          <Link href="/uses/5-star-review-response-examples" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            5-Star Review Response Examples →
-          </Link>
-        </div>
-      </div>
-    </div>
+    <UsesPageLayout
+      badge="Dental Practices"
+      h1="Dental Review Response Examples for Dentists"
+      tagline="Patients choose their dentist based heavily on reviews. How you respond — to both concerns and compliments — can fill your schedule or empty it."
+      featureHeading="What Patients Mention in Dental Reviews"
+      featureBody="Dental reviews often reflect both the clinical experience and the emotional one — patients are often anxious, and how your team makes them feel is as important as the treatment itself."
+      featurePoints={[
+        "Pain management and gentleness during procedures",
+        "Wait times and appointment scheduling efficiency",
+        "Billing transparency and insurance handling",
+        "How staff communicates treatment plans and costs",
+        "Office atmosphere and anxiety management",
+        "Follow-up care and post-procedure communication",
+      ]}
+      examples={[
+        {
+          stars: 2,
+          review: "Was told my procedure would be mostly covered by insurance. Got a bill for $400 afterward that nobody warned me about. The work itself was fine but I felt blindsided financially.",
+          response: "We're sorry you were surprised by the bill — that's never the experience we want for a patient. Insurance estimates can shift based on how claims process, but we should have communicated that risk more clearly before your appointment. Please call our billing team at 555-0150 and we'll walk through the charges with you and discuss options.",
+        },
+        {
+          stars: 5,
+          review: "I've had serious dental anxiety my whole life and have avoided the dentist for years. The whole team here was so patient with me. Dr. Chen checked in constantly and let me take breaks. I actually felt safe.",
+          response: "This means so much to us — thank you for trusting us with something so personal. Dental anxiety is real and we never want a patient to feel rushed or judged. Dr. Chen is going to be so glad to hear this. We're proud to be your dental home and we'll always make sure you feel safe here.",
+        },
+      ]}
+      whyHeading="Why Dental Practices Must Prioritize Review Responses"
+      whyBody={[
+        "Choosing a dentist is an intimate decision — patients are trusting someone with their health, their comfort, and often their anxiety. Reviews are the primary way new patients evaluate that trust before their first appointment. A practice that responds thoughtfully to reviews — especially anxious or disappointed patients — signals the kind of care they can expect in person.",
+        "HIPAA considerations mean dental responses need to be careful: never confirm a patient relationship or reveal health information. But you can still respond empathetically and invite patients to contact you offline to resolve concerns. That combination of discretion and care is exactly what patients are looking for.",
+      ]}
+      heroImage="/images/screenshots/dashboard-main.webp"
+      featureImage="/images/screenshots/reviews-dashboard.webp"
+      mobileImage="/images/screenshots/mobile-dashboard.webp"
+      heroImageAlt="Dental practice review response dashboard"
+      featureImageAlt="Managing dental patient reviews in Reviewly"
+      mobileImageAlt="Respond to dental reviews from your phone"
+      related={[
+        { href: "/uses/positive-dental-review-response-examples", label: "Positive Dental Review Responses" },
+        { href: "/uses/medical-practice-review-response-examples", label: "Medical Practice Review Responses" },
+        { href: "/uses/negative-review-response-examples", label: "Negative Review Response Examples" },
+        { href: "/uses/google-review-response-examples", label: "Google Review Response Examples" },
+      ]}
+    />
   );
 }

@@ -1,125 +1,58 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "5-Star Review Response Examples — Thank Happy Customers Right | Reviewly",
-    description: "5-star review response examples with warm, specific thanks. Generate personalized replies to positive reviews in 10 seconds with Reviewly.",
+    title: "5-Star Review Response Examples | Reviewly",
+    description: "See real examples of how to respond to 5-star Google reviews. Thank your best customers in a way that feels genuine and encourages more great reviews.",
   };
 }
 
 export default function FiveStarReviewResponseExamples() {
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
-      <h1 className="text-4xl font-bold text-navy-900 mb-6">
-        5-Star Review Response Examples
-      </h1>
-
-      <p className="text-lg text-navy-700 mb-2">
-        5-star review responses seem easy, but most businesses get them wrong. A quick "Thanks!" feels lazy. A wall of text feels automated. The goal is warm, specific, and short.
-      </p>
-      <p className="text-lg text-navy-700 mb-8">
-        Reviewly generates responses for 5-star reviews that reference what the customer actually said. The stylist they loved, the dish they raved about, the room they enjoyed. Paste the review, get a personal reply.
-      </p>
-
-      <a href="/#demo" className="btn-primary inline-block mb-12">
-        Generate a Response Free
-      </a>
-
-      {/* IMAGE: Reviewly generating a warm response to a 5-star review */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/dashboard-5star-response.webp"
-                  alt="Reviewly generating a 5-star review response - 5 star review response examples"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Why Responding to 5-Star Reviews Matters
-      </h2>
-      <p className="text-navy-700 mb-4">
-        Responding to positive reviews does three things:
-      </p>
-      <ul className="list-disc pl-6 text-navy-700 space-y-2 mb-8">
-        <li><strong>Builds loyalty.</strong> The customer feels seen. They come back.</li>
-        <li><strong>Shows others you care.</strong> Potential customers see a business that engages with everyone, not just the complaints.</li>
-        <li><strong>Helps SEO.</strong> Google factors in review responses when ranking local businesses. More responses = more activity = higher visibility.</li>
-      </ul>
-
-      {/* IMAGE: 5-star review from a restaurant with a warm, specific response */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/dashboard-5star-response.webp"
-                  alt="5-star restaurant review with warm response - 5 star review response examples"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Example: Specific Praise
-      </h2>
-      <div className="card p-6 mb-4">
-        <p className="text-sm font-semibold text-navy-500 mb-2">⭐⭐⭐⭐⭐ Review:</p>
-        <p className="text-navy-700 italic">"The team went above and beyond. Sarah at the front desk was incredible — she remembered my name from last time. The whole experience was seamless."</p>
-      </div>
-      <div className="card p-6 mb-8">
-        <p className="text-sm font-semibold text-emerald-600 mb-2">✅ Generated Response:</p>
-        <p className="text-navy-700">"Sarah will love hearing this — she makes it a point to remember every client. Thanks for coming back, and we look forward to making the next visit just as smooth."</p>
-      </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Example: Short and Sweet
-      </h2>
-      <div className="card p-6 mb-4">
-        <p className="text-sm font-semibold text-navy-500 mb-2">⭐⭐⭐⭐⭐ Review:</p>
-        <p className="text-navy-700 italic">"Amazing. Will be back."</p>
-      </div>
-      <div className="card p-6 mb-8">
-        <p className="text-sm font-semibold text-emerald-600 mb-2">✅ Generated Response:</p>
-        <p className="text-navy-700">"Glad you enjoyed it. See you next time!"</p>
-      </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Don't Ignore Your Happy Customers
-      </h2>
-      <p className="text-navy-700 mb-4">
-        Most businesses only respond when something goes wrong. That sends a message: we only pay attention when you're upset. Responding to 5-star reviews flips that.
-      </p>
-      <p className="text-navy-700 mb-8">
-        Reviewly makes it easy to respond to every review — not just the fires. Paste, generate, post. Under a minute per review.
-      </p>
-
-      {/* IMAGE: Business owner quickly responding to positive reviews */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/dashboard-5star-response.webp"
-                  alt="Business owner responding to positive reviews quickly - 5 star review response examples"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <a href="/#demo" className="btn-primary inline-block mb-12">
-        Generate a Response Free
-      </a>
-
-      <div className="border-t border-navy-100 pt-8 mt-8">
-        <p className="text-sm text-navy-500 mb-2">Related:</p>
-        <div className="flex flex-wrap gap-4">
-          <Link href="/uses/positive-review-response-examples" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Positive Review Response Examples →
-          </Link>
-          <Link href="/uses/4-star-review-response-examples" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            4-Star Review Response Examples →
-          </Link>
-          <Link href="/blog/how-to-respond-to-positive-reviews" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            How to Respond to Positive Reviews →
-          </Link>
-        </div>
-      </div>
-    </div>
+    <UsesPageLayout
+      badge="Star Ratings"
+      h1="5-Star Review Response Examples"
+      tagline="Your happiest customers deserve more than a copy-paste 'thank you.' Show them you read their review with a personal, specific response."
+      featureHeading="What Makes a Great 5-Star Response"
+      featureBody="Five-star reviews are gold — don't waste them with a generic reply. A personalized response reinforces their decision, deepens loyalty, and shows future readers that you actually care."
+      featurePoints={[
+        "Reference something specific from their review — it shows you read it",
+        "Thank them by name if it's included in the review",
+        "Avoid the robotic 'We're glad you had a great experience!' opener",
+        "Mention a team member or specific detail they praised",
+        "Keep it warm and human — match the energy of their review",
+        "Invite them back without being pushy",
+      ]}
+      examples={[
+        {
+          stars: 5,
+          review: "Best haircut I've had in years. Jessica really listened to what I wanted and didn't just do whatever she felt like. The whole vibe of the salon is super relaxing too. Already booked my next appointment.",
+          response: "That makes our day — thank you! Jessica is going to love hearing this. We always want every client to leave feeling like themselves, just better. We're so glad the whole experience hit the mark, and we can't wait to see you at your next appointment!",
+        },
+        {
+          stars: 5,
+          review: "Took my dog in for the first time and I was nervous because he's a rescue and gets anxious. The staff was so patient with him and he actually seemed calm by the end. Highly recommend.",
+          response: "This means so much to us — thank you for trusting us with your rescue pup. We know how nerve-wracking that first visit can be, and our team absolutely loves taking the time to help anxious dogs feel safe. Give him a treat from us and we'll see you both next time!",
+        },
+      ]}
+      whyHeading="Why Responding to 5-Star Reviews Matters"
+      whyBody={[
+        "Many businesses only respond to negative reviews and ignore the positive ones. That's backwards. Your 5-star reviewers are your biggest fans — a warm, personal response deepens that relationship and often leads to them recommending you to friends.",
+        "Responding to every review also sends a powerful signal to Google that you're an engaged business, which can help with local search rankings. And for potential customers reading reviews, seeing a business that actively engages with happy customers is reassuring.",
+      ]}
+      heroImage="/images/screenshots/dashboard-5star-response.webp"
+      featureImage="/images/screenshots/reviews-dashboard.webp"
+      mobileImage="/images/screenshots/mobile-dashboard.webp"
+      heroImageAlt="AI-generated responses to 5-star reviews"
+      featureImageAlt="Dashboard showing 5-star review responses"
+      mobileImageAlt="Responding to 5-star reviews on mobile"
+      related={[
+        { href: "/uses/positive-review-response-examples", label: "Positive Review Response Examples" },
+        { href: "/uses/4-star-review-response-examples", label: "4-Star Review Response Examples" },
+        { href: "/uses/google-review-response-examples", label: "Google Review Response Examples" },
+        { href: "/uses/positive-review-response-template", label: "Positive Review Response Templates" },
+      ]}
+    />
   );
 }

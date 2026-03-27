@@ -1,125 +1,58 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Law Firm Review Response Examples — Replies for Attorneys | Reviewly",
-    description: "Law firm review response examples covering communication, billing, and professionalism. Generate attorney review replies in 10 seconds with Reviewly.",
+    title: "Law Firm Review Response Examples | Reviewly",
+    description: "See how law firms should respond to Google reviews. Professional examples that maintain ethical standards while addressing client feedback effectively.",
   };
 }
 
 export default function LawFirmReviewResponseExamples() {
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
-      <h1 className="text-4xl font-bold text-navy-900 mb-6">
-        Law Firm Review Response Examples
-      </h1>
-
-      <p className="text-lg text-navy-700 mb-2">
-        Law firm review responses need to be professional without being cold. Clients hire attorneys during stressful times — a divorce, an accident, a business dispute. How you respond to reviews signals how you treat clients.
-      </p>
-      <p className="text-lg text-navy-700 mb-8">
-        Reviewly generates responses for law firm reviews that acknowledge the feedback without compromising confidentiality. Paste the review, get a professional reply.
-      </p>
-
-      <a href="/#demo" className="btn-primary inline-block mb-12">
-        Generate a Response Free
-      </a>
-
-      {/* IMAGE: Reviewly generating a law firm review response */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/dashboard-main.webp"
-                  alt="Reviewly dashboard for managing law firm review responses"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        What Clients Mention in Law Firm Reviews
-      </h2>
-      <ul className="list-disc pl-6 text-navy-700 space-y-1 mb-8">
-        <li>Communication frequency and responsiveness</li>
-        <li>Billing transparency and hourly rates</li>
-        <li>Professionalism and demeanor</li>
-        <li>Case outcomes and expectations</li>
-        <li>Staff and paralegal helpfulness</li>
-        <li>Availability and accessibility</li>
-      </ul>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Example: Communication Complaint
-      </h2>
-      <div className="card p-6 mb-4">
-        <p className="text-sm font-semibold text-navy-500 mb-2">⭐⭐ Review:</p>
-        <p className="text-navy-700 italic">"Hired them for a contract dispute. Took days to return calls. Got billed for emails I never received. Felt like just another number."</p>
-      </div>
-      <div className="card p-6 mb-8">
-        <p className="text-sm font-semibold text-emerald-600 mb-2">✅ Generated Response:</p>
-        <p className="text-navy-700">"Timely communication is something every client deserves, and I'm sorry we fell short. We've implemented a 24-hour response policy to prevent this going forward. If you'd like to discuss the billing concerns, please contact our office — we're happy to review the account."</p>
-      </div>
-
-      {/* IMAGE: Positive law firm review with warm attorney response */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/reviews-dashboard.webp"
-                  alt="Reviewly reviews dashboard for law firm review management"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Example: Grateful Client
-      </h2>
-      <div className="card p-6 mb-4">
-        <p className="text-sm font-semibold text-navy-500 mb-2">⭐⭐⭐⭐⭐ Review:</p>
-        <p className="text-navy-700 italic">"Attorney Garcia handled my custody case with care. Always available, explained everything clearly, and fought hard. I have my kids. That says it all."</p>
-      </div>
-      <div className="card p-6 mb-8">
-        <p className="text-sm font-semibold text-emerald-600 mb-2">✅ Generated Response:</p>
-        <p className="text-navy-700">"Thank you for trusting us with something so important. Attorney Garcia is dedicated to every family she works with. We're glad things worked out and wish you and your family the very best."</p>
-      </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Attorneys Compete on Reputation
-      </h2>
-      <p className="text-navy-700 mb-4">
-        People choosing a lawyer read reviews carefully. A firm that responds professionally — even to tough feedback — looks accountable. One that ignores reviews or gets defensive looks like a liability.
-      </p>
-      <p className="text-navy-700 mb-8">
-        Reviewly helps law firms maintain a consistent, professional review presence without eating into billable hours. Paste, generate, done.
-      </p>
-
-      {/* IMAGE: Attorney reviewing and responding to client feedback */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/mobile-dashboard.webp"
-                  alt="Reviewly mobile dashboard showing law firm review responses"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <a href="/#demo" className="btn-primary inline-block mb-12">
-        Generate a Response Free
-      </a>
-
-      <div className="border-t border-navy-100 pt-8 mt-8">
-        <p className="text-sm text-navy-500 mb-2">Related:</p>
-        <div className="flex flex-wrap gap-4">
-          <Link href="/uses/medical-practice-review-response-examples" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Medical Practice Review Response Examples →
-          </Link>
-          <Link href="/uses/negative-review-response-examples" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Negative Review Response Examples →
-          </Link>
-          <Link href="/uses/1-star-review-response-examples" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            1-Star Review Response Examples →
-          </Link>
-        </div>
-      </div>
-    </div>
+    <UsesPageLayout
+      badge="Legal Industry"
+      h1="Law Firm Review Response Examples"
+      tagline="People choose their attorney based on trust — and reviews play a major role in that decision. Responding professionally and ethically to every review builds the credibility you need."
+      featureHeading="What Clients Mention in Law Firm Reviews"
+      featureBody="Legal reviews tend to focus on communication and outcomes — clients want to feel informed, respected, and heard throughout a process that's often stressful and unfamiliar."
+      featurePoints={[
+        "Communication frequency and responsiveness to calls and emails",
+        "Clarity of explanations — did the attorney speak in plain language?",
+        "Transparency about fees and billing practices",
+        "Perceived effort and attention given to their case",
+        "Outcome satisfaction (though outcomes often depend on factors outside attorney control)",
+        "Staff professionalism and office responsiveness",
+      ]}
+      examples={[
+        {
+          stars: 2,
+          review: "Hired this firm for a relatively straightforward matter and it took six months longer than they said it would. Communication was terrible throughout — I had to chase them for updates.",
+          response: "Thank you for sharing this — timeline delays and communication gaps are serious concerns that we take to heart. We can't discuss case details in this forum, but we'd welcome the opportunity to speak with you directly. Please contact our client services team at clientcare@lawfirm.com so we can better understand what happened and address it properly.",
+        },
+        {
+          stars: 5,
+          review: "Went through a very stressful situation and the team here made me feel informed and supported throughout. They explained every step, returned calls same day, and the outcome was better than I expected.",
+          response: "Thank you for trusting us during such a difficult time — that means more than you know. Keeping clients informed and supported throughout the process is something we're deeply committed to. We're glad the outcome exceeded your expectations, and we're here if you ever need us again.",
+        },
+      ]}
+      whyHeading="Why Law Firms Must Take Review Responses Seriously"
+      whyBody={[
+        "Potential legal clients are making a high-stakes decision under stress. They read reviews carefully and they're looking for evidence of trustworthiness, communication quality, and genuine care. A law firm that responds professionally to every review — including critical ones — projects exactly those qualities.",
+        "There's an important ethical dimension here as well. Law firms must never confirm a client relationship or discuss case details in a public review response. The best approach is to acknowledge the concern, express that client experience matters, and invite the reviewer to connect privately. This approach is both ethically compliant and genuinely helpful.",
+      ]}
+      heroImage="/images/screenshots/dashboard-main.webp"
+      featureImage="/images/screenshots/reviews-dashboard.webp"
+      mobileImage="/images/screenshots/mobile-dashboard.webp"
+      heroImageAlt="Law firm review response dashboard"
+      featureImageAlt="Managing legal client reviews in Reviewly"
+      mobileImageAlt="Respond to law firm reviews on mobile"
+      related={[
+        { href: "/uses/medical-practice-review-response-examples", label: "Medical Practice Review Responses" },
+        { href: "/uses/negative-review-response-examples", label: "Negative Review Response Examples" },
+        { href: "/uses/google-review-response-examples", label: "Google Review Response Examples" },
+        { href: "/uses/review-response-service", label: "Review Response Service" },
+      ]}
+    />
   );
 }

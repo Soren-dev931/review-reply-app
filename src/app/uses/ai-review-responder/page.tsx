@@ -1,98 +1,58 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "AI Review Responder — Automatic Personalized Review Replies | Reviewly",
-    description: "AI review responder that generates personalized replies to Google reviews automatically. References specific details, matches your brand voice.",
+    title: "AI Review Responder | Reviewly",
+    description: "Let AI handle your Google review responses. Reviewly generates professional, personalized replies to every review — so you never have to stare at a blank reply box again.",
   };
 }
 
-export default function AIReviewResponder() {
+export default function AiReviewResponder() {
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
-      <h1 className="text-4xl font-bold text-navy-900 mb-6">
-        AI Review Responder
-      </h1>
-
-      <p className="text-lg text-navy-700 mb-2">
-        An AI review responder reads each customer review and writes a reply that sounds human. Reviewly is built specifically for review responses — not a general AI tool with review templates bolted on. It picks up on what the customer mentioned and works those details into the reply.
-      </p>
-      <p className="text-lg text-navy-700 mb-8">
-        Connect your Google Business Profile and Reviewly responds to reviews automatically. Or paste reviews manually and get replies in 10 seconds. Either way, every response is unique.
-      </p>
-
-      <a href="/signup" className="btn-primary inline-block mb-12">
-        Try the AI Responder
-      </a>
-
-      {/* IMAGE: Reviewly generating a unique response to a customer review */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/dashboard-main.webp"
-                  alt="Reviewly dashboard for managing AI review review responses"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        How It Reads Reviews
-      </h2>
-      <p className="text-navy-700 mb-4">
-        The AI analyzes three things in every review:
-      </p>
-      <ul className="list-disc pl-6 text-navy-700 space-y-2 mb-8">
-        <li><strong>Sentiment:</strong> Positive, negative, or mixed based on rating and language</li>
-        <li><strong>Specifics:</strong> Names, services, products, or experiences mentioned</li>
-        <li><strong>Tone:</strong> Matches your preference — professional, friendly, or casual</li>
-      </ul>
-
-      {/* IMAGE: Breakdown of AI analysis — sentiment, specifics, tone mapping */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/reviews-dashboard.webp"
-                  alt="Reviewly reviews dashboard for AI review review management"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Templates vs AI
-      </h2>
-      <p className="text-navy-700 mb-4">
-        Template-based responders use the same handful of replies for every review. Customers see through it immediately. &ldquo;Thank you for your feedback&rdquo; on 50 reviews in a row looks automated because it is.
-      </p>
-      <p className="text-navy-700 mb-8">
-        An AI review responder writes a new reply for every review. Two 5-star reviews about the same restaurant get two different responses because the customers said different things.
-      </p>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Pricing
-      </h2>
-      <p className="text-navy-700 mb-8">
-        Free plan includes 5 manual responses per month. Starter at $29/mo adds auto-monitoring for 1 location with 50 AI responses. Pro at $79/mo gives unlimited locations, unlimited responses, auto-post, and analytics. Annual billing saves 20%.
-      </p>
-
-      <a href="/signup" className="btn-primary inline-block mb-12">
-        Try the AI Responder
-      </a>
-
-      <div className="border-t border-navy-100 pt-8 mt-8">
-        <p className="text-sm text-navy-500 mb-2">Related:</p>
-        <div className="flex flex-wrap gap-4">
-          <Link href="/uses/ai-review-response" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            AI Review Response →
-          </Link>
-          <Link href="/uses/google-review-responder" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Google Review Responder →
-          </Link>
-          <Link href="/uses/review-response-service" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Review Response Service →
-          </Link>
-        </div>
-      </div>
-    </div>
+    <UsesPageLayout
+      badge="AI Tools"
+      h1="AI Review Responder for Google Reviews"
+      tagline="Never stare at a blank reply box again. Reviewly's AI review responder generates professional, on-brand responses to every Google review in seconds."
+      featureHeading="What the AI Review Responder Does"
+      featureBody="Reviewly's AI doesn't just fill in templates — it reads each review and crafts a response that matches the sentiment, addresses the specific feedback, and sounds like a real person wrote it."
+      featurePoints={[
+        "Handles all star ratings: 1-star to 5-star",
+        "Addresses specific complaints or praise from the review",
+        "Generates responses in your brand's tone",
+        "Review before posting — always one click away from done",
+        "Works for any industry or business type",
+        "Free to start with no credit card required",
+      ]}
+      examples={[
+        {
+          stars: 1,
+          review: "The apartment I was shown was not the one I rented. Completely different layout, smaller, and on a lower floor. Management shrugged it off and said 'that's just how it is.'",
+          response: "We are truly sorry to hear this happened — what you're describing is not acceptable and not how we operate. We want to look into this immediately. Please contact our resident services team at residents@apartments.com and ask for the property manager. We take this seriously and want to make it right.",
+        },
+        {
+          stars: 5,
+          review: "The leasing team made the whole move-in process so smooth. They answered every question, had everything ready on move-in day, and followed up a week later to make sure we were settled. Rare level of service.",
+          response: "This is exactly the experience we aim for with every new resident — thank you for sharing it! Moving can be stressful and we want that process to be the easiest part. We're so glad you're settling in well, and we're here any time you need us. Welcome home!",
+        },
+      ]}
+      whyHeading="Why an AI Review Responder Is a Business Asset"
+      whyBody={[
+        "Review response rates matter — both to Google's algorithm and to potential customers. Businesses that respond to reviews are seen as more trustworthy and engaged. But doing it manually at scale is unsustainable. An AI review responder solves that without sacrificing quality.",
+        "The best AI responders don't just automate replies — they improve them. Instead of firing off generic 'Thank you for your feedback!' messages, Reviewly generates responses that actually acknowledge what the reviewer said, which feels more human and builds more trust.",
+      ]}
+      heroImage="/images/screenshots/dashboard-review-input.webp"
+      featureImage="/images/screenshots/dashboard-main.webp"
+      mobileImage="/images/screenshots/mobile-dashboard.webp"
+      heroImageAlt="AI review responder generating a reply"
+      featureImageAlt="Reviewly AI responder dashboard overview"
+      mobileImageAlt="AI review responder on mobile"
+      related={[
+        { href: "/uses/ai-review-reply", label: "AI Review Reply" },
+        { href: "/uses/google-review-responder", label: "Google Review Responder" },
+        { href: "/uses/ai-powered-review-response", label: "AI-Powered Review Response" },
+        { href: "/uses/review-response-service", label: "Review Response Service" },
+      ]}
+    />
   );
 }

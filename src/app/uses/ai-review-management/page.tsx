@@ -1,97 +1,58 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "AI Review Management — Let AI Handle Your Review Responses | Reviewly",
-    description: "AI review management that monitors, responds to, and tracks Google reviews automatically. Personalized replies, analytics, and multi-location support.",
+    title: "AI Review Management Software | Reviewly",
+    description: "Manage all your Google reviews with AI. Get alerts, generate responses, and track your reputation — all from one simple dashboard.",
   };
 }
 
-export default function AIReviewManagement() {
+export default function AiReviewManagement() {
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
-      <h1 className="text-4xl font-bold text-navy-900 mb-6">
-        AI Review Management
-      </h1>
-
-      <p className="text-lg text-navy-700 mb-2">
-        AI review management means the entire review workflow — monitoring, responding, and tracking — is handled by artificial intelligence. Reviewly connects to your Google Business Profile, watches for new reviews, and writes replies that reference the specific details each customer mentioned.
-      </p>
-      <p className="text-lg text-navy-700 mb-8">
-        You stay in control. Every AI-drafted response goes through your approval before posting. Or turn on auto-post if you want it fully hands-off.
-      </p>
-
-      <a href="/signup" className="btn-primary inline-block mb-12">
-        Let AI Manage Your Reviews
-      </a>
-
-      {/* IMAGE: AI review management workflow — monitor, draft, approve, post */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/reviews-dashboard.webp"
-                  alt="AI review management workflow diagram"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        What AI Handles
-      </h2>
-      <ul className="list-disc pl-6 text-navy-700 space-y-2 mb-8">
-        <li><strong>Detection:</strong> Checks your Google profile for new reviews every few hours</li>
-        <li><strong>Analysis:</strong> Reads the review text and star rating, determines sentiment</li>
-        <li><strong>Response:</strong> Writes a personalized reply using your tone preferences</li>
-        <li><strong>Posting:</strong> Sends the approved response directly to Google</li>
-        <li><strong>Tracking:</strong> Logs response times, rates, and rating trends</li>
-      </ul>
-
-      {/* IMAGE: Dashboard showing AI-managed reviews with sentiment indicators */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/dashboard-main.webp"
-                  alt="Dashboard with AI-managed reviews and sentiment tags - ai review management"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Why AI Instead of Templates
-      </h2>
-      <p className="text-navy-700 mb-4">
-        Templates send the same response to every customer. Customers notice. &ldquo;Thank you for your feedback&rdquo; on every reply looks lazy.
-      </p>
-      <p className="text-navy-700 mb-8">
-        AI reads each review individually. If someone compliments your barista by name, the reply mentions the barista. If someone complains about parking, the reply addresses parking. Every response is different because every review is different.
-      </p>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Plans
-      </h2>
-      <p className="text-navy-700 mb-8">
-        Starter plan at $29/mo includes 1 location and 50 AI responses per month. Pro at $79/mo adds unlimited locations, unlimited responses, auto-post, analytics, and custom brand voice. Save 20% with annual billing.
-      </p>
-
-      <a href="/signup" className="btn-primary inline-block mb-12">
-        Let AI Manage Your Reviews
-      </a>
-
-      <div className="border-t border-navy-100 pt-8 mt-8">
-        <p className="text-sm text-navy-500 mb-2">Related:</p>
-        <div className="flex flex-wrap gap-4">
-          <Link href="/uses/ai-review-response" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            AI Review Response →
-          </Link>
-          <Link href="/uses/automated-review-management" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Automated Review Management →
-          </Link>
-          <Link href="/uses/ai-review-responder" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            AI Review Responder →
-          </Link>
-        </div>
-      </div>
-    </div>
+    <UsesPageLayout
+      badge="AI Tools"
+      h1="AI Review Management Software"
+      tagline="Reviewly brings all your Google reviews into one place — with AI that helps you respond faster, spot trends, and protect your reputation."
+      featureHeading="What AI Review Management Includes"
+      featureBody="From getting notified the moment a new review comes in to generating a polished response in seconds, Reviewly handles the full review management workflow so you can focus on running your business."
+      featurePoints={[
+        "Real-time alerts when new Google reviews come in",
+        "AI-generated responses for any review, any rating",
+        "Centralized dashboard to view and manage all reviews",
+        "Tone customization to match your brand voice",
+        "Review trend visibility to spot recurring issues",
+        "Free to start — no setup fees or contracts",
+      ]}
+      examples={[
+        {
+          stars: 2,
+          review: "Came in for a routine oil change and it took over 2 hours. No one updated me during the wait and I was late for work. Communication needs a lot of improvement.",
+          response: "You're absolutely right — a 2-hour wait for an oil change is too long, and leaving you without any updates is unacceptable. We're sorry this affected your day. We've been reviewing our service bay scheduling and we're committed to doing better. Please reach out if there's anything we can do to make this right.",
+        },
+        {
+          stars: 5,
+          review: "I manage three locations and Reviewly has completely changed how I handle reviews. I used to dread opening the app. Now I actually stay on top of everything.",
+          response: "That's exactly what we built this for — thank you! Managing multiple locations is a lot, and we're glad Reviewly is making a real difference. If there's anything we can do to make the platform work even better for your team, we'd love to hear it.",
+        },
+      ]}
+      whyHeading="Why AI Makes Review Management Smarter"
+      whyBody={[
+        "Traditional review management means logging into Google, reading each review, and typing a custom response — multiplied by every location, every day. AI review management compresses that workflow dramatically. You still control the voice and quality, but the heavy lifting is done for you.",
+        "For multi-location operators, the advantage is even bigger. Reviewly lets you manage all your locations from a single dashboard, so nothing slips through the cracks — even during your busiest seasons.",
+      ]}
+      heroImage="/images/screenshots/dashboard-recent-responses.webp"
+      featureImage="/images/screenshots/analytics-page.webp"
+      mobileImage="/images/screenshots/mobile-dashboard.webp"
+      heroImageAlt="AI review management dashboard"
+      featureImageAlt="Review management analytics and insights"
+      mobileImageAlt="Manage reviews on mobile with AI"
+      related={[
+        { href: "/uses/google-review-management-software", label: "Google Review Management Software" },
+        { href: "/uses/review-automation-software", label: "Review Automation Software" },
+        { href: "/uses/automated-review-management", label: "Automated Review Management" },
+        { href: "/uses/best-review-management-software", label: "Best Review Management Software" },
+      ]}
+    />
   );
 }

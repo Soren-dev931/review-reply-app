@@ -1,100 +1,58 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "AI Review Reply — Smart Replies to Customer Reviews | Reviewly",
-    description: "AI review reply tool that writes personalized responses to customer reviews. Adapts tone for positive, negative, and mixed reviews automatically.",
+    title: "AI Review Reply Generator | Reviewly",
+    description: "Generate AI replies to Google reviews instantly. Paste a review and get a professional, personalized response ready to post — free to start.",
   };
 }
 
-export default function AIReviewReply() {
+export default function AiReviewReply() {
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
-      <h1 className="text-4xl font-bold text-navy-900 mb-6">
-        AI Review Reply
-      </h1>
-
-      <p className="text-lg text-navy-700 mb-2">
-        An AI review reply is a response to a customer review written by artificial intelligence. Reviewly generates replies that read like a business owner wrote them — specific to what the customer said, matched to your brand tone, and free of generic AI filler phrases.
-      </p>
-      <p className="text-lg text-navy-700 mb-8">
-        Paste a review and get a reply in 10 seconds. Or connect your Google Business Profile and Reviewly drafts replies automatically when new reviews come in.
-      </p>
-
-      <a href="/#demo" className="btn-primary inline-block mb-12">
-        Generate an AI Reply Free
-      </a>
-
-      {/* IMAGE: AI review reply showing a 5-star review with warm, personalized response */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/dashboard-main.webp"
-                  alt="Reviewly dashboard for managing AI review reply review responses"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        How the AI Adapts
-      </h2>
-      <ul className="list-disc pl-6 text-navy-700 space-y-2 mb-8">
-        <li><strong>5-star reviews:</strong> Warm, specific thanks that make the customer feel valued</li>
-        <li><strong>3-star reviews:</strong> Acknowledges the good and the bad honestly</li>
-        <li><strong>1-star reviews:</strong> Leads with empathy, addresses the issue, offers to make it right</li>
-      </ul>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Example: AI Reply to a Mixed Review
-      </h2>
-      <div className="card p-6 mb-4">
-        <p className="text-sm font-semibold text-navy-500 mb-2">⭐⭐⭐ Review:</p>
-        <p className="text-navy-700 italic">&ldquo;Food was great but the wait was ridiculous. 45 minutes for a table on a Tuesday night. Server was friendly though.&rdquo;</p>
-      </div>
-      <div className="card p-6 mb-8">
-        <p className="text-sm font-semibold text-emerald-600 mb-2">✅ AI Reply:</p>
-        <p className="text-navy-700">&ldquo;Glad the food hit the mark and that your server took good care of you. A 45-minute wait on a Tuesday is not acceptable though — we hear you. We&apos;re adjusting how we manage reservations on weeknights. Hope you&apos;ll give us another shot.&rdquo;</p>
-      </div>
-
-      {/* IMAGE: Side-by-side comparison of template reply vs AI personalized reply */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/reviews-dashboard.webp"
-                  alt="Reviewly reviews dashboard for AI review reply review management"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Free and Paid Options
-      </h2>
-      <p className="text-navy-700 mb-4">
-        The free plan gives you 5 AI replies per month using the paste-and-generate tool. No signup needed to try the demo on the homepage.
-      </p>
-      <p className="text-navy-700 mb-8">
-        Starter at $29/mo adds automatic monitoring and AI replies for 1 location. Pro at $79/mo unlocks unlimited locations and responses with auto-post. Save 20% annually.
-      </p>
-
-      <a href="/#demo" className="btn-primary inline-block mb-12">
-        Generate an AI Reply Free
-      </a>
-
-      <div className="border-t border-navy-100 pt-8 mt-8">
-        <p className="text-sm text-navy-500 mb-2">Related:</p>
-        <div className="flex flex-wrap gap-4">
-          <Link href="/uses/ai-google-review-reply" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            AI Google Review Reply →
-          </Link>
-          <Link href="/uses/ai-review-response" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            AI Review Response →
-          </Link>
-          <Link href="/uses/review-reply-generator" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Review Reply Generator →
-          </Link>
-        </div>
-      </div>
-    </div>
+    <UsesPageLayout
+      badge="AI Tools"
+      h1="AI Review Reply Generator"
+      tagline="Paste any Google review and get an AI-generated reply in seconds. Professional, specific, and nothing like a template."
+      featureHeading="How AI Review Reply Works"
+      featureBody="Reviewly reads the full text of each review and generates a reply that addresses the specific feedback — not a generic response that customers can tell was auto-generated."
+      featurePoints={[
+        "Paste any review — positive, negative, or mixed",
+        "AI crafts a reply tailored to the review content",
+        "Adjusts tone automatically based on star rating",
+        "Edit before you post — you're always in control",
+        "Works for restaurants, retail, services, and more",
+        "Generate a response in seconds — free to start",
+      ]}
+      examples={[
+        {
+          stars: 3,
+          review: "The food was pretty good but the portion sizes were smaller than expected for the price. Service was quick and friendly though. Might try again.",
+          response: "Thanks for the honest feedback — we're glad the food and service landed well! Portion value is something we take seriously and we appreciate you mentioning it. We hope you do give us another try, and if portions are a concern, ask your server about our shareable options. Would love to win you over completely!",
+        },
+        {
+          stars: 5,
+          review: "My go-to for any legal question. The team is thorough, explains everything in plain English, and actually returns calls. That last part alone sets them apart.",
+          response: "Thank you so much — returning calls and communicating clearly is something we genuinely care about, so hearing that it stands out makes us proud. We're grateful for your trust and look forward to being a resource for you whenever you need us.",
+        },
+      ]}
+      whyHeading="Why AI Reply Tools Save More Than Time"
+      whyBody={[
+        "The biggest barrier to responding to reviews isn't motivation — it's friction. Sitting down to write a genuine, non-repetitive reply to every review is hard. AI review reply tools remove that friction so the barrier to responding drops to almost zero.",
+        "And when you respond consistently, it compounds. Your overall rating can improve as more reviewers feel acknowledged. Your local search presence benefits from the engagement signals. And customers who see your responses trust you more before they even walk through the door.",
+      ]}
+      heroImage="/images/screenshots/dashboard-review-input.webp"
+      featureImage="/images/screenshots/dashboard-main.webp"
+      mobileImage="/images/screenshots/mobile-dashboard.webp"
+      heroImageAlt="AI review reply generator interface"
+      featureImageAlt="Reviewly dashboard showing AI reply generation"
+      mobileImageAlt="Generate AI review replies on your phone"
+      related={[
+        { href: "/uses/ai-google-review-reply", label: "AI Google Review Reply" },
+        { href: "/uses/review-reply-generator", label: "Review Reply Generator" },
+        { href: "/uses/ai-review-response", label: "AI Review Response" },
+        { href: "/uses/free-review-response-generator", label: "Free Review Response Generator" },
+      ]}
+    />
   );
 }

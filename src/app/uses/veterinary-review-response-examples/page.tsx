@@ -1,125 +1,58 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Veterinary Review Response Examples — Replies for Vet Clinics | Reviewly",
-    description: "Veterinary review response examples covering pet care, compassion, and emergency visits. Generate vet clinic review replies in 10 seconds with Reviewly.",
+    title: "Veterinary Review Response Examples | Reviewly",
+    description: "See how veterinary practices should respond to Google reviews. Real examples for handling pet care concerns, emergency situations, and heartfelt 5-star praise.",
   };
 }
 
 export default function VeterinaryReviewResponseExamples() {
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
-      <h1 className="text-4xl font-bold text-navy-900 mb-6">
-        Veterinary Review Response Examples
-      </h1>
-
-      <p className="text-lg text-navy-700 mb-2">
-        Veterinary review responses are emotional. Pet owners write reviews at their happiest and their most heartbroken. How your clinic responds says everything about the kind of care you provide.
-      </p>
-      <p className="text-lg text-navy-700 mb-8">
-        Reviewly generates compassionate, specific responses for vet clinic reviews. It picks up on the pet's name, the visit type, and the tone of the review. Paste it in, get a response.
-      </p>
-
-      <a href="/#demo" className="btn-primary inline-block mb-12">
-        Generate a Response Free
-      </a>
-
-      {/* IMAGE: Reviewly generating a compassionate response to a vet clinic review */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/dashboard-main.webp"
-                  alt="Reviewly dashboard for managing veterinary practice review responses"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        What Pet Owners Mention in Vet Reviews
-      </h2>
-      <ul className="list-disc pl-6 text-navy-700 space-y-1 mb-8">
-        <li>Quality of pet care and treatment</li>
-        <li>Compassion from vets and staff</li>
-        <li>Emergency visit experience</li>
-        <li>Costs and billing transparency</li>
-        <li>Communication about diagnosis and treatment options</li>
-        <li>Wait times</li>
-      </ul>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Example: Emergency Visit Gone Well
-      </h2>
-      <div className="card p-6 mb-4">
-        <p className="text-sm font-semibold text-navy-500 mb-2">⭐⭐⭐⭐⭐ Review:</p>
-        <p className="text-navy-700 italic">"Brought our dog Max in at 10pm with a bloated stomach. Dr. Rivera acted fast and saved his life. The whole team stayed late. We can't thank them enough."</p>
-      </div>
-      <div className="card p-6 mb-8">
-        <p className="text-sm font-semibold text-emerald-600 mb-2">✅ Generated Response:</p>
-        <p className="text-navy-700">"We're so glad Max is doing well. Dr. Rivera and the team take emergency cases seriously — that's what we're here for. Give Max a belly rub from us."</p>
-      </div>
-
-      {/* IMAGE: Vet clinic review about costs with professional response */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/reviews-dashboard.webp"
-                  alt="Reviewly reviews dashboard for veterinary practice review management"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Example: Cost Concern
-      </h2>
-      <div className="card p-6 mb-4">
-        <p className="text-sm font-semibold text-navy-500 mb-2">⭐⭐ Review:</p>
-        <p className="text-navy-700 italic">"$800 for bloodwork and an exam. No real answers. Just told us to 'monitor' our cat. Felt like we paid a lot for nothing."</p>
-      </div>
-      <div className="card p-6 mb-8">
-        <p className="text-sm font-semibold text-emerald-600 mb-2">✅ Generated Response:</p>
-        <p className="text-navy-700">"I understand the frustration when costs feel high and answers feel unclear. Diagnostic bloodwork sometimes rules things out rather than pinpointing one cause, which can feel unsatisfying. We'd like to discuss your cat's results in more detail — please call us to schedule a follow-up conversation at no charge."</p>
-      </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Vet Reviews Are Personal
-      </h2>
-      <p className="text-navy-700 mb-4">
-        People choose their vet the way they choose a pediatrician. Reviews about compassionate care carry serious weight. Responding with warmth and specificity shows prospective pet owners they'll be treated well.
-      </p>
-      <p className="text-navy-700 mb-8">
-        Reviewly helps vet clinics respond to every review without pulling staff away from patients. Compassionate, specific, and fast.
-      </p>
-
-      {/* IMAGE: Vet clinic front desk staff using Reviewly between appointments */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/reviews-dashboard.webp"
-                  alt="Vet clinic staff managing reviews with Reviewly - veterinary review response examples"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <a href="/#demo" className="btn-primary inline-block mb-12">
-        Generate a Response Free
-      </a>
-
-      <div className="border-t border-navy-100 pt-8 mt-8">
-        <p className="text-sm text-navy-500 mb-2">Related:</p>
-        <div className="flex flex-wrap gap-4">
-          <Link href="/uses/medical-practice-review-response-examples" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Medical Practice Review Response Examples →
-          </Link>
-          <Link href="/uses/5-star-review-response-examples" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            5-Star Review Response Examples →
-          </Link>
-          <Link href="/uses/negative-review-response-examples" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Negative Review Response Examples →
-          </Link>
-        </div>
-      </div>
-    </div>
+    <UsesPageLayout
+      badge="Veterinary Practices"
+      h1="Veterinary Review Response Examples for Vets"
+      tagline="Pet owners are deeply emotional about their animals' care. How your practice responds to reviews — especially difficult ones — shapes how new clients perceive your compassion and competence."
+      featureHeading="What Pet Owners Mention in Vet Reviews"
+      featureBody="Veterinary reviews are among the most emotional of any industry. Clients trust you with family members. Their feedback reflects that level of care and investment."
+      featurePoints={[
+        "Compassion and gentleness with the pet during the visit",
+        "Wait times and appointment availability, especially for urgent cases",
+        "How clearly the vet explained diagnosis and treatment options",
+        "Pricing transparency and estimate accuracy",
+        "How the team handled the pet's anxiety or pain",
+        "End-of-life care and sensitivity during difficult visits",
+      ]}
+      examples={[
+        {
+          stars: 2,
+          review: "Called to get my dog seen urgently and was told the next available appointment was in two weeks. He was visibly in pain. Had to take him to an emergency vet elsewhere.",
+          response: "We are so sorry — when a pet is in pain, two weeks is not an answer. We do have an urgent care protocol that should have been offered to you, and it clearly wasn't. We want to understand what happened. Please call us at 555-0133 and ask for the practice manager. We hope your dog is recovering well.",
+        },
+        {
+          stars: 5,
+          review: "Had to say goodbye to my 15-year-old dog last month. The whole team made one of the hardest days of my life feel as peaceful and loving as possible. I will never forget their kindness.",
+          response: "Thank you for trusting us with such a sacred and heartbreaking moment. Fifteen years is a long life filled with love, and we are honored we could be there with you at the end. Our whole team is holding you in their hearts. We're so sorry for your loss.",
+        },
+      ]}
+      whyHeading="Why Vet Review Responses Require Extra Care"
+      whyBody={[
+        "Veterinary reviews are read by pet owners who are already anxious about their animal's health. They're looking for evidence of compassion, competence, and the kind of practice that will treat their pet like a patient — not a transaction. A thoughtful, warm review response provides exactly that evidence before the first appointment is even booked.",
+        "End-of-life reviews deserve special attention. When a client shares a painful loss in a review, even a brief, heartfelt response goes a long way — both for the grieving client and for every future client who reads it. It shows the kind of practice you are when it matters most.",
+      ]}
+      heroImage="/images/screenshots/dashboard-main.webp"
+      featureImage="/images/screenshots/reviews-dashboard.webp"
+      mobileImage="/images/screenshots/mobile-dashboard.webp"
+      heroImageAlt="Veterinary review response dashboard"
+      featureImageAlt="Managing veterinary client reviews in Reviewly"
+      mobileImageAlt="Respond to vet reviews from your phone"
+      related={[
+        { href: "/uses/medical-practice-review-response-examples", label: "Medical Practice Review Responses" },
+        { href: "/uses/dental-review-response-examples", label: "Dental Review Response Examples" },
+        { href: "/uses/negative-review-response-examples", label: "Negative Review Response Examples" },
+        { href: "/uses/positive-review-response-examples", label: "Positive Review Response Examples" },
+      ]}
+    />
   );
 }

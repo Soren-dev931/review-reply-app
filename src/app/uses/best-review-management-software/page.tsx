@@ -1,103 +1,58 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Best Review Management Software — AI-Powered Review Responses | Reviewly",
-    description: "Best review management software for small businesses. AI-generated responses, Google monitoring, and analytics starting at $29/mo. No enterprise pricing.",
+    title: "Best Review Management Software | Reviewly",
+    description: "Looking for the best review management software? Reviewly helps you monitor, respond to, and analyze Google reviews — all from one simple dashboard.",
   };
 }
 
 export default function BestReviewManagementSoftware() {
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
-      <h1 className="text-4xl font-bold text-navy-900 mb-6">
-        Best Review Management Software
-      </h1>
-
-      <p className="text-lg text-navy-700 mb-2">
-        The best review management software does three things: monitors for new reviews, helps you respond quickly, and shows you trends over time. Most platforms charge $200-500 per month and include features small businesses never use. Reviewly focuses on the core workflow — AI-powered monitoring and response — at a price that makes sense.
-      </p>
-      <p className="text-lg text-navy-700 mb-8">
-        Connect your Google Business Profile. New reviews get detected automatically. AI writes a personalized response. You approve with one click. That is the entire workflow.
-      </p>
-
-      <a href="/signup" className="btn-primary inline-block mb-12">
-        Try Reviewly Free
-      </a>
-
-      {/* IMAGE: Reviewly dashboard as a review management platform */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/dashboard-main.webp"
-                  alt="Reviewly review management dashboard - best review management software"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        What to Look for in Review Management Software
-      </h2>
-      <ul className="list-disc pl-6 text-navy-700 space-y-2 mb-8">
-        <li><strong>Automatic monitoring:</strong> Detects new reviews without manual checking</li>
-        <li><strong>AI responses:</strong> Generates replies that reference specific review details, not templates</li>
-        <li><strong>Direct posting:</strong> Publishes replies to Google from the tool</li>
-        <li><strong>Analytics:</strong> Shows response rate, average reply time, and rating trends</li>
-        <li><strong>Reasonable pricing:</strong> Scales with your business without enterprise minimums</li>
-      </ul>
-
-      {/* IMAGE: Checklist comparing review management software features */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/reviews-dashboard.webp"
-                  alt="Review management software feature checklist - best review management software"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        How Reviewly Compares
-      </h2>
-      <ul className="list-disc pl-6 text-navy-700 space-y-2 mb-8">
-        <li><strong>Birdeye ($299+/mo):</strong> Full suite with review generation, surveys, messaging. More than most small businesses need.</li>
-        <li><strong>Podium ($399+/mo):</strong> Reviews plus payments and messaging. Built for larger operations.</li>
-        <li><strong>GatherUp ($99+/mo):</strong> Review monitoring and responses. Closer competitor but more expensive.</li>
-        <li><strong>Reviewly ($29-79/mo):</strong> AI monitoring and responses with analytics. Built specifically for small businesses who want the core features without the enterprise pricing.</li>
-      </ul>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Pricing
-      </h2>
-      <p className="text-navy-700 mb-4">
-        Free plan: 5 manual responses per month, no monitoring.
-      </p>
-      <p className="text-navy-700 mb-4">
-        Starter ($29/mo): 1 location, 50 AI responses, monitoring, email alerts.
-      </p>
-      <p className="text-navy-700 mb-8">
-        Pro ($79/mo): Unlimited locations and responses, auto-post, analytics, custom brand voice. Save 20% with annual billing.
-      </p>
-
-      <a href="/signup" className="btn-primary inline-block mb-12">
-        Try Reviewly Free
-      </a>
-
-      <div className="border-t border-navy-100 pt-8 mt-8">
-        <p className="text-sm text-navy-500 mb-2">Related:</p>
-        <div className="flex flex-wrap gap-4">
-          <Link href="/uses/google-review-management-software" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Google Review Management Software →
-          </Link>
-          <Link href="/uses/review-automation-software" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Review Automation Software →
-          </Link>
-          <Link href="/uses/automated-review-management" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Automated Review Management →
-          </Link>
-        </div>
-      </div>
-    </div>
+    <UsesPageLayout
+      badge="Review Management"
+      h1="Best Review Management Software for Local Businesses"
+      tagline="Reviewly gives local businesses everything they need to manage Google reviews — alerts, AI responses, analytics, and multi-location support — in one clean dashboard."
+      featureHeading="What to Look for in Review Management Software"
+      featureBody="The best review management tools don't just collect reviews — they help you respond consistently, spot trends, and protect your reputation across every location."
+      featurePoints={[
+        "Real-time alerts so you never miss a new review",
+        "AI-generated responses that sound human, not robotic",
+        "Multi-location support for franchises and chains",
+        "Analytics to track rating trends over time",
+        "Simple interface that doesn't require training",
+        "Free to start — no enterprise pricing required",
+      ]}
+      examples={[
+        {
+          stars: 2,
+          review: "We tried three different review management platforms before Reviewly. The others were either too expensive, too complicated, or generated responses that sounded like they were written by a robot.",
+          response: "Thank you for giving us a shot after a frustrating search — we built Reviewly specifically because the existing tools felt like they were designed for enterprise teams, not small business owners. We're glad the responses feel more human. If you ever have suggestions for improvement, we genuinely want to hear them.",
+        },
+        {
+          stars: 5,
+          review: "Finally a tool that does exactly what it says. I get a notification when a review comes in, there's a draft response ready, I edit and post it. Five minutes tops. Worth every penny.",
+          response: "That workflow is exactly what we designed for — thank you for describing it so perfectly! Simple, fast, and out of your way. We're really glad it's working well for you and we'd love to keep making it even better.",
+        },
+      ]}
+      whyHeading="Why the Right Review Management Software Matters"
+      whyBody={[
+        "Most local businesses know they should be managing their reviews — but without the right tool, it quickly becomes overwhelming. The best review management software removes friction at every step: you get notified, you get a response draft, you approve and post. That's the whole workflow.",
+        "The alternative — manually checking Google every day, writing every response from scratch, trying to remember which reviews you've addressed — isn't sustainable. A good review management platform turns an irregular chore into a consistent system.",
+      ]}
+      heroImage="/images/screenshots/dashboard-recent-responses.webp"
+      featureImage="/images/screenshots/analytics-page.webp"
+      mobileImage="/images/screenshots/mobile-dashboard.webp"
+      heroImageAlt="Best review management software dashboard"
+      featureImageAlt="Review management analytics and reporting"
+      mobileImageAlt="Review management on mobile"
+      related={[
+        { href: "/uses/google-review-management-software", label: "Google Review Management Software" },
+        { href: "/uses/ai-review-management", label: "AI Review Management" },
+        { href: "/uses/review-automation-software", label: "Review Automation Software" },
+        { href: "/uses/review-monitoring-service", label: "Review Monitoring Service" },
+      ]}
+    />
   );
 }

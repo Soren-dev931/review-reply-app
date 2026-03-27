@@ -1,104 +1,58 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Customer Service Negative Review Response Examples — Consistent, Professional Replies | Reviewly",
-    description: "Customer service negative review response examples for teams handling reviews at scale. Keep brand voice consistent across multiple staff members with Reviewly.",
+    title: "Customer Service Negative Review Response Examples | Reviewly",
+    description: "Learn how to respond when customers complain about customer service in Google reviews. Real examples that de-escalate tension and rebuild trust.",
   };
 }
 
 export default function CustomerServiceNegativeReviewResponseExamples() {
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
-      <h1 className="text-4xl font-bold text-navy-900 mb-6">
-        Customer Service Negative Review Response Examples
-      </h1>
-
-      <p className="text-lg text-navy-700 mb-2">
-        Customer service negative review response examples show what happens when a trained team handles reviews instead of an overwhelmed owner typing on their phone. The tone is different. Empathetic, solution-oriented, and never personal.
-      </p>
-      <p className="text-lg text-navy-700 mb-8">
-        Reviewly helps customer service teams respond consistently — same brand voice, same professionalism, every time. No matter who on the team is posting the reply.
-      </p>
-
-      <a href="/#demo" className="btn-primary inline-block mb-12">
-        Generate a Response Free
-      </a>
-
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/reviews-dashboard.webp"
-                  alt="Customer service team member responding to reviews on a dashboard - customer service negative review response examples"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Example 1: The Empathetic Acknowledgment
-      </h2>
-      <div className="card p-6 mb-4">
-        <p className="text-sm font-semibold text-navy-500 mb-2">⭐⭐ Review:</p>
-        <p className="text-navy-700 italic">"Been a customer for 3 years and the service has gone downhill. Last visit was the final straw — 45 minute wait for a scheduled appointment."</p>
-      </div>
-      <div className="card p-6 mb-8">
-        <p className="text-sm font-semibold text-emerald-600 mb-2">✅ Customer Service Response:</p>
-        <p className="text-navy-700">"Thank you for being a loyal customer for three years — that makes this feedback even more important to us. A 45-minute wait for a scheduled appointment isn't acceptable. We've adjusted our booking system to prevent overbooking. We'd love the chance to earn back your trust — please contact our team at [email] for priority scheduling."</p>
-      </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Example 2: The Solution-First Reply
-      </h2>
-      <div className="card p-6 mb-4">
-        <p className="text-sm font-semibold text-navy-500 mb-2">⭐ Review:</p>
-        <p className="text-navy-700 italic">"Ordered online and received the wrong item. Called customer service and was put on hold for 20 minutes before giving up."</p>
-      </div>
-      <div className="card p-6 mb-8">
-        <p className="text-sm font-semibold text-emerald-600 mb-2">✅ Customer Service Response:</p>
-        <p className="text-navy-700">"Wrong item and a long hold time — that's two problems that shouldn't have happened. We're sending the correct item today with expedited shipping at no cost. We've also added staff to our phone lines. Please check your email for a confirmation and a direct contact number for future orders."</p>
-      </div>
-
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/dashboard-recent-responses.webp"
-                  alt="Consistent brand voice across multiple review responses - customer service negative review response examples"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        The Customer Service Difference
-      </h2>
-      <p className="text-navy-700 mb-4">
-        Customer service responses differ from owner responses. They don't take things personally. They focus on the process failure, not the emotional sting. They offer concrete next steps.
-      </p>
-      <p className="text-navy-700 mb-4">
-        The challenge is consistency. When three different team members respond to reviews, you get three different tones. One is too casual, one is too stiff, one accidentally gets defensive.
-      </p>
-      <p className="text-navy-700 mb-8">
-        Reviewly solves this by generating responses in your brand voice every time. Set the tone once. Every response matches it — whether it's Sarah on Monday or James on Friday.
-      </p>
-
-      <a href="/#demo" className="btn-primary inline-block mb-12">
-        Try Reviewly — Consistent Responses for Your Team
-      </a>
-
-      <div className="border-t border-navy-100 pt-8 mt-8">
-        <p className="text-sm text-navy-500 mb-2">Related:</p>
-        <div className="flex flex-wrap gap-4">
-          <Link href="/uses/negative-review-response-examples" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Negative Review Response Examples →
-          </Link>
-          <Link href="/uses/review-response-service" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Review Response Service →
-          </Link>
-          <Link href="/uses/automated-review-management" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Automated Review Management →
-          </Link>
-        </div>
-      </div>
-    </div>
+    <UsesPageLayout
+      badge="Customer Service"
+      h1="Customer Service Negative Review Response Examples"
+      tagline="Customer service complaints are the most personal reviews you'll receive. Responding well means acknowledging the person — not just the problem."
+      featureHeading="What Drives Customer Service Complaints in Reviews"
+      featureBody="Customer service reviews almost always center on how the customer was made to feel. Understanding the root of those feelings helps you craft a response that genuinely addresses what went wrong."
+      featurePoints={[
+        "Being made to feel dismissed or unheard by staff",
+        "Long hold times or difficulty reaching a real person",
+        "Conflicting information from different team members",
+        "Promises made but not kept during a service call",
+        "Attitude or tone of frontline staff",
+        "Feeling like their complaint wasn't taken seriously",
+      ]}
+      examples={[
+        {
+          stars: 1,
+          review: "Called customer service four times about the same issue. Each time I was given a different answer and told someone would call me back. Nobody ever did. This is absolutely unacceptable.",
+          response: "Four calls and no resolution — we completely understand your frustration, and we owe you a real apology. Inconsistent answers and missed callbacks are exactly the kind of experience we work to prevent, and we clearly failed here. Please email us directly at priority@company.com with your account details and we will personally handle this until it's resolved.",
+        },
+        {
+          stars: 2,
+          review: "The product is fine but the service experience was disappointing. The rep was impatient and talked over me when I was trying to explain my issue. I felt like a burden.",
+          response: "Nobody should ever feel like a burden when they reach out to us for help — we're genuinely sorry you felt that way. This is a training and culture issue that we take seriously. Thank you for telling us specifically what happened. Please let us know if your issue was ultimately resolved; if not, we want to fix it properly.",
+        },
+      ]}
+      whyHeading="Why Customer Service Review Responses Are High Stakes"
+      whyBody={[
+        "Customer service complaints carry extra weight because they're not about a product or a one-time experience — they're about how your company treats people. Other readers identify strongly with these stories. A defensive or dismissive response to a customer service complaint can do lasting damage. A genuine, accountable response can actually build loyalty with readers who've never interacted with you.",
+        "The best responses to customer service reviews do one thing above all else: they make the reviewer feel heard. Not excused, not dismissed — heard. That shift in tone, even in a brief reply, signals to everyone reading that your company is different from the ones that ignore complaints.",
+      ]}
+      heroImage="/images/screenshots/reviews-dashboard.webp"
+      featureImage="/images/screenshots/dashboard-main.webp"
+      mobileImage="/images/screenshots/mobile-dashboard.webp"
+      heroImageAlt="Customer service review response examples dashboard"
+      featureImageAlt="Managing customer service complaints in reviews"
+      mobileImageAlt="Respond to customer service reviews on mobile"
+      related={[
+        { href: "/uses/negative-review-response-examples", label: "Negative Review Response Examples" },
+        { href: "/uses/bad-review-response-examples", label: "Bad Review Response Examples" },
+        { href: "/uses/negative-review-response-template", label: "Negative Review Response Templates" },
+        { href: "/uses/sample-responses-to-negative-reviews", label: "Sample Responses to Negative Reviews" },
+      ]}
+    />
   );
 }

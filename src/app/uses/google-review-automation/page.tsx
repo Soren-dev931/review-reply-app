@@ -1,97 +1,58 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Google Review Automation — Automate Monitoring & Replies | Reviewly",
-    description: "Google review automation that monitors your Business Profile and generates AI replies automatically. Detect new reviews, draft responses, post with one click.",
+    title: "Google Review Automation | Reviewly",
+    description: "Automate your Google review workflow with AI. Get instant alerts, draft responses, and review tracking — all without manual monitoring.",
   };
 }
 
 export default function GoogleReviewAutomation() {
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
-      <h1 className="text-4xl font-bold text-navy-900 mb-6">
-        Google Review Automation
-      </h1>
-
-      <p className="text-lg text-navy-700 mb-2">
-        Google review automation takes the repetitive work out of managing your online reputation. Reviewly connects to your Google Business Profile, watches for new reviews, drafts a personalized AI response for each one, and posts the reply after you approve it.
-      </p>
-      <p className="text-lg text-navy-700 mb-8">
-        The entire workflow — detection, response generation, and posting — runs on autopilot. You check in when you want to, not because you have to.
-      </p>
-
-      <a href="/signup" className="btn-primary inline-block mb-12">
-        Automate Google Reviews
-      </a>
-
-      {/* IMAGE: Google review automation pipeline — detect → generate → approve → post */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/reviews-dashboard.webp"
-                  alt="Google review automation pipeline diagram"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        What Reviewly Automates
-      </h2>
-      <ul className="list-disc pl-6 text-navy-700 space-y-2 mb-8">
-        <li><strong>Monitoring:</strong> Checks for new reviews every few hours</li>
-        <li><strong>AI Response:</strong> Writes a unique reply based on the review content</li>
-        <li><strong>Alerts:</strong> Sends you an email when a new review needs attention</li>
-        <li><strong>Posting:</strong> Puts the approved response directly on Google</li>
-        <li><strong>Analytics:</strong> Tracks response rate, speed, and rating trends</li>
-      </ul>
-
-      {/* IMAGE: Dashboard showing automated reviews with status badges */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/reviews-dashboard.webp"
-                  alt="Automated review management dashboard - google review automation"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        SEO Benefits of Automation
-      </h2>
-      <p className="text-navy-700 mb-4">
-        Google uses review engagement as a local ranking signal. Businesses that respond to reviews consistently rank higher in Maps and local search. But consistency is the hard part — most businesses start strong and then fall off.
-      </p>
-      <p className="text-navy-700 mb-8">
-        Automation solves the consistency problem. Every review gets a response. Your response rate stays at 100%. Your average reply time drops from days to hours. Google notices.
-      </p>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Plans for Every Size
-      </h2>
-      <p className="text-navy-700 mb-8">
-        Starter at $29/mo automates 1 location with 50 responses per month. Pro at $79/mo handles unlimited locations with unlimited responses, auto-post, and full analytics. Both plans support annual billing at 20% off.
-      </p>
-
-      <a href="/signup" className="btn-primary inline-block mb-12">
-        Automate Google Reviews
-      </a>
-
-      <div className="border-t border-navy-100 pt-8 mt-8">
-        <p className="text-sm text-navy-500 mb-2">Related:</p>
-        <div className="flex flex-wrap gap-4">
-          <Link href="/uses/review-response-automation" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Review Response Automation →
-          </Link>
-          <Link href="/uses/google-review-responder" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Google Review Responder →
-          </Link>
-          <Link href="/uses/google-review-management-software" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Google Review Management Software →
-          </Link>
-        </div>
-      </div>
-    </div>
+    <UsesPageLayout
+      badge="Automation"
+      h1="Google Review Automation for Local Businesses"
+      tagline="Automate the most time-consuming parts of Google review management — alerts, response drafts, and tracking — so you can focus on running your business."
+      featureHeading="What Google Review Automation Includes"
+      featureBody="Reviewly automates the full review response workflow: from knowing a review was posted to having a draft response ready, all without you having to check manually."
+      featurePoints={[
+        "Automated alerts the moment new reviews are posted",
+        "AI drafts a response immediately for your review",
+        "Handles any star rating — 1 through 5",
+        "Multi-location support in one dashboard",
+        "Review tracking and response history",
+        "Free to start — no complex integration required",
+      ]}
+      examples={[
+        {
+          stars: 2,
+          review: "Good food but every time I order delivery through Google, the order is always missing something. It's happened three times now. The in-person experience is great but delivery needs serious work.",
+          response: "Three times is absolutely too many — we're sorry about the repeated delivery issues. This is something we need to fix at the process level, not just case by case. Please reach out to us at delivery@restaurant.com with your recent order details and we'll make it right. Thank you for sticking with us and giving us the feedback.",
+        },
+        {
+          stars: 5,
+          review: "I like that this business actually responds to reviews — you can tell they're using some kind of tool because responses come fast, but they're personalized enough that it doesn't feel automated.",
+          response: "That's the exact balance we aim for — responsive and genuinely human. We do use tools to help us stay on top of reviews, but every response is reviewed and tailored before it goes out. Thank you for noticing, and for taking the time to leave such a thoughtful review!",
+        },
+      ]}
+      whyHeading="Why Google Review Automation Is Worth It"
+      whyBody={[
+        "Manual Google review management doesn't scale. When you're busy, reviews pile up unanswered. When you finally check, you're responding to week-old complaints in a way that looks neglectful. Automation ensures you're always on top of your reputation — regardless of how busy your business gets.",
+        "The goal of review automation isn't to remove the human element — it's to reduce the friction that stops businesses from engaging at all. Reviewly gives you a draft to work from so you're never staring at a blank box, and ensures nothing slips through the cracks.",
+      ]}
+      heroImage="/images/screenshots/dashboard-recent-responses.webp"
+      featureImage="/images/screenshots/analytics-page.webp"
+      mobileImage="/images/screenshots/mobile-dashboard.webp"
+      heroImageAlt="Google review automation dashboard"
+      featureImageAlt="Automated review management analytics"
+      mobileImageAlt="Google review automation on mobile"
+      related={[
+        { href: "/uses/automated-review-management", label: "Automated Review Management" },
+        { href: "/uses/review-response-automation", label: "Review Response Automation" },
+        { href: "/uses/google-review-alerts", label: "Google Review Alerts" },
+        { href: "/uses/review-automation-software", label: "Review Automation Software" },
+      ]}
+    />
   );
 }

@@ -1,125 +1,58 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Sample Responses to Negative Reviews — Ready-to-Use Replies by Complaint Type | Reviewly",
-    description: "Sample responses to negative reviews for bad service, long waits, billing issues, and rude staff. Copy these samples or generate custom responses in 10 seconds with Reviewly.",
+    title: "Sample Responses to Negative Reviews | Reviewly",
+    description: "Browse real sample responses to negative Google reviews. Copy, adapt, or generate your own tailored response with Reviewly's AI — free to start.",
   };
 }
 
 export default function SampleResponsesToNegativeReviews() {
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
-      <h1 className="text-4xl font-bold text-navy-900 mb-6">
-        Sample Responses to Negative Reviews
-      </h1>
-
-      <p className="text-lg text-navy-700 mb-2">
-        Sample responses to negative reviews organized by complaint type. Each one is ready to copy and adapt. Bad service, long waits, billing disputes, rude staff — the four complaints that cover about 80% of negative reviews.
-      </p>
-      <p className="text-lg text-navy-700 mb-8">
-        Use these as starting points or skip the editing and let Reviewly write a unique response for each review automatically.
-      </p>
-
-      <a href="/#demo" className="btn-primary inline-block mb-12">
-        Generate a Response Free
-      </a>
-
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/dashboard-main.webp"
-                  alt="Reviewly dashboard for managing negative review review responses"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Sample 1: Bad Service Quality
-      </h2>
-      <div className="card p-6 mb-4">
-        <p className="text-sm font-semibold text-navy-500 mb-2">⭐ Review:</p>
-        <p className="text-navy-700 italic">"The work was sloppy. Had to bring my car back twice to get the alignment right. Should have been done correctly the first time."</p>
-      </div>
-      <div className="card p-6 mb-8">
-        <p className="text-sm font-semibold text-emerald-600 mb-2">✅ Sample Response:</p>
-        <p className="text-navy-700">"You shouldn't have had to come back twice — that's on us. I've reviewed the work order with the technician to make sure this doesn't repeat. If anything still feels off, call me directly and we'll handle it immediately."</p>
-      </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Sample 2: Long Wait Times
-      </h2>
-      <div className="card p-6 mb-4">
-        <p className="text-sm font-semibold text-navy-500 mb-2">⭐⭐ Review:</p>
-        <p className="text-navy-700 italic">"Arrived at 11am for a scheduled appointment. Didn't get seen until almost noon. No explanation, no apology."</p>
-      </div>
-      <div className="card p-6 mb-8">
-        <p className="text-sm font-semibold text-emerald-600 mb-2">✅ Sample Response:</p>
-        <p className="text-navy-700">"An hour wait with no communication is unacceptable. We've changed our scheduling to build in buffer time between appointments, and our front desk team now provides updates if there's any delay. I'm sorry we wasted your time."</p>
-      </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Sample 3: Billing Dispute
-      </h2>
-      <div className="card p-6 mb-4">
-        <p className="text-sm font-semibold text-navy-500 mb-2">⭐ Review:</p>
-        <p className="text-navy-700 italic">"Was quoted $150 on the phone. Bill came out to $280. When I asked about it they said 'the phone quote was an estimate.' Feels like bait and switch."</p>
-      </div>
-      <div className="card p-6 mb-8">
-        <p className="text-sm font-semibold text-emerald-600 mb-2">✅ Sample Response:</p>
-        <p className="text-navy-700">"I understand the frustration with a bill that's nearly double the quote. We should have contacted you before proceeding with any work beyond the original estimate. Please reach out to our office and ask for the manager — we'll review the charges and make this right."</p>
-      </div>
-
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/reviews-dashboard.webp"
-                  alt="Reviewly reviews dashboard for negative review review management"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Sample 4: Rude Staff
-      </h2>
-      <div className="card p-6 mb-4">
-        <p className="text-sm font-semibold text-navy-500 mb-2">⭐ Review:</p>
-        <p className="text-navy-700 italic">"The receptionist was dismissive and barely looked up when I walked in. Asked a question and got a one-word answer. Not a welcoming place."</p>
-      </div>
-      <div className="card p-6 mb-8">
-        <p className="text-sm font-semibold text-emerald-600 mb-2">✅ Sample Response:</p>
-        <p className="text-navy-700">"That's not the first impression we want anyone to have. I've spoken with our front desk team about this directly. Every person who walks in should feel welcomed. I'd like the chance to show you what our service is really like — please contact me and I'll take care of your next visit personally."</p>
-      </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Why Samples Aren't Enough
-      </h2>
-      <p className="text-navy-700 mb-4">
-        Samples get you started. But every review is slightly different. A response about "long wait" doesn't work the same for a 15-minute delay as it does for a 2-hour one. The specifics matter.
-      </p>
-      <p className="text-navy-700 mb-8">
-        Reviewly reads each review individually and generates a response that addresses the exact complaint. Same professional tone, different words every time.
-      </p>
-
-      <a href="/#demo" className="btn-primary inline-block mb-12">
-        Try Reviewly — Unique Responses, Not Samples
-      </a>
-
-      <div className="border-t border-navy-100 pt-8 mt-8">
-        <p className="text-sm text-navy-500 mb-2">Related:</p>
-        <div className="flex flex-wrap gap-4">
-          <Link href="/uses/negative-review-response-examples" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Negative Review Response Examples →
-          </Link>
-          <Link href="/uses/negative-review-response-template" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Negative Review Response Template →
-          </Link>
-          <Link href="/uses/bad-review-response-examples" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Bad Review Response Examples →
-          </Link>
-        </div>
-      </div>
-    </div>
+    <UsesPageLayout
+      badge="Negative Reviews"
+      h1="Sample Responses to Negative Reviews"
+      tagline="See real-world examples of professional responses to negative reviews — then generate your own tailored response in seconds with Reviewly's AI."
+      featureHeading="What Makes a Negative Review Response Work"
+      featureBody="The best negative review responses aren't magic — they follow a consistent pattern that anyone can learn. Here's what every effective response has in common."
+      featurePoints={[
+        "Opens with acknowledgment, not defense",
+        "Apologizes without over-explaining",
+        "Addresses the specific complaint, not a generic version",
+        "Provides a clear next step for resolution",
+        "Closes with an invitation to reconnect",
+        "Stays under 100 words in most cases",
+      ]}
+      examples={[
+        {
+          stars: 1,
+          review: "Paid for priority shipping and it arrived a week after the estimated delivery date. No email update, no tracking movement for five days. Terrible experience.",
+          response: "We're so sorry — priority shipping that misses the delivery window and goes silent on tracking is a failure on our end, not yours. You deserved better communication and a faster resolution. Please email us at priority@shop.com with your order number and we'll issue a refund on the shipping cost and look into what happened.",
+        },
+        {
+          stars: 2,
+          review: "Had a reservation for 7pm. Didn't get seated until 7:45 with no explanation. By the time food came it was 9pm. The food itself was great but the experience was stressful.",
+          response: "A 45-minute wait past your reservation time with no explanation is unacceptable — especially for an evening meant to be enjoyable. We're sorry we let the execution fall short of the food quality. Please reach out to us at reservations@restaurant.com and we'd love to invite you back for an evening that goes the way it should.",
+        },
+      ]}
+      whyHeading="How Sample Responses Improve Your Own Writing"
+      whyBody={[
+        "Most business owners have never been trained in review response writing — they pick it up as they go, which usually means defaulting to defensive or generic replies. Reading strong sample responses recalibrates your approach quickly. You see what good looks like, and you start recognizing when your own responses fall short.",
+        "For businesses that want to go further, Reviewly's AI generates responses tailored to each actual review — not sample-based templates. Instead of adapting a sample, you get a draft that already incorporates the specific complaint or praise from the review you're responding to. It's faster and the quality is consistently better.",
+      ]}
+      heroImage="/images/screenshots/reviews-dashboard.webp"
+      featureImage="/images/screenshots/dashboard-main.webp"
+      mobileImage="/images/screenshots/mobile-dashboard.webp"
+      heroImageAlt="Sample responses to negative reviews dashboard"
+      featureImageAlt="Reviewly sample response library"
+      mobileImageAlt="Browse sample negative review responses on mobile"
+      related={[
+        { href: "/uses/negative-review-response-examples", label: "Negative Review Response Examples" },
+        { href: "/uses/bad-review-response-examples", label: "Bad Review Response Examples" },
+        { href: "/uses/negative-review-response-template", label: "Negative Review Response Templates" },
+        { href: "/uses/1-star-review-response-examples", label: "1-Star Review Response Examples" },
+      ]}
+    />
   );
 }

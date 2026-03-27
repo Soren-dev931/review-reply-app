@@ -1,107 +1,58 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Positive Hotel Review Response Examples — Thank Guests Without Sounding Corporate | Reviewly",
-    description: "Positive hotel review response examples that mention rooms, staff, and amenities by name. Generate personalized hotel thank-you replies in 10 seconds.",
+    title: "Positive Hotel Review Response Examples | Reviewly",
+    description: "See how hotels should respond to 5-star Google reviews. Real examples that reinforce guest loyalty and attract future bookings.",
   };
 }
 
 export default function PositiveHotelReviewResponseExamples() {
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
-      <h1 className="text-4xl font-bold text-navy-900 mb-6">
-        Positive Hotel Review Response Examples
-      </h1>
-
-      <p className="text-lg text-navy-700 mb-2">
-        Positive hotel review response examples that don't sound like they came from a PR department. Guests notice when you actually read their review versus when you paste "Thank you for your kind words, we look forward to welcoming you back" for the hundredth time.
-      </p>
-      <p className="text-lg text-navy-700 mb-8">
-        Reviewly generates hotel responses that reference the specific room, staff member, or amenity the guest mentioned. Paste the review, get a personal reply in 10 seconds.
-      </p>
-
-      <a href="/#demo" className="btn-primary inline-block mb-12">
-        Generate a Response Free
-      </a>
-
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/dashboard-main.webp"
-                  alt="Reviewly dashboard for managing hotel review responses"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Example 1: Guest Praising Staff
-      </h2>
-      <div className="card p-6 mb-4">
-        <p className="text-sm font-semibold text-navy-500 mb-2">⭐⭐⭐⭐⭐ Review:</p>
-        <p className="text-navy-700 italic">"Marco at the front desk upgraded us to a suite when he found out it was our honeymoon. The rooftop bar was perfect for sunset drinks. We'll be back for our anniversary."</p>
-      </div>
-      <div className="card p-6 mb-8">
-        <p className="text-sm font-semibold text-emerald-600 mb-2">✅ Response:</p>
-        <p className="text-navy-700">"Congratulations again! Marco has a knack for making special occasions even better — he'll be thrilled to hear this. The rooftop at sunset is hard to beat. We'll have your suite ready for that anniversary trip."</p>
-      </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Example 2: Guest Praising Location and Amenities
-      </h2>
-      <div className="card p-6 mb-4">
-        <p className="text-sm font-semibold text-navy-500 mb-2">⭐⭐⭐⭐⭐ Review:</p>
-        <p className="text-navy-700 italic">"Walking distance to everything downtown. The pool was clean and never crowded. Breakfast buffet had good variety. Room 412 had a great view of the harbor."</p>
-      </div>
-      <div className="card p-6 mb-8">
-        <p className="text-sm font-semibold text-emerald-600 mb-2">✅ Response:</p>
-        <p className="text-navy-700">"Room 412 is one of our favorites for that harbor view. Glad you took advantage of the pool and breakfast — the location really does make it easy to explore. Hope to see you back next time you're in town."</p>
-      </div>
-
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/reviews-dashboard.webp"
-                  alt="Reviewly reviews dashboard for hotel review management"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        What Makes a Positive Hotel Response Feel Real
-      </h2>
-      <p className="text-navy-700 mb-4">
-        Three things separate a real reply from a template:
-      </p>
-      <ul className="list-disc pl-6 text-navy-700 space-y-2 mb-8">
-        <li><strong>Use the guest's details.</strong> If they mention Room 412 or the rooftop bar, reference it back. It proves you read the review.</li>
-        <li><strong>Name staff when mentioned.</strong> "Marco will be thrilled" means more than "Our team appreciates your feedback."</li>
-        <li><strong>Skip the corporate filler.</strong> "We look forward to welcoming you back to our establishment" sounds like a robot. "Hope to see you next time" sounds like a person.</li>
-      </ul>
-
-      <p className="text-navy-700 mb-8">
-        Reviewly pulls names, room numbers, amenities, and specific compliments from each review and works them into the response naturally. No more staring at a blank reply box trying to say something different from yesterday.
-      </p>
-
-      <a href="/#demo" className="btn-primary inline-block mb-12">
-        Try Reviewly for Your Hotel
-      </a>
-
-      <div className="border-t border-navy-100 pt-8 mt-8">
-        <p className="text-sm text-navy-500 mb-2">Related:</p>
-        <div className="flex flex-wrap gap-4">
-          <Link href="/uses/hotel-review-response-examples" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Hotel Review Response Examples →
-          </Link>
-          <Link href="/uses/positive-review-response-examples" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Positive Review Response Examples →
-          </Link>
-          <Link href="/uses/5-star-review-response-examples" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            5-Star Review Response Examples →
-          </Link>
-        </div>
-      </div>
-    </div>
+    <UsesPageLayout
+      badge="Hospitality"
+      h1="Positive Hotel Review Response Examples"
+      tagline="A guest who leaves a 5-star review is giving you a gift. The right response deepens their loyalty and turns future travelers into believers before they even check in."
+      featureHeading="What Happy Hotel Guests Highlight in Reviews"
+      featureBody="Positive hotel reviews tend to celebrate specific moments and staff interactions — not just general cleanliness or comfort. Reflecting those specifics back in your response makes the connection feel personal."
+      featurePoints={[
+        "Exceptional staff interactions that stood out",
+        "Thoughtful personal touches and special accommodations",
+        "Cleanliness and room comfort above expectations",
+        "Great location and easy access to attractions",
+        "Breakfast quality or in-hotel dining experiences",
+        "Smooth, efficient check-in and check-out process",
+      ]}
+      examples={[
+        {
+          stars: 5,
+          review: "The front desk staff upgraded us to a suite without being asked, because they saw it was our honeymoon. That kind of proactive kindness is something you remember forever.",
+          response: "Congratulations to you both — what a beautiful reason to stay with us! We love celebrating special occasions with our guests, and knowing that small gesture created a lasting memory means everything to our team. We hope to see you again on many more milestones. Thank you for sharing this.",
+        },
+        {
+          stars: 5,
+          review: "Stayed three nights for a work trip. Usually hotels feel impersonal but this one was different — every staff member greeted me by name after day one. Made a long trip feel genuinely welcoming.",
+          response: "That's exactly the atmosphere we work to create — thank you for noticing and for saying so. Business trips can be long and impersonal, and we're glad our team made you feel like a guest, not just a room number. We'd love to be your home base the next time work brings you to the area!",
+        },
+      ]}
+      whyHeading="Why Positive Hotel Review Responses Drive Repeat Bookings"
+      whyBody={[
+        "Guests who felt truly cared for during their stay are your most powerful marketing channel. When they leave a glowing review and you respond personally — referencing what made their stay special — it reinforces their decision and makes them far more likely to return or recommend you to others. A warm, specific response to a 5-star review isn't just good manners; it's revenue.",
+        "Prospective travelers also read positive reviews and responses when choosing between properties. Seeing a hotel that engages personally with happy guests — not just with automated 'Thank you for your stay!' messages — creates a genuine impression of hospitality before the booking is even made.",
+      ]}
+      heroImage="/images/screenshots/dashboard-5star-response.webp"
+      featureImage="/images/screenshots/dashboard-recent-responses.webp"
+      mobileImage="/images/screenshots/mobile-dashboard.webp"
+      heroImageAlt="Positive hotel review response examples"
+      featureImageAlt="Responding to positive hotel reviews in Reviewly"
+      mobileImageAlt="Respond to positive hotel reviews on mobile"
+      related={[
+        { href: "/uses/hotel-review-response-examples", label: "Hotel Review Response Examples" },
+        { href: "/uses/negative-hotel-review-response-template", label: "Negative Hotel Review Templates" },
+        { href: "/uses/positive-review-response-examples", label: "Positive Review Response Examples" },
+        { href: "/uses/5-star-review-response-examples", label: "5-Star Review Response Examples" },
+      ]}
+    />
   );
 }

@@ -1,114 +1,58 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Negative Hotel Review Response Template — Copy-Paste Structures for Common Complaints | Reviewly",
-    description: "Negative hotel review response templates for room complaints, noise, staff issues, and billing disputes. Copy these templates or generate personalized responses with Reviewly.",
+    title: "Negative Hotel Review Response Templates | Reviewly",
+    description: "Use these proven negative hotel review response templates to handle guest complaints professionally. Protect your rating and win back future travelers.",
   };
 }
 
 export default function NegativeHotelReviewResponseTemplate() {
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
-      <h1 className="text-4xl font-bold text-navy-900 mb-6">
-        Negative Hotel Review Response Template
-      </h1>
-
-      <p className="text-lg text-navy-700 mb-2">
-        Negative hotel review response templates give your front desk team a starting point for the most common complaints. Room issues, noise, staff problems, billing — they all follow patterns.
-      </p>
-      <p className="text-lg text-navy-700 mb-8">
-        Here are templates you can copy and customize. Or skip the manual work and let Reviewly personalize each response automatically.
-      </p>
-
-      <a href="/#demo" className="btn-primary inline-block mb-12">
-        Generate a Response Free
-      </a>
-
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/dashboard-main.webp"
-                  alt="Reviewly dashboard for managing hotel review responses"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Template 1: Room Complaints
-      </h2>
-      <div className="card p-6 mb-8">
-        <p className="text-navy-700">"Thank you for your feedback about your room. [Specific issue — cleanliness/temperature/maintenance] is something we take seriously and I've shared your comments with our housekeeping/maintenance team. We'd like to make this right — please contact [name] at [email/phone] so we can discuss a resolution."</p>
-      </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Template 2: Noise Issues
-      </h2>
-      <div className="card p-6 mb-8">
-        <p className="text-navy-700">"We're sorry the noise affected your stay. [Construction/event/other guests] can be disruptive and we should have [warned you at check-in/offered a room change]. For your next visit, please request a room on [quieter floor/wing] and we'll make sure you're comfortable."</p>
-      </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Template 3: Staff Rudeness
-      </h2>
-      <div className="card p-6 mb-8">
-        <p className="text-navy-700">"This is not the service standard we hold ourselves to. I've spoken with the team member involved. Every guest deserves to be treated with courtesy, and I'm sorry that wasn't your experience. Please reach out to me directly at [contact] — I'd like to make this up to you."</p>
-      </div>
-
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/reviews-dashboard.webp"
-                  alt="Reviewly reviews dashboard for hotel review management"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Template 4: Billing Disputes
-      </h2>
-      <div className="card p-6 mb-8">
-        <p className="text-navy-700">"I understand billing surprises are frustrating. I've looked into your charges and [explanation]. If anything still seems off, please contact our billing department at [email/phone] and we'll review your folio together. We want this resolved for you."</p>
-      </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Why Templates Get Old Fast
-      </h2>
-      <p className="text-navy-700 mb-4">
-        Templates work for the first few reviews. Then guests start seeing the same structure repeated across all your responses. It looks automated — because it is.
-      </p>
-      <p className="text-navy-700 mb-8">
-        Reviewly reads each review individually and generates a unique response that references the guest's specific complaint. No brackets to fill in. No copy-paste fatigue. Just paste the review and get a response that sounds like a real person wrote it.
-      </p>
-
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/mobile-dashboard.webp"
-                  alt="Reviewly mobile dashboard showing hotel review responses"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <a href="/#demo" className="btn-primary inline-block mb-12">
-        Try Reviewly — No More Templates
-      </a>
-
-      <div className="border-t border-navy-100 pt-8 mt-8">
-        <p className="text-sm text-navy-500 mb-2">Related:</p>
-        <div className="flex flex-wrap gap-4">
-          <Link href="/uses/hotel-review-response-examples" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Hotel Review Response Examples →
-          </Link>
-          <Link href="/uses/negative-review-response-examples" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Negative Review Response Examples →
-          </Link>
-          <Link href="/uses/negative-review-response-template" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Negative Review Response Template →
-          </Link>
-        </div>
-      </div>
-    </div>
+    <UsesPageLayout
+      badge="Hospitality"
+      h1="Negative Hotel Review Response Templates"
+      tagline="Every negative hotel review is read by dozens of potential guests. The right response doesn't just address the unhappy guest — it wins over everyone watching."
+      featureHeading="What Negative Hotel Reviews Typically Contain"
+      featureBody="Negative hotel reviews tend to center on a handful of recurring issues. Understanding the patterns helps you respond quickly, specifically, and credibly."
+      featurePoints={[
+        "Room cleanliness or condition below expectations",
+        "Noise issues from other guests or construction",
+        "Slow or unhelpful check-in and check-out",
+        "Discrepancy between listed and actual amenities",
+        "Billing errors or unexpected charges",
+        "Staff rudeness or indifference to complaints",
+      ]}
+      examples={[
+        {
+          stars: 1,
+          review: "The bathroom had visible mold, the sheets had stains, and there were crumbs on the floor. This is basic housekeeping. The room was completely unacceptable.",
+          response: "We are deeply sorry — what you've described falls well below our standards and should never have happened. Room cleanliness is foundational to the hospitality experience and we failed to deliver it. Please reach out to our general manager at gm@hotel.com and we'll address this with a full refund and a review of our housekeeping procedures. Thank you for telling us.",
+        },
+        {
+          stars: 2,
+          review: "We were charged $45 for parking that wasn't mentioned anywhere during booking. When I asked at checkout, I was told it was 'in the fine print.' Felt like a gotcha and ruined an otherwise decent stay.",
+          response: "We completely understand that frustration — a surprise charge at checkout is not the ending any guest should have. Parking fees should be clearly communicated at the time of booking, and we're reviewing how this information is presented. Please email billing@hotel.com with your reservation details and we'll look at refunding that charge.",
+        },
+      ]}
+      whyHeading="Why Negative Hotel Review Responses Are Crucial"
+      whyBody={[
+        "Travelers almost always check reviews before booking, and they look specifically for how hotels handle negative feedback. A hotel that responds professionally and accountably to a 1-star review often gets the booking over a hotel with a slightly higher rating and zero responses. Your response is your reputation management in real time.",
+        "The goal isn't to argue with the unhappy guest — it's to demonstrate to future travelers that your hotel is accountable, communicative, and genuinely committed to the guest experience. Even if the review is partly unfair, a calm and constructive response reflects well on your property.",
+      ]}
+      heroImage="/images/screenshots/reviews-dashboard.webp"
+      featureImage="/images/screenshots/dashboard-main.webp"
+      mobileImage="/images/screenshots/mobile-dashboard.webp"
+      heroImageAlt="Negative hotel review response template dashboard"
+      featureImageAlt="Managing negative hotel reviews in Reviewly"
+      mobileImageAlt="Respond to negative hotel reviews on mobile"
+      related={[
+        { href: "/uses/hotel-review-response-examples", label: "Hotel Review Response Examples" },
+        { href: "/uses/positive-hotel-review-response-examples", label: "Positive Hotel Review Responses" },
+        { href: "/uses/negative-review-response-template", label: "Negative Review Response Templates" },
+        { href: "/uses/negative-review-response-examples", label: "Negative Review Response Examples" },
+      ]}
+    />
   );
 }

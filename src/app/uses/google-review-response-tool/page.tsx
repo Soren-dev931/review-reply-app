@@ -1,97 +1,58 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Google Review Response Tool — Generate & Post Replies to Google | Reviewly",
-    description: "Google review response tool that generates personalized AI replies and posts them directly to your Business Profile. Monitor, respond, and track reviews.",
+    title: "Google Review Response Tool | Reviewly",
+    description: "The simplest Google review response tool for local businesses. Generate, edit, and post professional replies to any Google review — in seconds.",
   };
 }
 
 export default function GoogleReviewResponseTool() {
   return (
-    <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
-      <h1 className="text-4xl font-bold text-navy-900 mb-6">
-        Google Review Response Tool
-      </h1>
-
-      <p className="text-lg text-navy-700 mb-2">
-        A Google review response tool helps business owners reply to Google reviews faster without sacrificing quality. Reviewly generates personalized AI responses based on what each customer wrote, then posts the reply directly to your Google Business Profile.
-      </p>
-      <p className="text-lg text-navy-700 mb-8">
-        No more logging into Google, reading the review, drafting a reply, and posting it manually. Reviewly handles the workflow. You approve with one click.
-      </p>
-
-      <a href="/signup" className="btn-primary inline-block mb-12">
-        Try the Response Tool
-      </a>
-
-      {/* IMAGE: Reviewly as a Google review response tool — full workflow view */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/reviews-dashboard.webp"
-                  alt="Google review response tool workflow"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        What the Tool Does
-      </h2>
-      <ul className="list-disc pl-6 text-navy-700 space-y-2 mb-8">
-        <li>Monitors your Google Business Profile for new reviews</li>
-        <li>Generates a personalized AI response for each review</li>
-        <li>Lets you approve, edit, or skip each response</li>
-        <li>Posts approved responses directly to Google</li>
-        <li>Tracks response rate and average reply time</li>
-      </ul>
-
-      {/* IMAGE: Review card with AI response and one-click approve */}
-      <div className="rounded-lg overflow-hidden mb-12">
-                <img
-                  src="/images/screenshots/reviews-dashboard.webp"
-                  alt="Review card with approve button and AI response - google review response tool"
-                  className="w-full h-auto rounded-lg"
-                  loading="lazy"
-                />
-              </div>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Built for Google Specifically
-      </h2>
-      <p className="text-navy-700 mb-4">
-        Google is where most customers leave reviews and where local search rankings are determined. Responding to Google reviews is a confirmed local SEO factor. This tool is built around the Google Business Profile workflow.
-      </p>
-      <p className="text-navy-700 mb-8">
-        The AI also works for reviews you paste manually from Yelp, TripAdvisor, or any other platform. But the automatic monitoring and posting is built for Google.
-      </p>
-
-      <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Free to Try
-      </h2>
-      <p className="text-navy-700 mb-8">
-        The manual paste-and-generate tool works for free — 5 responses per month, no signup required for the demo. Starter at $29/mo adds Google monitoring for 1 location. Pro at $79/mo covers unlimited locations with auto-post and analytics.
-      </p>
-
-      <a href="/#demo" className="btn-primary inline-block mb-12">
-        Try the Response Tool Free
-      </a>
-
-      <div className="border-t border-navy-100 pt-8 mt-8">
-        <p className="text-sm text-navy-500 mb-2">Related:</p>
-        <div className="flex flex-wrap gap-4">
-          <Link href="/uses/google-review-response-generator" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Google Review Response Generator →
-          </Link>
-          <Link href="/uses/google-review-automation" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Google Review Automation →
-          </Link>
-          <Link href="/uses/google-review-responder" className="text-emerald-600 hover:text-emerald-700 text-sm font-medium">
-            Google Review Responder →
-          </Link>
-        </div>
-      </div>
-    </div>
+    <UsesPageLayout
+      badge="AI Tools"
+      h1="Google Review Response Tool for Local Businesses"
+      tagline="Reviewly is the simplest tool for responding to Google reviews. Paste a review, get a professional response in seconds — no complex setup, no learning curve."
+      featureHeading="What Makes a Great Google Review Response Tool"
+      featureBody="The best review response tools get out of your way. They should be fast, produce quality output, and make it easy to edit before posting. Here's how Reviewly delivers on all three."
+      featurePoints={[
+        "Paste-and-generate interface — no complex setup",
+        "AI-generated responses specific to each review",
+        "Edit before posting — you control the final output",
+        "Works for every industry and business type",
+        "Free to start — upgrade when you're ready",
+        "Responses in seconds, not minutes",
+      ]}
+      examples={[
+        {
+          stars: 3,
+          review: "The food is consistently good but the online ordering experience is frustrating. The app crashes frequently and I've lost my cart twice now.",
+          response: "You're right and we hear you — losing your cart twice is genuinely frustrating and it's something we're actively working to fix. The online experience should be as good as the food itself. Thank you for sticking with us despite the tech issues. Please keep flagging these when they happen so we know what to prioritize.",
+        },
+        {
+          stars: 5,
+          review: "Fast, efficient, and the quality is consistently excellent. I've tried other tools and always come back to this one. Worth it.",
+          response: "Thank you — 'come back to this one' is exactly what we aim to be. Consistency is hard to maintain and we're glad it shows in your experience. We appreciate your loyalty and we'll keep working to deserve it!",
+        },
+      ]}
+      whyHeading="Why the Right Tool Makes You a Better Reviewer"
+      whyBody={[
+        "The difference between a business that responds to all its Google reviews and one that responds to some of them usually isn't effort — it's tooling. With the right tool in place, responding to a review takes less time than not responding, because everything is already staged and ready for you.",
+        "A good Google review response tool also improves the quality of your responses over time. Instead of writing from scratch and defaulting to the same phrases, you're working from AI drafts that are already tuned to the review content — and your edits make them even better.",
+      ]}
+      heroImage="/images/screenshots/dashboard-review-input.webp"
+      featureImage="/images/screenshots/dashboard-main.webp"
+      mobileImage="/images/screenshots/mobile-dashboard.webp"
+      heroImageAlt="Google review response tool interface"
+      featureImageAlt="Reviewly response tool dashboard"
+      mobileImageAlt="Use the Google review response tool on mobile"
+      related={[
+        { href: "/uses/google-review-response-generator", label: "Google Review Response Generator" },
+        { href: "/uses/google-review-responder", label: "Google Review Responder" },
+        { href: "/uses/ai-review-response", label: "AI Review Response" },
+        { href: "/uses/review-reply-generator", label: "Review Reply Generator" },
+      ]}
+    />
   );
 }
