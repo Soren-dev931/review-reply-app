@@ -22,7 +22,7 @@ export default function TermsPage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 prose prose-navy prose-sm max-w-none">
           <h2 className="text-xl font-bold text-navy-900 mt-8 mb-4">1. Acceptance of Terms</h2>
           <p className="text-navy-600 text-sm leading-relaxed mb-4">
-            By accessing or using Typani (&ldquo;the Service&rdquo;), operated by Rize Market LLC, doing business as Typani, you agree to be bound by these Terms of Service. If you do not agree to these terms, do not use the Service. We reserve the right to update these terms at any time, and your continued use constitutes acceptance of any changes.
+            By accessing or using Typani (&ldquo;the Service&rdquo;), operated by Rize Market LLC D/B/A Typani, you agree to be bound by these Terms of Service. If you do not agree to these terms, do not use the Service. We reserve the right to update these terms at any time, and your continued use constitutes acceptance of any changes.
           </p>
 
           <h2 className="text-xl font-bold text-navy-900 mt-8 mb-4">2. Account Registration</h2>
@@ -42,17 +42,17 @@ export default function TermsPage() {
 
           <h2 className="text-xl font-bold text-navy-900 mt-8 mb-4">5. AI-Generated Content Disclaimer</h2>
           <p className="text-navy-600 text-sm leading-relaxed mb-4">
-            Typani uses artificial intelligence to generate review response suggestions. All AI-generated content is provided as a starting point and should be reviewed by you before publication. Rize Market LLC, doing business as Typani does not guarantee the accuracy, completeness, or appropriateness of any AI-generated content. You are solely responsible for reviewing, editing, and approving all content before posting it publicly. AI-generated responses may not comply with industry-specific regulations (such as HIPAA for healthcare) without proper review and modification by qualified personnel.
+            Typani uses artificial intelligence to generate review response suggestions. All AI-generated content is provided as a starting point and should be reviewed by you before publication. Rize Market LLC D/B/A Typani does not guarantee the accuracy, completeness, or appropriateness of any AI-generated content. You are solely responsible for reviewing, editing, and approving all content before posting it publicly. AI-generated responses may not comply with industry-specific regulations (such as HIPAA for healthcare) without proper review and modification by qualified personnel.
           </p>
 
           <h2 className="text-xl font-bold text-navy-900 mt-8 mb-4">6. Intellectual Property</h2>
           <p className="text-navy-600 text-sm leading-relaxed mb-4">
-            The Service, including its design, features, and content (excluding user-submitted content), is the property of Rize Market LLC, doing business as Typani and is protected by copyright, trademark, and other intellectual property laws. You retain ownership of any review text you submit to the Service. By using the Service, you grant Rize Market LLC, doing business as Typani a limited, non-exclusive license to process your submitted content solely for the purpose of generating responses.
+            The Service, including its design, features, and content (excluding user-submitted content), is the property of Rize Market LLC D/B/A Typani and is protected by copyright, trademark, and other intellectual property laws. You retain ownership of any review text you submit to the Service. By using the Service, you grant Rize Market LLC D/B/A Typani a limited, non-exclusive license to process your submitted content solely for the purpose of generating responses.
           </p>
 
           <h2 className="text-xl font-bold text-navy-900 mt-8 mb-4">7. Limitation of Liability</h2>
           <p className="text-navy-600 text-sm leading-relaxed mb-4">
-            To the maximum extent permitted by law, Rize Market LLC, doing business as Typani shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, revenue, data, or business opportunities, arising from your use of or inability to use the Service. Our total liability for any claim arising from these Terms or your use of the Service shall not exceed the amount you paid to us in the twelve (12) months preceding the claim. The Service is provided &ldquo;as is&rdquo; and &ldquo;as available&rdquo; without warranties of any kind, either express or implied.
+            To the maximum extent permitted by law, Rize Market LLC D/B/A Typani shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, revenue, data, or business opportunities, arising from your use of or inability to use the Service. Our total liability for any claim arising from these Terms or your use of the Service shall not exceed the amount you paid to us in the twelve (12) months preceding the claim. The Service is provided &ldquo;as is&rdquo; and &ldquo;as available&rdquo; without warranties of any kind, either express or implied.
           </p>
 
           <h2 className="text-xl font-bold text-navy-900 mt-8 mb-4">8. Termination</h2>
@@ -70,7 +70,7 @@ export default function TermsPage() {
             If you have questions about these Terms of Service, please contact us at:
           </p>
           <p className="text-navy-600 text-sm leading-relaxed">
-            Rize Market LLC, doing business as Typani<br />
+            Rize Market LLC D/B/A Typani<br />
             support@typani.com
           </p>
         </div>

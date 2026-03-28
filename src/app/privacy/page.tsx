@@ -22,7 +22,7 @@ export default function PrivacyPage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 prose prose-navy prose-sm max-w-none">
           <h2 className="text-xl font-bold text-navy-900 mt-8 mb-4">1. Introduction</h2>
           <p className="text-navy-600 text-sm leading-relaxed mb-4">
-            Rize Market LLC, doing business as Typani (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) operates Typani. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our Service. Please read this policy carefully. By using the Service, you consent to the practices described herein.
+            Rize Market LLC D/B/A Typani (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) operates Typani. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our Service. Please read this policy carefully. By using the Service, you consent to the practices described herein.
           </p>
 
           <h2 className="text-xl font-bold text-navy-900 mt-8 mb-4">2. Information We Collect</h2>
@@ -97,7 +97,7 @@ export default function PrivacyPage() {
             If you have questions or concerns about this Privacy Policy or our data practices, please contact us at:
           </p>
           <p className="text-navy-600 text-sm leading-relaxed">
-            Rize Market LLC, doing business as Typani<br />
+            Rize Market LLC D/B/A Typani<br />
             support@typani.com
           </p>
         </div>

@@ -92,7 +92,7 @@ export default function CookiesPage() {
             If you have questions about our use of cookies, please contact us at:
           </p>
           <p className="text-navy-600 text-sm leading-relaxed">
-            Rize Market LLC, doing business as Typani<br />
+            Rize Market LLC D/B/A Typani<br />
             support@typani.com
           </p>
         </div>
