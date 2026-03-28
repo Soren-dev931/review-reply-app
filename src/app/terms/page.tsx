@@ -14,7 +14,7 @@ export default function TermsPage() {
       <section className="bg-gradient-to-b from-navy-900 to-navy-800 text-white py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight">Terms of Service</h1>
-          <p className="mt-4 text-navy-300">Last updated: March 2025</p>
+          <p className="mt-4 text-navy-300">Last updated: March 2026</p>
         </div>
       </section>
 
@@ -22,12 +22,12 @@ export default function TermsPage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 prose prose-navy prose-sm max-w-none">
           <h2 className="text-xl font-bold text-navy-900 mt-8 mb-4">1. Acceptance of Terms</h2>
           <p className="text-navy-600 text-sm leading-relaxed mb-4">
-            By accessing or using Typani (&ldquo;the Service&rdquo;), operated by [COMPANY_NAME], you agree to be bound by these Terms of Service. If you do not agree to these terms, do not use the Service. We reserve the right to update these terms at any time, and your continued use constitutes acceptance of any changes.
+            By accessing or using Typani (&ldquo;the Service&rdquo;), operated by Rize Market LLC, doing business as Typani, you agree to be bound by these Terms of Service. If you do not agree to these terms, do not use the Service. We reserve the right to update these terms at any time, and your continued use constitutes acceptance of any changes.
           </p>
 
           <h2 className="text-xl font-bold text-navy-900 mt-8 mb-4">2. Account Registration</h2>
           <p className="text-navy-600 text-sm leading-relaxed mb-4">
-            To access certain features of the Service, you must create an account. You agree to provide accurate, current, and complete information during registration and to keep your account information updated. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. Notify us immediately at [SUPPORT_EMAIL] if you suspect unauthorized access.
+            To access certain features of the Service, you must create an account. You agree to provide accurate, current, and complete information during registration and to keep your account information updated. You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. Notify us immediately at support@typani.com if you suspect unauthorized access.
           </p>
 
           <h2 className="text-xl font-bold text-navy-900 mt-8 mb-4">3. Subscription and Billing</h2>
@@ -42,22 +42,22 @@ export default function TermsPage() {
 
           <h2 className="text-xl font-bold text-navy-900 mt-8 mb-4">5. AI-Generated Content Disclaimer</h2>
           <p className="text-navy-600 text-sm leading-relaxed mb-4">
-            Typani uses artificial intelligence to generate review response suggestions. All AI-generated content is provided as a starting point and should be reviewed by you before publication. [COMPANY_NAME] does not guarantee the accuracy, completeness, or appropriateness of any AI-generated content. You are solely responsible for reviewing, editing, and approving all content before posting it publicly. AI-generated responses may not comply with industry-specific regulations (such as HIPAA for healthcare) without proper review and modification by qualified personnel.
+            Typani uses artificial intelligence to generate review response suggestions. All AI-generated content is provided as a starting point and should be reviewed by you before publication. Rize Market LLC, doing business as Typani does not guarantee the accuracy, completeness, or appropriateness of any AI-generated content. You are solely responsible for reviewing, editing, and approving all content before posting it publicly. AI-generated responses may not comply with industry-specific regulations (such as HIPAA for healthcare) without proper review and modification by qualified personnel.
           </p>
 
           <h2 className="text-xl font-bold text-navy-900 mt-8 mb-4">6. Intellectual Property</h2>
           <p className="text-navy-600 text-sm leading-relaxed mb-4">
-            The Service, including its design, features, and content (excluding user-submitted content), is the property of [COMPANY_NAME] and is protected by copyright, trademark, and other intellectual property laws. You retain ownership of any review text you submit to the Service. By using the Service, you grant [COMPANY_NAME] a limited, non-exclusive license to process your submitted content solely for the purpose of generating responses.
+            The Service, including its design, features, and content (excluding user-submitted content), is the property of Rize Market LLC, doing business as Typani and is protected by copyright, trademark, and other intellectual property laws. You retain ownership of any review text you submit to the Service. By using the Service, you grant Rize Market LLC, doing business as Typani a limited, non-exclusive license to process your submitted content solely for the purpose of generating responses.
           </p>
 
           <h2 className="text-xl font-bold text-navy-900 mt-8 mb-4">7. Limitation of Liability</h2>
           <p className="text-navy-600 text-sm leading-relaxed mb-4">
-            To the maximum extent permitted by law, [COMPANY_NAME] shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, revenue, data, or business opportunities, arising from your use of or inability to use the Service. Our total liability for any claim arising from these Terms or your use of the Service shall not exceed the amount you paid to us in the twelve (12) months preceding the claim. The Service is provided &ldquo;as is&rdquo; and &ldquo;as available&rdquo; without warranties of any kind, either express or implied.
+            To the maximum extent permitted by law, Rize Market LLC, doing business as Typani shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to loss of profits, revenue, data, or business opportunities, arising from your use of or inability to use the Service. Our total liability for any claim arising from these Terms or your use of the Service shall not exceed the amount you paid to us in the twelve (12) months preceding the claim. The Service is provided &ldquo;as is&rdquo; and &ldquo;as available&rdquo; without warranties of any kind, either express or implied.
           </p>
 
           <h2 className="text-xl font-bold text-navy-900 mt-8 mb-4">8. Termination</h2>
           <p className="text-navy-600 text-sm leading-relaxed mb-4">
-            We may suspend or terminate your access to the Service at any time, with or without cause, and with or without notice. You may terminate your account at any time by contacting us at [SUPPORT_EMAIL] or through your account settings. Upon termination, your right to use the Service ceases immediately. Provisions that by their nature should survive termination shall survive, including but not limited to intellectual property, limitation of liability, and governing law.
+            We may suspend or terminate your access to the Service at any time, with or without cause, and with or without notice. You may terminate your account at any time by contacting us at support@typani.com or through your account settings. Upon termination, your right to use the Service ceases immediately. Provisions that by their nature should survive termination shall survive, including but not limited to intellectual property, limitation of liability, and governing law.
           </p>
 
           <h2 className="text-xl font-bold text-navy-900 mt-8 mb-4">9. Governing Law</h2>
@@ -70,9 +70,8 @@ export default function TermsPage() {
             If you have questions about these Terms of Service, please contact us at:
           </p>
           <p className="text-navy-600 text-sm leading-relaxed">
-            [COMPANY_NAME]<br />
-            [ADDRESS]<br />
-            [SUPPORT_EMAIL]
+            Rize Market LLC, doing business as Typani<br />
+            support@typani.com
           </p>
         </div>
       </section>

@@ -14,7 +14,7 @@ export default function PrivacyPage() {
       <section className="bg-gradient-to-b from-navy-900 to-navy-800 text-white py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight">Privacy Policy</h1>
-          <p className="mt-4 text-navy-300">Last updated: March 2025</p>
+          <p className="mt-4 text-navy-300">Last updated: March 2026</p>
         </div>
       </section>
 
@@ -22,7 +22,7 @@ export default function PrivacyPage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 prose prose-navy prose-sm max-w-none">
           <h2 className="text-xl font-bold text-navy-900 mt-8 mb-4">1. Introduction</h2>
           <p className="text-navy-600 text-sm leading-relaxed mb-4">
-            [COMPANY_NAME] (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) operates Typani. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our Service. Please read this policy carefully. By using the Service, you consent to the practices described herein.
+            Rize Market LLC, doing business as Typani (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) operates Typani. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our Service. Please read this policy carefully. By using the Service, you consent to the practices described herein.
           </p>
 
           <h2 className="text-xl font-bold text-navy-900 mt-8 mb-4">2. Information We Collect</h2>
@@ -84,7 +84,7 @@ export default function PrivacyPage() {
 
           <h2 className="text-xl font-bold text-navy-900 mt-8 mb-4">9. Your Rights</h2>
           <p className="text-navy-600 text-sm leading-relaxed mb-4">
-            Depending on your jurisdiction, you may have the following rights regarding your personal data: (a) the right to access the personal data we hold about you; (b) the right to request correction of inaccurate data; (c) the right to request deletion of your data; (d) the right to data portability; (e) the right to opt out of certain data processing activities; and (f) the right to withdraw consent at any time. To exercise any of these rights, please contact us at [SUPPORT_EMAIL].
+            Depending on your jurisdiction, you may have the following rights regarding your personal data: (a) the right to access the personal data we hold about you; (b) the right to request correction of inaccurate data; (c) the right to request deletion of your data; (d) the right to data portability; (e) the right to opt out of certain data processing activities; and (f) the right to withdraw consent at any time. To exercise any of these rights, please contact us at support@typani.com.
           </p>
 
           <h2 className="text-xl font-bold text-navy-900 mt-8 mb-4">10. Children&apos;s Privacy</h2>
@@ -97,9 +97,8 @@ export default function PrivacyPage() {
             If you have questions or concerns about this Privacy Policy or our data practices, please contact us at:
           </p>
           <p className="text-navy-600 text-sm leading-relaxed">
-            [COMPANY_NAME]<br />
-            [ADDRESS]<br />
-            [SUPPORT_EMAIL]
+            Rize Market LLC, doing business as Typani<br />
+            support@typani.com
           </p>
         </div>
       </section>

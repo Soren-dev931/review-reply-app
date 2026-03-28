@@ -14,7 +14,7 @@ export default function CookiesPage() {
       <section className="bg-gradient-to-b from-navy-900 to-navy-800 text-white py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
           <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight">Cookie Policy</h1>
-          <p className="mt-4 text-navy-300">Last updated: March 2025</p>
+          <p className="mt-4 text-navy-300">Last updated: March 2026</p>
         </div>
       </section>
 
@@ -92,9 +92,8 @@ export default function CookiesPage() {
             If you have questions about our use of cookies, please contact us at:
           </p>
           <p className="text-navy-600 text-sm leading-relaxed">
-            [COMPANY_NAME]<br />
-            [ADDRESS]<br />
-            [SUPPORT_EMAIL]
+            Rize Market LLC, doing business as Typani<br />
+            support@typani.com
           </p>
         </div>
       </section>
