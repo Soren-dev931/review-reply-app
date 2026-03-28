@@ -44,7 +44,7 @@ export default function NavBar() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <a href="/" className="flex items-center" onClick={closeMenu}>
-          <img src="/brand/reviewly-logo.svg" alt="Typani" width={140} height={38} className="h-9 w-auto" />
+          <img src="/brand/typani-logo.svg" alt="Typani" width={140} height={38} className="h-9 w-auto" />
         </a>
 
         {/* Desktop center links */}
