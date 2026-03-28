@@ -8,6 +8,38 @@ export const metadata: Metadata = {
   verification: {
     google: "-KSVZVUBBqLmOjFo7WMUs-njzctGSF7Tp5q_wr5Wqg0",
   },
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+    other: [
+      { rel: "manifest", url: "/site.webmanifest" },
+    ],
+  },
+  openGraph: {
+    title: "Reviewly — AI Review Response Generator",
+    description: "Generate professional responses to Google reviews in seconds. Free to start.",
+    url: "https://thereviewly.io",
+    siteName: "Reviewly",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Reviewly — AI Review Response Generator",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Reviewly — AI Review Response Generator",
+    description: "Generate professional responses to Google reviews in seconds. Free to start.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({
@@ -26,9 +58,8 @@ export default function RootLayout({
           <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
             <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
               <div className="col-span-2 md:col-span-1">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="text-xl">💬</span>
-                  <span className="text-lg font-bold text-white">Reviewly</span>
+                <div className="mb-3">
+                  <img src="/brand/reviewly-logo-dark.svg" alt="Reviewly" width={130} height={36} className="h-9 w-auto" />
                 </div>
                 <p className="text-sm text-navy-400 mb-4">
                   AI-powered review responses that sound like you, not a robot.
