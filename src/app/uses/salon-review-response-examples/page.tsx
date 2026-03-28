@@ -3,7 +3,7 @@ import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Salon Review Response Examples | Reviewly",
+    title: "Salon Review Response Examples | Typani",
     description: "See how hair salons and beauty salons should respond to Google reviews. Real examples for handling client complaints, color issues, and 5-star praise.",
   };
 }
@@ -45,7 +45,7 @@ export default function SalonReviewResponseExamples() {
       featureImage="/images/screenshots/reviews-dashboard.webp"
       mobileImage="/images/screenshots/mobile-dashboard.webp"
       heroImageAlt="Salon review response dashboard"
-      featureImageAlt="Managing salon client reviews in Reviewly"
+      featureImageAlt="Managing salon client reviews in Typani"
       mobileImageAlt="Respond to salon reviews on your phone"
       related={[
         { href: "/uses/spa-review-response-examples", label: "Spa Review Response Examples" },

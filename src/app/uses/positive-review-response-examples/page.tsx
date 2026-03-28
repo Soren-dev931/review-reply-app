@@ -3,7 +3,7 @@ import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Positive Review Response Examples | Reviewly",
+    title: "Positive Review Response Examples | Typani",
     description: "See real examples of how to respond to positive Google reviews. Thoughtful, specific replies that build loyalty and encourage more 5-star feedback.",
   };
 }
@@ -45,7 +45,7 @@ export default function PositiveReviewResponseExamples() {
       featureImage="/images/screenshots/dashboard-recent-responses.webp"
       mobileImage="/images/screenshots/mobile-dashboard.webp"
       heroImageAlt="Positive review response examples dashboard"
-      featureImageAlt="Responding to positive reviews in Reviewly"
+      featureImageAlt="Responding to positive reviews in Typani"
       mobileImageAlt="Respond to positive reviews on mobile"
       related={[
         { href: "/uses/5-star-review-response-examples", label: "5-Star Review Response Examples" },

@@ -3,7 +3,7 @@ import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Customer Service Negative Review Response Examples | Reviewly",
+    title: "Customer Service Negative Review Response Examples | Typani",
     description: "Learn how to respond when customers complain about customer service in Google reviews. Real examples that de-escalate tension and rebuild trust.",
   };
 }

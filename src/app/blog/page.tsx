@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Blog — Review Response Tips and Guides | Reviewly",
+    title: "Blog — Review Response Tips and Guides | Typani",
     description: "Practical guides on responding to Google reviews, improving local SEO, and handling customer feedback. Tips for every business owner.",
   };
 }
@@ -47,7 +47,7 @@ export default function BlogHub() {
       </div>
 
       <div className="mt-12 text-center">
-        <p className="text-navy-600 mb-4">Want to see Reviewly in action?</p>
+        <p className="text-navy-600 mb-4">Want to see Typani in action?</p>
         <a href="/#demo" className="btn-primary inline-block">
           Generate a Response Free
         </a>

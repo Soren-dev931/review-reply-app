@@ -3,7 +3,7 @@ import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Gym Review Response Examples | Reviewly",
+    title: "Gym Review Response Examples | Typani",
     description: "See how fitness centers and gyms should respond to Google reviews. Real examples for handling equipment complaints, class cancellations, and member praise.",
   };
 }
@@ -45,7 +45,7 @@ export default function GymReviewResponseExamples() {
       featureImage="/images/screenshots/reviews-dashboard.webp"
       mobileImage="/images/screenshots/mobile-dashboard.webp"
       heroImageAlt="Gym review response dashboard for fitness centers"
-      featureImageAlt="Managing gym member reviews in Reviewly"
+      featureImageAlt="Managing gym member reviews in Typani"
       mobileImageAlt="Respond to gym reviews on your phone"
       related={[
         { href: "/uses/negative-review-response-examples", label: "Negative Review Response Examples" },

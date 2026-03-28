@@ -3,8 +3,8 @@ import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Google Review Responder | Reviewly",
-    description: "Respond to all your Google reviews faster with AI. Reviewly generates professional, personalized responses for every review — ready to post in seconds.",
+    title: "Google Review Responder | Typani",
+    description: "Respond to all your Google reviews faster with AI. Typani generates professional, personalized responses for every review — ready to post in seconds.",
   };
 }
 
@@ -13,9 +13,9 @@ export default function GoogleReviewResponder() {
     <UsesPageLayout
       badge="AI Tools"
       h1="Google Review Responder — Reply to Every Review Faster"
-      tagline="Reviewly's AI-powered Google review responder generates professional replies for every review — so you can stay on top of your reputation without the time drain."
+      tagline="Typani's AI-powered Google review responder generates professional replies for every review — so you can stay on top of your reputation without the time drain."
       featureHeading="How the Google Review Responder Works"
-      featureBody="Paste any Google review — or connect your Google Business Profile — and Reviewly generates a response that's personalized, professional, and ready to post in seconds."
+      featureBody="Paste any Google review — or connect your Google Business Profile — and Typani generates a response that's personalized, professional, and ready to post in seconds."
       featurePoints={[
         "AI reads the full review before generating a response",
         "Tailored to the star rating and review content",
@@ -45,7 +45,7 @@ export default function GoogleReviewResponder() {
       featureImage="/images/screenshots/dashboard-main.webp"
       mobileImage="/images/screenshots/mobile-dashboard.webp"
       heroImageAlt="Google review responder interface"
-      featureImageAlt="Reviewly Google review responder dashboard"
+      featureImageAlt="Typani Google review responder dashboard"
       mobileImageAlt="Google review responder on mobile"
       related={[
         { href: "/uses/ai-review-responder", label: "AI Review Responder" },

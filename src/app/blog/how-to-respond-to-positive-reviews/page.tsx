@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "How to Respond to Positive Reviews — Examples That Build Loyalty | Reviewly",
-    description: "How to respond to positive reviews with examples. Learn to write warm, specific replies that turn happy customers into loyal ones. Generate responses with Reviewly.",
+    title: "How to Respond to Positive Reviews — Examples That Build Loyalty | Typani",
+    description: "How to respond to positive reviews with examples. Learn to write warm, specific replies that turn happy customers into loyal ones. Generate responses with Typani.",
   };
 }
 
@@ -96,21 +96,21 @@ export default function HowToRespondToPositiveReviews() {
         <p className="text-navy-700">"Our housekeeping team takes cleanliness seriously — they'll love hearing this. And the breakfast team puts in work every morning. Thanks for noticing."</p>
       </div>
 
-      {/* IMAGE: Reviewly generating positive review responses for multiple industries */}
+      {/* IMAGE: Typani generating positive review responses for multiple industries */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
                   src="/images/screenshots/dashboard-5star-response.webp"
-                  alt="Reviewly generating positive review responses - how to respond to positive reviews"
+                  alt="Typani generating positive review responses - how to respond to positive reviews"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
               </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Let Reviewly Handle It
+        Let Typani Handle It
       </h2>
       <p className="text-navy-700 mb-4">
-        Writing positive review responses gets repetitive. You want each one to feel personal but you've got 15 reviews to get through. Reviewly reads each review and generates a unique, specific response.
+        Writing positive review responses gets repetitive. You want each one to feel personal but you've got 15 reviews to get through. Typani reads each review and generates a unique, specific response.
       </p>
       <p className="text-navy-700 mb-8">
         Paste the review, get a reply, post it. Every happy customer gets a response that feels written just for them.

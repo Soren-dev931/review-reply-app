@@ -3,7 +3,7 @@ import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Apartment Review Response Examples | Reviewly",
+    title: "Apartment Review Response Examples | Typani",
     description: "Learn how property managers should respond to apartment reviews on Google. Real examples for handling maintenance complaints, move-in issues, and 5-star praise.",
   };
 }
@@ -45,7 +45,7 @@ export default function ApartmentReviewResponseExamples() {
       featureImage="/images/screenshots/reviews-dashboard.webp"
       mobileImage="/images/screenshots/mobile-dashboard.webp"
       heroImageAlt="Apartment review response dashboard for property managers"
-      featureImageAlt="Managing apartment reviews in Reviewly"
+      featureImageAlt="Managing apartment reviews in Typani"
       mobileImageAlt="Respond to apartment reviews on your phone"
       related={[
         { href: "/uses/negative-review-response-examples", label: "Negative Review Response Examples" },

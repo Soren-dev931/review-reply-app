@@ -3,8 +3,8 @@ import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Review Response Examples | Reviewly",
-    description: "See real review response examples for any star rating or industry. Use them as inspiration or generate your own instantly with Reviewly's AI.",
+    title: "Review Response Examples | Typani",
+    description: "See real review response examples for any star rating or industry. Use them as inspiration or generate your own instantly with Typani's AI.",
   };
 }
 
@@ -39,13 +39,13 @@ export default function ReviewResponseExamples() {
       whyHeading="How Review Response Examples Help You Get Better"
       whyBody={[
         "Seeing strong review response examples is one of the fastest ways to improve your own. Most business owners have never been formally taught how to respond to reviews — they default to what feels natural, which is often either too formal or too defensive. Good examples recalibrate your instincts.",
-        "The even faster path is using Reviewly's AI generator to create responses tailored to each actual review. You still benefit from seeing examples — they help you recognize quality and know when to adjust a generated response — but you don't have to write from scratch every time.",
+        "The even faster path is using Typani's AI generator to create responses tailored to each actual review. You still benefit from seeing examples — they help you recognize quality and know when to adjust a generated response — but you don't have to write from scratch every time.",
       ]}
       heroImage="/images/screenshots/dashboard-main.webp"
       featureImage="/images/screenshots/dashboard-5star-response.webp"
       mobileImage="/images/screenshots/mobile-dashboard.webp"
       heroImageAlt="Review response examples library"
-      featureImageAlt="Example review responses in Reviewly"
+      featureImageAlt="Example review responses in Typani"
       mobileImageAlt="Browse review response examples on mobile"
       related={[
         { href: "/uses/google-review-response-examples", label: "Google Review Response Examples" },

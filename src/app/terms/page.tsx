@@ -2,9 +2,9 @@ import { Metadata } from 'next'
 
 export function generateMetadata(): Metadata {
   return {
-    title: 'Terms of Service | Reviewly',
+    title: 'Terms of Service | Typani',
     description:
-      'Reviewly Terms of Service. Read our terms covering account registration, subscriptions, acceptable use, AI-generated content, and more.',
+      'Typani Terms of Service. Read our terms covering account registration, subscriptions, acceptable use, AI-generated content, and more.',
   }
 }
 
@@ -22,7 +22,7 @@ export default function TermsPage() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 prose prose-navy prose-sm max-w-none">
           <h2 className="text-xl font-bold text-navy-900 mt-8 mb-4">1. Acceptance of Terms</h2>
           <p className="text-navy-600 text-sm leading-relaxed mb-4">
-            By accessing or using Reviewly (&ldquo;the Service&rdquo;), operated by [COMPANY_NAME], you agree to be bound by these Terms of Service. If you do not agree to these terms, do not use the Service. We reserve the right to update these terms at any time, and your continued use constitutes acceptance of any changes.
+            By accessing or using Typani (&ldquo;the Service&rdquo;), operated by [COMPANY_NAME], you agree to be bound by these Terms of Service. If you do not agree to these terms, do not use the Service. We reserve the right to update these terms at any time, and your continued use constitutes acceptance of any changes.
           </p>
 
           <h2 className="text-xl font-bold text-navy-900 mt-8 mb-4">2. Account Registration</h2>
@@ -32,7 +32,7 @@ export default function TermsPage() {
 
           <h2 className="text-xl font-bold text-navy-900 mt-8 mb-4">3. Subscription and Billing</h2>
           <p className="text-navy-600 text-sm leading-relaxed mb-4">
-            Reviewly offers both free and paid subscription plans. Paid plans are billed on a recurring basis (monthly or annually) as selected at the time of purchase. Payments are processed through Stripe. By subscribing to a paid plan, you authorize us to charge your payment method on a recurring basis until you cancel. You may cancel your subscription at any time through your account settings. Cancellations take effect at the end of the current billing period. Refunds are provided at our discretion and in accordance with applicable law.
+            Typani offers both free and paid subscription plans. Paid plans are billed on a recurring basis (monthly or annually) as selected at the time of purchase. Payments are processed through Stripe. By subscribing to a paid plan, you authorize us to charge your payment method on a recurring basis until you cancel. You may cancel your subscription at any time through your account settings. Cancellations take effect at the end of the current billing period. Refunds are provided at our discretion and in accordance with applicable law.
           </p>
 
           <h2 className="text-xl font-bold text-navy-900 mt-8 mb-4">4. Acceptable Use</h2>
@@ -42,7 +42,7 @@ export default function TermsPage() {
 
           <h2 className="text-xl font-bold text-navy-900 mt-8 mb-4">5. AI-Generated Content Disclaimer</h2>
           <p className="text-navy-600 text-sm leading-relaxed mb-4">
-            Reviewly uses artificial intelligence to generate review response suggestions. All AI-generated content is provided as a starting point and should be reviewed by you before publication. [COMPANY_NAME] does not guarantee the accuracy, completeness, or appropriateness of any AI-generated content. You are solely responsible for reviewing, editing, and approving all content before posting it publicly. AI-generated responses may not comply with industry-specific regulations (such as HIPAA for healthcare) without proper review and modification by qualified personnel.
+            Typani uses artificial intelligence to generate review response suggestions. All AI-generated content is provided as a starting point and should be reviewed by you before publication. [COMPANY_NAME] does not guarantee the accuracy, completeness, or appropriateness of any AI-generated content. You are solely responsible for reviewing, editing, and approving all content before posting it publicly. AI-generated responses may not comply with industry-specific regulations (such as HIPAA for healthcare) without proper review and modification by qualified personnel.
           </p>
 
           <h2 className="text-xl font-bold text-navy-900 mt-8 mb-4">6. Intellectual Property</h2>

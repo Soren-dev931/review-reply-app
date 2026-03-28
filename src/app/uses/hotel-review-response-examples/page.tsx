@@ -3,7 +3,7 @@ import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Hotel Review Response Examples | Reviewly",
+    title: "Hotel Review Response Examples | Typani",
     description: "See how hotels should respond to Google reviews. Real examples for handling room complaints, service issues, and glowing guest feedback.",
   };
 }
@@ -45,7 +45,7 @@ export default function HotelReviewResponseExamples() {
       featureImage="/images/screenshots/reviews-dashboard.webp"
       mobileImage="/images/screenshots/mobile-dashboard.webp"
       heroImageAlt="Hotel review response dashboard"
-      featureImageAlt="Managing hotel guest reviews in Reviewly"
+      featureImageAlt="Managing hotel guest reviews in Typani"
       mobileImageAlt="Respond to hotel reviews from your phone"
       related={[
         { href: "/uses/negative-hotel-review-response-template", label: "Negative Hotel Review Templates" },

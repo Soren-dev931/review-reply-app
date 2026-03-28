@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Support — Reviewly',
-  description: 'Get help with your Reviewly account, settings, and common questions.',
+  title: 'Support — Typani',
+  description: 'Get help with your Typani account, settings, and common questions.',
 }
 
 const FAQ_ITEMS = [
@@ -24,7 +24,7 @@ const FAQ_ITEMS = [
   {
     question: 'How do I upgrade or cancel my plan?',
     answer:
-      'Go to Settings to upgrade. To cancel, email support@thereviewly.io and we\'ll handle it within 24 hours.',
+      'Go to Settings to upgrade. To cancel, email support@typani.com and we\'ll handle it within 24 hours.',
   },
   {
     question: 'Can I export my response history?',
@@ -47,10 +47,10 @@ export default function SupportPage() {
           hours.
         </p>
         <a
-          href="mailto:support@thereviewly.io"
+          href="mailto:support@typani.com"
           className="text-emerald-600 hover:text-emerald-700 font-medium transition-colors"
         >
-          support@thereviewly.io
+          support@typani.com
         </a>
       </div>
 

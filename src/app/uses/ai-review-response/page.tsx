@@ -3,8 +3,8 @@ import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "AI Review Response Generator | Reviewly",
-    description: "Generate professional AI review responses for Google reviews. Reviewly creates personalized, brand-appropriate replies for any review in seconds.",
+    title: "AI Review Response Generator | Typani",
+    description: "Generate professional AI review responses for Google reviews. Typani creates personalized, brand-appropriate replies for any review in seconds.",
   };
 }
 
@@ -13,9 +13,9 @@ export default function AiReviewResponse() {
     <UsesPageLayout
       badge="AI Tools"
       h1="AI Review Response Generator"
-      tagline="Generate a professional, personalized response to any Google review in seconds. Reviewly's AI reads the review and writes a reply that sounds like you — not a bot."
+      tagline="Generate a professional, personalized response to any Google review in seconds. Typani's AI reads the review and writes a reply that sounds like you — not a bot."
       featureHeading="What AI Review Response Gets Right"
-      featureBody="The problem with most review response tools is they produce obvious templates. Reviewly generates responses that actually reflect what the reviewer said — specific, genuine, and ready to post."
+      featureBody="The problem with most review response tools is they produce obvious templates. Typani generates responses that actually reflect what the reviewer said — specific, genuine, and ready to post."
       featurePoints={[
         "Context-aware: reads the full review before generating a response",
         "Tone-matched: empathetic for negatives, warm for positives",
@@ -38,14 +38,14 @@ export default function AiReviewResponse() {
       ]}
       whyHeading="The Case for AI in Review Response"
       whyBody={[
-        "Writing a unique, genuine response to every review takes time that most business owners simply don't have. AI review response tools solve the time problem without creating a new one — responses that feel robotic or dishonest. Reviewly strikes that balance by generating replies that are specific, personalized, and easy to publish.",
+        "Writing a unique, genuine response to every review takes time that most business owners simply don't have. AI review response tools solve the time problem without creating a new one — responses that feel robotic or dishonest. Typani strikes that balance by generating replies that are specific, personalized, and easy to publish.",
         "Consistent review responses also help your business rank better in local search. Google sees review engagement as a signal of business activity and credibility. By responding to every review — positive or negative — you're investing in your visibility as well as your reputation.",
       ]}
       heroImage="/images/screenshots/dashboard-review-input.webp"
       featureImage="/images/screenshots/dashboard-main.webp"
       mobileImage="/images/screenshots/mobile-dashboard.webp"
       heroImageAlt="AI review response generator dashboard"
-      featureImageAlt="Reviewly overview for AI review responses"
+      featureImageAlt="Typani overview for AI review responses"
       mobileImageAlt="Generate AI review responses on mobile"
       related={[
         { href: "/uses/ai-review-response-generator", label: "AI Review Response Generator" },

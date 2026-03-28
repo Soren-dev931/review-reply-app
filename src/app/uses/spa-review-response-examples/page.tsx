@@ -3,7 +3,7 @@ import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Spa Review Response Examples | Reviewly",
+    title: "Spa Review Response Examples | Typani",
     description: "See how spas should respond to Google reviews. Real examples for handling service complaints, therapist issues, and glowing guest experiences.",
   };
 }
@@ -45,7 +45,7 @@ export default function SpaReviewResponseExamples() {
       featureImage="/images/screenshots/reviews-dashboard.webp"
       mobileImage="/images/screenshots/mobile-dashboard.webp"
       heroImageAlt="Spa review response dashboard"
-      featureImageAlt="Managing spa guest reviews in Reviewly"
+      featureImageAlt="Managing spa guest reviews in Typani"
       mobileImageAlt="Respond to spa reviews from your phone"
       related={[
         { href: "/uses/salon-review-response-examples", label: "Salon Review Response Examples" },

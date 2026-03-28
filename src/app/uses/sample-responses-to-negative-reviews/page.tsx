@@ -3,8 +3,8 @@ import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Sample Responses to Negative Reviews | Reviewly",
-    description: "Browse real sample responses to negative Google reviews. Copy, adapt, or generate your own tailored response with Reviewly's AI — free to start.",
+    title: "Sample Responses to Negative Reviews | Typani",
+    description: "Browse real sample responses to negative Google reviews. Copy, adapt, or generate your own tailored response with Typani's AI — free to start.",
   };
 }
 
@@ -13,7 +13,7 @@ export default function SampleResponsesToNegativeReviews() {
     <UsesPageLayout
       badge="Negative Reviews"
       h1="Sample Responses to Negative Reviews"
-      tagline="See real-world examples of professional responses to negative reviews — then generate your own tailored response in seconds with Reviewly's AI."
+      tagline="See real-world examples of professional responses to negative reviews — then generate your own tailored response in seconds with Typani's AI."
       featureHeading="What Makes a Negative Review Response Work"
       featureBody="The best negative review responses aren't magic — they follow a consistent pattern that anyone can learn. Here's what every effective response has in common."
       featurePoints={[
@@ -39,13 +39,13 @@ export default function SampleResponsesToNegativeReviews() {
       whyHeading="How Sample Responses Improve Your Own Writing"
       whyBody={[
         "Most business owners have never been trained in review response writing — they pick it up as they go, which usually means defaulting to defensive or generic replies. Reading strong sample responses recalibrates your approach quickly. You see what good looks like, and you start recognizing when your own responses fall short.",
-        "For businesses that want to go further, Reviewly's AI generates responses tailored to each actual review — not sample-based templates. Instead of adapting a sample, you get a draft that already incorporates the specific complaint or praise from the review you're responding to. It's faster and the quality is consistently better.",
+        "For businesses that want to go further, Typani's AI generates responses tailored to each actual review — not sample-based templates. Instead of adapting a sample, you get a draft that already incorporates the specific complaint or praise from the review you're responding to. It's faster and the quality is consistently better.",
       ]}
       heroImage="/images/screenshots/reviews-dashboard.webp"
       featureImage="/images/screenshots/dashboard-main.webp"
       mobileImage="/images/screenshots/mobile-dashboard.webp"
       heroImageAlt="Sample responses to negative reviews dashboard"
-      featureImageAlt="Reviewly sample response library"
+      featureImageAlt="Typani sample response library"
       mobileImageAlt="Browse sample negative review responses on mobile"
       related={[
         { href: "/uses/negative-review-response-examples", label: "Negative Review Response Examples" },

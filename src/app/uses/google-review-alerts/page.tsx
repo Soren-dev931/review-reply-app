@@ -3,7 +3,7 @@ import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Google Review Alerts | Reviewly",
+    title: "Google Review Alerts | Typani",
     description: "Get instant alerts when a new Google review comes in. Never miss a review — and respond faster with AI-generated draft responses ready when you are.",
   };
 }
@@ -13,9 +13,9 @@ export default function GoogleReviewAlerts() {
     <UsesPageLayout
       badge="Automation"
       h1="Google Review Alerts — Get Notified Instantly"
-      tagline="Know the moment a new Google review is posted. Reviewly sends instant alerts so you can respond before the day is over — not days later."
+      tagline="Know the moment a new Google review is posted. Typani sends instant alerts so you can respond before the day is over — not days later."
       featureHeading="What Google Review Alerts Give You"
-      featureBody="Speed matters in review response. Businesses that respond within hours get better outcomes than those that respond weeks later — or not at all. Reviewly keeps you informed in real time."
+      featureBody="Speed matters in review response. Businesses that respond within hours get better outcomes than those that respond weeks later — or not at all. Typani keeps you informed in real time."
       featurePoints={[
         "Instant notifications when a new Google review is posted",
         "Alerts for all your locations in one feed",
@@ -39,7 +39,7 @@ export default function GoogleReviewAlerts() {
       whyHeading="Why Fast Review Alerts Change Your Response Rate"
       whyBody={[
         "Most businesses that check their Google reviews manually do it sporadically — maybe once a week, maybe less. That means a damaging 1-star review can sit unanswered for days or weeks, visible to every potential customer who searches for you. Real-time alerts fix that. The moment a review comes in, you know about it.",
-        "Response speed also affects the outcome of negative reviews. When you respond within a few hours, there's a much better chance the customer is still in the mindset of your interaction — and a thoughtful response can change how they feel before they've completely moved on. Reviewly makes that speed possible without requiring you to constantly refresh your Google listing.",
+        "Response speed also affects the outcome of negative reviews. When you respond within a few hours, there's a much better chance the customer is still in the mindset of your interaction — and a thoughtful response can change how they feel before they've completely moved on. Typani makes that speed possible without requiring you to constantly refresh your Google listing.",
       ]}
       heroImage="/images/screenshots/dashboard-recent-responses.webp"
       featureImage="/images/screenshots/analytics-page.webp"

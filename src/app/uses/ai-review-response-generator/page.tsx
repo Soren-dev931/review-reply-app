@@ -3,7 +3,7 @@ import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "AI Review Response Generator | Reviewly",
+    title: "AI Review Response Generator | Typani",
     description: "The best AI review response generator for Google reviews. Generate unique, professional responses to any review — free to start, no card required.",
   };
 }
@@ -14,8 +14,8 @@ export default function AiReviewResponseGenerator() {
       badge="AI Tools"
       h1="AI Review Response Generator"
       tagline="The fastest way to respond to every Google review. Paste the review, get a tailored response in seconds, and post it — done."
-      featureHeading="Why Reviewly's AI Generator Is Different"
-      featureBody="Most AI generators produce the same template with a few words swapped. Reviewly actually reads the review and writes a response that addresses what the customer said — so it doesn't read like a bot."
+      featureHeading="Why Typani's AI Generator Is Different"
+      featureBody="Most AI generators produce the same template with a few words swapped. Typani actually reads the review and writes a response that addresses what the customer said — so it doesn't read like a bot."
       featurePoints={[
         "Reads the full review for context before generating",
         "Unique responses — not recycled templates",
@@ -39,13 +39,13 @@ export default function AiReviewResponseGenerator() {
       whyHeading="Why You Need an AI Review Response Generator"
       whyBody={[
         "Even businesses with great customer service struggle to keep up with reviews. Writing a thoughtful, individual response to every review — especially when you're getting dozens a month — isn't realistic without help. An AI generator closes that gap and makes it possible to respond to every single review, every time.",
-        "But the generator is only as good as the responses it produces. Reviewly generates replies that are specific, human-sounding, and reflect your brand voice — so you can post them with confidence, not embarrassment.",
+        "But the generator is only as good as the responses it produces. Typani generates replies that are specific, human-sounding, and reflect your brand voice — so you can post them with confidence, not embarrassment.",
       ]}
       heroImage="/images/screenshots/dashboard-review-input.webp"
       featureImage="/images/screenshots/dashboard-main.webp"
       mobileImage="/images/screenshots/mobile-dashboard.webp"
       heroImageAlt="AI review response generator tool"
-      featureImageAlt="Reviewly AI generator dashboard"
+      featureImageAlt="Typani AI generator dashboard"
       mobileImageAlt="AI review response generator on mobile"
       related={[
         { href: "/uses/free-review-response-generator", label: "Free Review Response Generator" },

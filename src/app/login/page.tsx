@@ -37,7 +37,7 @@ export default function LoginPage() {
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
           <h1 className="text-2xl font-bold text-navy-900">Welcome back</h1>
-          <p className="text-navy-500 mt-2">Log in to your Reviewly account</p>
+          <p className="text-navy-500 mt-2">Log in to your Typani account</p>
         </div>
         <form onSubmit={handleLogin} className="card p-6 sm:p-8 space-y-4">
           <div>

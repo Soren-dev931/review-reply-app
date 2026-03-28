@@ -3,8 +3,8 @@ import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Review Monitoring Service | Reviewly",
-    description: "Never miss a Google review with Reviewly's review monitoring service. Get instant alerts, track your rating trends, and respond faster with AI-generated drafts.",
+    title: "Review Monitoring Service | Typani",
+    description: "Never miss a Google review with Typani's review monitoring service. Get instant alerts, track your rating trends, and respond faster with AI-generated drafts.",
   };
 }
 
@@ -13,7 +13,7 @@ export default function ReviewMonitoringService() {
     <UsesPageLayout
       badge="Review Management"
       h1="Google Review Monitoring Service"
-      tagline="Know the moment a new review comes in — positive or negative. Reviewly monitors your Google reviews around the clock and alerts you instantly so nothing gets missed."
+      tagline="Know the moment a new review comes in — positive or negative. Typani monitors your Google reviews around the clock and alerts you instantly so nothing gets missed."
       featureHeading="What Review Monitoring Gives You"
       featureBody="Review monitoring is the foundation of reputation management. Without it, you're flying blind — responding to reviews you happen to notice, and missing the ones that needed your attention most."
       featurePoints={[

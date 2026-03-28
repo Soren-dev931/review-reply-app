@@ -3,7 +3,7 @@ import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Positive Dental Review Response Examples | Reviewly",
+    title: "Positive Dental Review Response Examples | Typani",
     description: "See how dental practices should respond to 5-star Google reviews. Real examples that deepen patient loyalty and attract new patients.",
   };
 }
@@ -45,7 +45,7 @@ export default function PositiveDentalReviewResponseExamples() {
       featureImage="/images/screenshots/dashboard-recent-responses.webp"
       mobileImage="/images/screenshots/mobile-dashboard.webp"
       heroImageAlt="Positive dental review response examples"
-      featureImageAlt="Responding to positive dental reviews in Reviewly"
+      featureImageAlt="Responding to positive dental reviews in Typani"
       mobileImageAlt="Respond to positive dental reviews on mobile"
       related={[
         { href: "/uses/dental-review-response-examples", label: "Dental Review Response Examples" },

@@ -3,7 +3,7 @@ import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Automated Review Management | Reviewly",
+    title: "Automated Review Management | Typani",
     description: "Automate your Google review management workflow. Get instant alerts, AI-generated responses, and a centralized dashboard — all without the manual effort.",
   };
 }
@@ -13,9 +13,9 @@ export default function AutomatedReviewManagement() {
     <UsesPageLayout
       badge="Automation"
       h1="Automated Review Management for Google Reviews"
-      tagline="Stop manually checking for new reviews. Reviewly automates the alerts, the responses, and the tracking — so your reputation runs on autopilot."
+      tagline="Stop manually checking for new reviews. Typani automates the alerts, the responses, and the tracking — so your reputation runs on autopilot."
       featureHeading="What Automated Review Management Covers"
-      featureBody="Reviewly automates the most time-consuming parts of review management: knowing when a review comes in, figuring out what to say, and keeping track of what's been handled."
+      featureBody="Typani automates the most time-consuming parts of review management: knowing when a review comes in, figuring out what to say, and keeping track of what's been handled."
       featurePoints={[
         "Instant alerts the moment a new Google review is posted",
         "AI-generated draft responses ready for review",
@@ -32,8 +32,8 @@ export default function AutomatedReviewManagement() {
         },
         {
           stars: 5,
-          review: "I manage a chain of five coffee shops and Reviewly has been a game-changer. New review comes in, I get a ping, and there's already a draft response waiting. Takes me 30 seconds now.",
-          response: "That's exactly what we built this for! Five locations is a lot to stay on top of, and we're so glad Reviewly is making the review workflow actually manageable. If you ever want to share feedback on how we can make it even better for multi-location operators, we're all ears.",
+          review: "I manage a chain of five coffee shops and Typani has been a game-changer. New review comes in, I get a ping, and there's already a draft response waiting. Takes me 30 seconds now.",
+          response: "That's exactly what we built this for! Five locations is a lot to stay on top of, and we're so glad Typani is making the review workflow actually manageable. If you ever want to share feedback on how we can make it even better for multi-location operators, we're all ears.",
         },
       ]}
       whyHeading="Why Automation Is the Key to Consistent Review Management"

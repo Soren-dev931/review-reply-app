@@ -3,7 +3,7 @@ import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Google Review Dashboard | Reviewly",
+    title: "Google Review Dashboard | Typani",
     description: "Manage all your Google reviews from one clean dashboard. View, respond, track, and analyze reviews across all your locations — in one place.",
   };
 }
@@ -15,7 +15,7 @@ export default function GoogleReviewDashboard() {
       h1="Google Review Dashboard for Local Businesses"
       tagline="See all your Google reviews in one place — and respond to each one with AI-generated drafts that are ready in seconds."
       featureHeading="What the Google Review Dashboard Shows You"
-      featureBody="Reviewly's dashboard gives you a complete view of your review activity: new reviews, response status, rating trends, and AI-generated drafts — all in one simple interface."
+      featureBody="Typani's dashboard gives you a complete view of your review activity: new reviews, response status, rating trends, and AI-generated drafts — all in one simple interface."
       featurePoints={[
         "All reviews visible at a glance — sorted by date and star rating",
         "Response status tracking — see what's been answered and what hasn't",

@@ -3,7 +3,7 @@ import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Etsy Review Response Examples | Reviewly",
+    title: "Etsy Review Response Examples | Typani",
     description: "Learn how Etsy sellers should respond to shop reviews. See real examples for handling shipping complaints, custom order issues, and glowing buyer feedback.",
   };
 }
@@ -45,7 +45,7 @@ export default function EtsyReviewResponseExamples() {
       featureImage="/images/screenshots/reviews-dashboard.webp"
       mobileImage="/images/screenshots/mobile-dashboard.webp"
       heroImageAlt="Etsy shop review response dashboard"
-      featureImageAlt="Managing Etsy reviews in Reviewly"
+      featureImageAlt="Managing Etsy reviews in Typani"
       mobileImageAlt="Respond to Etsy reviews on mobile"
       related={[
         { href: "/uses/positive-review-response-examples", label: "Positive Review Response Examples" },

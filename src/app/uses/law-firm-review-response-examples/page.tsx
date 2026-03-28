@@ -3,7 +3,7 @@ import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Law Firm Review Response Examples | Reviewly",
+    title: "Law Firm Review Response Examples | Typani",
     description: "See how law firms should respond to Google reviews. Professional examples that maintain ethical standards while addressing client feedback effectively.",
   };
 }
@@ -45,7 +45,7 @@ export default function LawFirmReviewResponseExamples() {
       featureImage="/images/screenshots/reviews-dashboard.webp"
       mobileImage="/images/screenshots/mobile-dashboard.webp"
       heroImageAlt="Law firm review response dashboard"
-      featureImageAlt="Managing legal client reviews in Reviewly"
+      featureImageAlt="Managing legal client reviews in Typani"
       mobileImageAlt="Respond to law firm reviews on mobile"
       related={[
         { href: "/uses/medical-practice-review-response-examples", label: "Medical Practice Review Responses" },

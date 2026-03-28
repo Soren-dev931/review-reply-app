@@ -3,7 +3,7 @@ import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "AI Review Reply Generator | Reviewly",
+    title: "AI Review Reply Generator | Typani",
     description: "Generate AI replies to Google reviews instantly. Paste a review and get a professional, personalized response ready to post — free to start.",
   };
 }
@@ -15,7 +15,7 @@ export default function AiReviewReply() {
       h1="AI Review Reply Generator"
       tagline="Paste any Google review and get an AI-generated reply in seconds. Professional, specific, and nothing like a template."
       featureHeading="How AI Review Reply Works"
-      featureBody="Reviewly reads the full text of each review and generates a reply that addresses the specific feedback — not a generic response that customers can tell was auto-generated."
+      featureBody="Typani reads the full text of each review and generates a reply that addresses the specific feedback — not a generic response that customers can tell was auto-generated."
       featurePoints={[
         "Paste any review — positive, negative, or mixed",
         "AI crafts a reply tailored to the review content",
@@ -45,7 +45,7 @@ export default function AiReviewReply() {
       featureImage="/images/screenshots/dashboard-main.webp"
       mobileImage="/images/screenshots/mobile-dashboard.webp"
       heroImageAlt="AI review reply generator interface"
-      featureImageAlt="Reviewly dashboard showing AI reply generation"
+      featureImageAlt="Typani dashboard showing AI reply generation"
       mobileImageAlt="Generate AI review replies on your phone"
       related={[
         { href: "/uses/ai-google-review-reply", label: "AI Google Review Reply" },

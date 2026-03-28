@@ -3,7 +3,7 @@ import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Free Review Response Generator | Reviewly",
+    title: "Free Review Response Generator | Typani",
     description: "Generate professional Google review responses for free. Paste any review and get a ready-to-post reply in seconds — no account required to start.",
   };
 }
@@ -15,7 +15,7 @@ export default function FreeReviewResponseGenerator() {
       h1="Free Review Response Generator for Google Reviews"
       tagline="Generate a professional response to any Google review — free, fast, and no credit card required. Try it in seconds."
       featureHeading="What You Get with the Free Generator"
-      featureBody="Reviewly's free review response generator gives you everything you need to respond to any Google review — for any industry, any star rating — without paying a cent to get started."
+      featureBody="Typani's free review response generator gives you everything you need to respond to any Google review — for any industry, any star rating — without paying a cent to get started."
       featurePoints={[
         "Paste any review — positive, negative, or mixed",
         "Get a tailored response in seconds",
@@ -39,13 +39,13 @@ export default function FreeReviewResponseGenerator() {
       whyHeading="Why Free Review Response Tools Are Worth Using"
       whyBody={[
         "Responding to every Google review is one of the most impactful things a small business can do — but it only works if you actually do it. A free tool removes every excuse: you don't need a subscription, you don't need to budget for it, and you don't need to be a copywriter. You just paste the review and get a response.",
-        "The free generator is how most Reviewly users start. Once you see how much time it saves and how good the responses are, upgrading to manage all your reviews in one place becomes an easy decision. But there's no pressure — start free, stay free, upgrade when it makes sense for you.",
+        "The free generator is how most Typani users start. Once you see how much time it saves and how good the responses are, upgrading to manage all your reviews in one place becomes an easy decision. But there's no pressure — start free, stay free, upgrade when it makes sense for you.",
       ]}
       heroImage="/images/screenshots/dashboard-review-input.webp"
       featureImage="/images/screenshots/dashboard-main.webp"
       mobileImage="/images/screenshots/mobile-dashboard.webp"
       heroImageAlt="Free review response generator tool"
-      featureImageAlt="Reviewly free response generator dashboard"
+      featureImageAlt="Typani free response generator dashboard"
       mobileImageAlt="Generate free review responses on your phone"
       related={[
         { href: "/uses/ai-review-response-generator", label: "AI Review Response Generator" },

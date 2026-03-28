@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "How to Respond to Bad Reviews on Google — A Practical Guide | Reviewly",
-    description: "How to respond to bad reviews on Google without getting defensive. Step-by-step approach with examples. Plus, generate responses in 10 seconds with Reviewly.",
+    title: "How to Respond to Bad Reviews on Google — A Practical Guide | Typani",
+    description: "How to respond to bad reviews on Google without getting defensive. Step-by-step approach with examples. Plus, generate responses in 10 seconds with Typani.",
   };
 }
 
@@ -91,21 +91,21 @@ export default function HowToRespondToBadReviewsOnGoogle() {
         <p className="text-navy-700">"Being charged for unapproved work is not acceptable, and I'm sorry for the experience on the phone as well. I'd like to review the invoice and make this right. Please call me directly at [number] — ask for [name]."</p>
       </div>
 
-      {/* IMAGE: Reviewly generating a response to a bad Google review */}
+      {/* IMAGE: Typani generating a response to a bad Google review */}
       <div className="rounded-lg overflow-hidden mb-12">
                 <img
                   src="/images/screenshots/dashboard-response-generated.webp"
-                  alt="Reviewly generating a response to a bad Google review - how to respond to bad reviews on google"
+                  alt="Typani generating a response to a bad Google review - how to respond to bad reviews on google"
                   className="w-full h-auto rounded-lg"
                   loading="lazy"
                 />
               </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Or Let Reviewly Write It for You
+        Or Let Typani Write It for You
       </h2>
       <p className="text-navy-700 mb-4">
-        If writing responses to bad reviews feels stressful, Reviewly does it for you. Paste the review, select the star rating, and get a professional response in 10 seconds. It follows all the rules above automatically — empathy, specifics, offline invitation.
+        If writing responses to bad reviews feels stressful, Typani does it for you. Paste the review, select the star rating, and get a professional response in 10 seconds. It follows all the rules above automatically — empathy, specifics, offline invitation.
       </p>
       <p className="text-navy-700 mb-8">
         Try it with your worst Google review and see what it generates.

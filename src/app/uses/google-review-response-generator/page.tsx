@@ -3,7 +3,7 @@ import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Google Review Response Generator | Reviewly",
+    title: "Google Review Response Generator | Typani",
     description: "Generate professional responses to Google reviews in seconds. Paste any review and get an AI-crafted reply that's ready to post — free to start.",
   };
 }
@@ -14,8 +14,8 @@ export default function GoogleReviewResponseGenerator() {
       badge="AI Tools"
       h1="Google Review Response Generator"
       tagline="The fastest way to generate professional responses to Google reviews. Paste the review, get a response in seconds — nothing to install, free to start."
-      featureHeading="Why Reviewly's Generator Stands Out"
-      featureBody="Most review response generators produce obvious templates. Reviewly reads the actual content of each review and generates a tailored reply that sounds like it came from a real business owner."
+      featureHeading="Why Typani's Generator Stands Out"
+      featureBody="Most review response generators produce obvious templates. Typani reads the actual content of each review and generates a tailored reply that sounds like it came from a real business owner."
       featurePoints={[
         "No templates — every response is generated from the review content",
         "Handles any star rating from 1 to 5",
@@ -39,13 +39,13 @@ export default function GoogleReviewResponseGenerator() {
       whyHeading="The Value of a Fast, Quality Review Response Generator"
       whyBody={[
         "Time is the biggest obstacle to consistent review management. Businesses that don't respond to reviews almost always cite the same reason: they just don't have time to write individual responses. A generator eliminates that problem — you go from 20 minutes per response to 30 seconds, while maintaining quality.",
-        "The key is that the quality has to hold up. Generic AI generators produce responses that customers can immediately identify as automated — and that's almost as bad as no response. Reviewly generates responses specific enough to each review that they read as genuine, not canned.",
+        "The key is that the quality has to hold up. Generic AI generators produce responses that customers can immediately identify as automated — and that's almost as bad as no response. Typani generates responses specific enough to each review that they read as genuine, not canned.",
       ]}
       heroImage="/images/screenshots/dashboard-review-input.webp"
       featureImage="/images/screenshots/dashboard-main.webp"
       mobileImage="/images/screenshots/mobile-dashboard.webp"
       heroImageAlt="Google review response generator interface"
-      featureImageAlt="Reviewly review response generator dashboard"
+      featureImageAlt="Typani review response generator dashboard"
       mobileImageAlt="Generate Google review responses on mobile"
       related={[
         { href: "/uses/ai-review-response-generator", label: "AI Review Response Generator" },

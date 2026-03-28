@@ -3,7 +3,7 @@ import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "3-Star Review Response Examples | Reviewly",
+    title: "3-Star Review Response Examples | Typani",
     description: "Learn how to respond to 3-star reviews on Google. Mixed feedback is an opportunity — see real response examples that turn lukewarm ratings into loyal customers.",
   };
 }

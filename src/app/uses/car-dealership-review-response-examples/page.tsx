@@ -3,7 +3,7 @@ import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Car Dealership Review Response Examples | Reviewly",
+    title: "Car Dealership Review Response Examples | Typani",
     description: "See how car dealerships should respond to Google reviews. Real examples for handling finance complaints, service delays, and glowing sales experiences.",
   };
 }

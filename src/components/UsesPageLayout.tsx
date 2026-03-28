@@ -23,7 +23,7 @@ export interface UsesPageProps {
   featurePoints: string[];
 
   // Examples
-  examplesHeading?: string; // default "Real Examples — See What Reviewly Generates"
+  examplesHeading?: string; // default "Real Examples — See What Typani Generates"
   examplesSubtitle?: string;
   examples: [ReviewExample, ReviewExample]; // exactly 2 — negative + positive
 
@@ -56,7 +56,7 @@ export default function UsesPageLayout(props: UsesPageProps) {
     featureHeading,
     featureBody,
     featurePoints,
-    examplesHeading = "Real Examples — See What Reviewly Generates",
+    examplesHeading = "Real Examples — See What Typani Generates",
     examplesSubtitle = "Paste any review, get a reply that sounds like a real business owner — not a corporate template.",
     examples,
     whyHeading,
@@ -164,7 +164,7 @@ export default function UsesPageLayout(props: UsesPageProps) {
                 <div className="flex items-center gap-2 mb-3">
                   <span className="w-2 h-2 rounded-full bg-emerald-500 flex-shrink-0"></span>
                   <span className="text-sm font-semibold text-emerald-700 uppercase tracking-wide">
-                    Reviewly Response
+                    Typani Response
                   </span>
                 </div>
                 <p className="text-navy-700 leading-relaxed">"{ex.response}"</p>
@@ -215,7 +215,7 @@ export default function UsesPageLayout(props: UsesPageProps) {
             href="/signup"
             className="inline-block bg-white text-emerald-700 font-bold px-8 py-4 rounded-xl hover:bg-emerald-50 transition-colors text-lg"
           >
-            Try Reviewly Free
+            Try Typani Free
           </a>
         </div>
       </section>

@@ -4,13 +4,13 @@ import { createClient } from '@/lib/supabase/server'
 
 const PLANS = {
   starter: {
-    name: 'Reviewly Starter',
+    name: 'Typani Starter',
     description: '1 location, 50 AI responses/mo, auto-monitor, email alerts',
     monthly: 2900, // $29
     annual: 27800, // $278/yr (20% off)
   },
   pro: {
-    name: 'Reviewly Pro',
+    name: 'Typani Pro',
     description: 'Unlimited locations & responses, auto-post, analytics, custom brand voice',
     monthly: 7900, // $79
     annual: 75800, // $758/yr (20% off)
@@ -85,8 +85,8 @@ export async function POST(request: Request) {
           quantity: 1,
         },
       ],
-      success_url: `${process.env.NEXT_PUBLIC_APP_URL || 'https://thereviewly.io'}/app?upgraded=true`,
-      cancel_url: `${process.env.NEXT_PUBLIC_APP_URL || 'https://thereviewly.io'}/app/settings`,
+      success_url: `${process.env.NEXT_PUBLIC_APP_URL || 'https://typani.com'}/app?upgraded=true`,
+      cancel_url: `${process.env.NEXT_PUBLIC_APP_URL || 'https://typani.com'}/app/settings`,
       metadata: {
         supabase_user_id: user.id,
         plan,

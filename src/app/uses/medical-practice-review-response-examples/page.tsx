@@ -3,7 +3,7 @@ import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Medical Practice Review Response Examples | Reviewly",
+    title: "Medical Practice Review Response Examples | Typani",
     description: "See how medical practices should respond to Google reviews. HIPAA-compliant response examples for handling patient feedback professionally.",
   };
 }
@@ -45,7 +45,7 @@ export default function MedicalPracticeReviewResponseExamples() {
       featureImage="/images/screenshots/reviews-dashboard.webp"
       mobileImage="/images/screenshots/mobile-dashboard.webp"
       heroImageAlt="Medical practice review response dashboard"
-      featureImageAlt="Managing patient reviews in Reviewly"
+      featureImageAlt="Managing patient reviews in Typani"
       mobileImageAlt="Respond to medical reviews on your phone"
       related={[
         { href: "/uses/dental-review-response-examples", label: "Dental Review Response Examples" },

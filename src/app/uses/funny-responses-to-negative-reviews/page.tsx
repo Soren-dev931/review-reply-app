@@ -3,7 +3,7 @@ import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Funny Responses to Negative Reviews | Reviewly",
+    title: "Funny Responses to Negative Reviews | Typani",
     description: "See examples of clever, witty responses to negative reviews that work — without crossing the line. Learn when humor helps and when it hurts.",
   };
 }
@@ -45,7 +45,7 @@ export default function FunnyResponsesToNegativeReviews() {
       featureImage="/images/screenshots/dashboard-main.webp"
       mobileImage="/images/screenshots/mobile-dashboard.webp"
       heroImageAlt="Managing review responses with the right tone"
-      featureImageAlt="Reviewly dashboard showing response strategy"
+      featureImageAlt="Typani dashboard showing response strategy"
       mobileImageAlt="Review response strategy on mobile"
       related={[
         { href: "/uses/negative-review-response-examples", label: "Negative Review Response Examples" },

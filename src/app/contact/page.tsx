@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Contact Us — Reviewly',
-  description: 'Contact Reviewly for questions, support, or feedback about our AI review response generator. We respond within 24 hours.',
+  title: 'Contact Us — Typani',
+  description: 'Contact Typani for questions, support, or feedback about our AI review response generator. We respond within 24 hours.',
 }
 
 export default function ContactPage() {
@@ -20,10 +20,10 @@ export default function ContactPage() {
       <div className="bg-white border border-navy-100 rounded-2xl p-6 mb-8">
         <h2 className="text-lg font-semibold text-navy-900 mb-2">Email Us</h2>
         <a
-          href="mailto:support@thereviewly.io"
+          href="mailto:support@typani.com"
           className="text-emerald-600 hover:text-emerald-700 font-medium text-lg transition-colors"
         >
-          support@thereviewly.io
+          support@typani.com
         </a>
       </div>
 
@@ -32,7 +32,7 @@ export default function ContactPage() {
           Need help with your account?
         </h2>
         <p className="text-navy-600 mb-3">
-          If you&apos;re already a Reviewly user, visit our in-app support page for
+          If you&apos;re already a Typani user, visit our in-app support page for
           FAQs and account help.
         </p>
         <a
@@ -45,7 +45,7 @@ export default function ContactPage() {
 
       <div className="border-t border-navy-100 pt-8">
         <h2 className="text-lg font-semibold text-navy-900 mb-4">
-          Explore Reviewly
+          Explore Typani
         </h2>
         <div className="flex flex-col sm:flex-row gap-4">
           <a

@@ -3,7 +3,7 @@ import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Google Review Automation | Reviewly",
+    title: "Google Review Automation | Typani",
     description: "Automate your Google review workflow with AI. Get instant alerts, draft responses, and review tracking — all without manual monitoring.",
   };
 }
@@ -15,7 +15,7 @@ export default function GoogleReviewAutomation() {
       h1="Google Review Automation for Local Businesses"
       tagline="Automate the most time-consuming parts of Google review management — alerts, response drafts, and tracking — so you can focus on running your business."
       featureHeading="What Google Review Automation Includes"
-      featureBody="Reviewly automates the full review response workflow: from knowing a review was posted to having a draft response ready, all without you having to check manually."
+      featureBody="Typani automates the full review response workflow: from knowing a review was posted to having a draft response ready, all without you having to check manually."
       featurePoints={[
         "Automated alerts the moment new reviews are posted",
         "AI drafts a response immediately for your review",
@@ -39,7 +39,7 @@ export default function GoogleReviewAutomation() {
       whyHeading="Why Google Review Automation Is Worth It"
       whyBody={[
         "Manual Google review management doesn't scale. When you're busy, reviews pile up unanswered. When you finally check, you're responding to week-old complaints in a way that looks neglectful. Automation ensures you're always on top of your reputation — regardless of how busy your business gets.",
-        "The goal of review automation isn't to remove the human element — it's to reduce the friction that stops businesses from engaging at all. Reviewly gives you a draft to work from so you're never staring at a blank box, and ensures nothing slips through the cracks.",
+        "The goal of review automation isn't to remove the human element — it's to reduce the friction that stops businesses from engaging at all. Typani gives you a draft to work from so you're never staring at a blank box, and ensures nothing slips through the cracks.",
       ]}
       heroImage="/images/screenshots/dashboard-recent-responses.webp"
       featureImage="/images/screenshots/analytics-page.webp"

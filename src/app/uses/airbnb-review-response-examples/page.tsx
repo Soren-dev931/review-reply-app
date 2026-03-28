@@ -3,7 +3,7 @@ import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Airbnb Review Response Examples | Reviewly",
+    title: "Airbnb Review Response Examples | Typani",
     description: "See real examples of how to respond to Airbnb guest reviews. Professional, host-like responses that protect your Superhost status and attract future bookings.",
   };
 }
@@ -45,7 +45,7 @@ export default function AirbnbReviewResponseExamples() {
       featureImage="/images/screenshots/reviews-dashboard.webp"
       mobileImage="/images/screenshots/mobile-dashboard.webp"
       heroImageAlt="Airbnb review response dashboard for hosts"
-      featureImageAlt="Managing Airbnb reviews in Reviewly"
+      featureImageAlt="Managing Airbnb reviews in Typani"
       mobileImageAlt="Respond to Airbnb reviews on mobile"
       related={[
         { href: "/uses/hotel-review-response-examples", label: "Hotel Review Response Examples" },

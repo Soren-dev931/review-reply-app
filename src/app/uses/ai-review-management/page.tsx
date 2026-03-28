@@ -3,7 +3,7 @@ import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "AI Review Management Software | Reviewly",
+    title: "AI Review Management Software | Typani",
     description: "Manage all your Google reviews with AI. Get alerts, generate responses, and track your reputation — all from one simple dashboard.",
   };
 }
@@ -13,9 +13,9 @@ export default function AiReviewManagement() {
     <UsesPageLayout
       badge="AI Tools"
       h1="AI Review Management Software"
-      tagline="Reviewly brings all your Google reviews into one place — with AI that helps you respond faster, spot trends, and protect your reputation."
+      tagline="Typani brings all your Google reviews into one place — with AI that helps you respond faster, spot trends, and protect your reputation."
       featureHeading="What AI Review Management Includes"
-      featureBody="From getting notified the moment a new review comes in to generating a polished response in seconds, Reviewly handles the full review management workflow so you can focus on running your business."
+      featureBody="From getting notified the moment a new review comes in to generating a polished response in seconds, Typani handles the full review management workflow so you can focus on running your business."
       featurePoints={[
         "Real-time alerts when new Google reviews come in",
         "AI-generated responses for any review, any rating",
@@ -32,14 +32,14 @@ export default function AiReviewManagement() {
         },
         {
           stars: 5,
-          review: "I manage three locations and Reviewly has completely changed how I handle reviews. I used to dread opening the app. Now I actually stay on top of everything.",
-          response: "That's exactly what we built this for — thank you! Managing multiple locations is a lot, and we're glad Reviewly is making a real difference. If there's anything we can do to make the platform work even better for your team, we'd love to hear it.",
+          review: "I manage three locations and Typani has completely changed how I handle reviews. I used to dread opening the app. Now I actually stay on top of everything.",
+          response: "That's exactly what we built this for — thank you! Managing multiple locations is a lot, and we're glad Typani is making a real difference. If there's anything we can do to make the platform work even better for your team, we'd love to hear it.",
         },
       ]}
       whyHeading="Why AI Makes Review Management Smarter"
       whyBody={[
         "Traditional review management means logging into Google, reading each review, and typing a custom response — multiplied by every location, every day. AI review management compresses that workflow dramatically. You still control the voice and quality, but the heavy lifting is done for you.",
-        "For multi-location operators, the advantage is even bigger. Reviewly lets you manage all your locations from a single dashboard, so nothing slips through the cracks — even during your busiest seasons.",
+        "For multi-location operators, the advantage is even bigger. Typani lets you manage all your locations from a single dashboard, so nothing slips through the cracks — even during your busiest seasons.",
       ]}
       heroImage="/images/screenshots/dashboard-recent-responses.webp"
       featureImage="/images/screenshots/analytics-page.webp"

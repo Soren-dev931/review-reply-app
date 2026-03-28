@@ -3,7 +3,7 @@ import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Bad Review Response Examples | Reviewly",
+    title: "Bad Review Response Examples | Typani",
     description: "See real examples of professional responses to bad Google reviews. Learn what to say (and what not to say) when a customer leaves a harsh review.",
   };
 }
@@ -45,7 +45,7 @@ export default function BadReviewResponseExamples() {
       featureImage="/images/screenshots/dashboard-main.webp"
       mobileImage="/images/screenshots/mobile-dashboard.webp"
       heroImageAlt="Dashboard for managing bad Google reviews"
-      featureImageAlt="Reviewly overview for responding to bad reviews"
+      featureImageAlt="Typani overview for responding to bad reviews"
       mobileImageAlt="Respond to bad reviews from your phone"
       related={[
         { href: "/uses/negative-review-response-examples", label: "Negative Review Response Examples" },

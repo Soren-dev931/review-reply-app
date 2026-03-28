@@ -3,7 +3,7 @@ import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Restaurant Review Response Examples | Reviewly",
+    title: "Restaurant Review Response Examples | Typani",
     description: "See how restaurants should respond to Google reviews. Real examples for handling food complaints, wait time issues, and glowing dining experiences.",
   };
 }
@@ -45,7 +45,7 @@ export default function RestaurantReviewResponseExamples() {
       featureImage="/images/screenshots/reviews-dashboard.webp"
       mobileImage="/images/screenshots/mobile-dashboard.webp"
       heroImageAlt="Restaurant review response dashboard"
-      featureImageAlt="Managing restaurant Google reviews in Reviewly"
+      featureImageAlt="Managing restaurant Google reviews in Typani"
       mobileImageAlt="Respond to restaurant reviews on your phone"
       related={[
         { href: "/uses/negative-review-response-examples", label: "Negative Review Response Examples" },

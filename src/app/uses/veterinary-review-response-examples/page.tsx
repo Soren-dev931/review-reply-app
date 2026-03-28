@@ -3,7 +3,7 @@ import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Veterinary Review Response Examples | Reviewly",
+    title: "Veterinary Review Response Examples | Typani",
     description: "See how veterinary practices should respond to Google reviews. Real examples for handling pet care concerns, emergency situations, and heartfelt 5-star praise.",
   };
 }
@@ -45,7 +45,7 @@ export default function VeterinaryReviewResponseExamples() {
       featureImage="/images/screenshots/reviews-dashboard.webp"
       mobileImage="/images/screenshots/mobile-dashboard.webp"
       heroImageAlt="Veterinary review response dashboard"
-      featureImageAlt="Managing veterinary client reviews in Reviewly"
+      featureImageAlt="Managing veterinary client reviews in Typani"
       mobileImageAlt="Respond to vet reviews from your phone"
       related={[
         { href: "/uses/medical-practice-review-response-examples", label: "Medical Practice Review Responses" },

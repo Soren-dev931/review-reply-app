@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Does Responding to Google Reviews Help SEO? Yes — Here's How | Reviewly",
-    description: "Does responding to Google reviews help SEO? Google confirms it does. Learn how review responses boost local search rankings and how Reviewly makes it easy.",
+    title: "Does Responding to Google Reviews Help SEO? Yes — Here's How | Typani",
+    description: "Does responding to Google reviews help SEO? Google confirms it does. Learn how review responses boost local search rankings and how Typani makes it easy.",
   };
 }
 
@@ -89,13 +89,13 @@ export default function DoesRespondingToGoogleReviewsHelpSEO() {
               </div>
 
       <h2 className="text-2xl font-bold text-navy-900 mb-4">
-        Reviewly Makes Consistent Responding Easy
+        Typani Makes Consistent Responding Easy
       </h2>
       <p className="text-navy-700 mb-4">
         The SEO benefit comes from consistency. Responding to one review doesn't move the needle. Responding to every review, every month, does.
       </p>
       <p className="text-navy-700 mb-8">
-        Reviewly generates review responses in 10 seconds. Paste the review, get a reply, post it. The consistency becomes automatic.
+        Typani generates review responses in 10 seconds. Paste the review, get a reply, post it. The consistency becomes automatic.
       </p>
 
       <a href="/#demo" className="btn-primary inline-block mb-12">

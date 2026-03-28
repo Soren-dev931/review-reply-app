@@ -3,8 +3,8 @@ import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Best Review Management Software | Reviewly",
-    description: "Looking for the best review management software? Reviewly helps you monitor, respond to, and analyze Google reviews — all from one simple dashboard.",
+    title: "Best Review Management Software | Typani",
+    description: "Looking for the best review management software? Typani helps you monitor, respond to, and analyze Google reviews — all from one simple dashboard.",
   };
 }
 
@@ -13,7 +13,7 @@ export default function BestReviewManagementSoftware() {
     <UsesPageLayout
       badge="Review Management"
       h1="Best Review Management Software for Local Businesses"
-      tagline="Reviewly gives local businesses everything they need to manage Google reviews — alerts, AI responses, analytics, and multi-location support — in one clean dashboard."
+      tagline="Typani gives local businesses everything they need to manage Google reviews — alerts, AI responses, analytics, and multi-location support — in one clean dashboard."
       featureHeading="What to Look for in Review Management Software"
       featureBody="The best review management tools don't just collect reviews — they help you respond consistently, spot trends, and protect your reputation across every location."
       featurePoints={[
@@ -27,8 +27,8 @@ export default function BestReviewManagementSoftware() {
       examples={[
         {
           stars: 2,
-          review: "We tried three different review management platforms before Reviewly. The others were either too expensive, too complicated, or generated responses that sounded like they were written by a robot.",
-          response: "Thank you for giving us a shot after a frustrating search — we built Reviewly specifically because the existing tools felt like they were designed for enterprise teams, not small business owners. We're glad the responses feel more human. If you ever have suggestions for improvement, we genuinely want to hear them.",
+          review: "We tried three different review management platforms before Typani. The others were either too expensive, too complicated, or generated responses that sounded like they were written by a robot.",
+          response: "Thank you for giving us a shot after a frustrating search — we built Typani specifically because the existing tools felt like they were designed for enterprise teams, not small business owners. We're glad the responses feel more human. If you ever have suggestions for improvement, we genuinely want to hear them.",
         },
         {
           stars: 5,

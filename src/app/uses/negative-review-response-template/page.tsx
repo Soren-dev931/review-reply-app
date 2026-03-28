@@ -3,7 +3,7 @@ import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Negative Review Response Templates | Reviewly",
+    title: "Negative Review Response Templates | Typani",
     description: "Use these proven negative review response templates to handle Google complaints professionally. Customizable for any industry or situation.",
   };
 }
@@ -13,7 +13,7 @@ export default function NegativeReviewResponseTemplate() {
     <UsesPageLayout
       badge="Templates"
       h1="Negative Review Response Templates for Any Business"
-      tagline="Stop writing negative review responses from scratch. Use these proven templates as a starting point — then customize with Reviewly's AI to fit the specific review."
+      tagline="Stop writing negative review responses from scratch. Use these proven templates as a starting point — then customize with Typani's AI to fit the specific review."
       featureHeading="How to Use Negative Review Response Templates"
       featureBody="Templates are most useful as a structural guide. The best negative review responses follow a predictable format — it's the specific details that make them feel genuine rather than canned."
       featurePoints={[
@@ -39,13 +39,13 @@ export default function NegativeReviewResponseTemplate() {
       whyHeading="Why Templates Help and When to Go Beyond Them"
       whyBody={[
         "Templates solve the blank-page problem — they give you a starting structure so you're not writing from scratch every time. But templates have a ceiling. A response that's obviously templated can feel dismissive, which defeats the purpose. The best approach is to use a template as a skeleton and personalize it with the specific details from the review.",
-        "Reviewly's AI takes this one step further: paste the review, and the AI generates a response that incorporates the specifics automatically. You get the speed of a template with the quality of a custom response — ready to edit and post in seconds.",
+        "Typani's AI takes this one step further: paste the review, and the AI generates a response that incorporates the specifics automatically. You get the speed of a template with the quality of a custom response — ready to edit and post in seconds.",
       ]}
       heroImage="/images/screenshots/dashboard-main.webp"
       featureImage="/images/screenshots/dashboard-5star-response.webp"
       mobileImage="/images/screenshots/mobile-dashboard.webp"
       heroImageAlt="Negative review response template examples"
-      featureImageAlt="Reviewly template library for negative reviews"
+      featureImageAlt="Typani template library for negative reviews"
       mobileImageAlt="Use review response templates on mobile"
       related={[
         { href: "/uses/negative-review-response-examples", label: "Negative Review Response Examples" },

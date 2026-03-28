@@ -2,9 +2,9 @@ import { Metadata } from 'next'
 
 export function generateMetadata(): Metadata {
   return {
-    title: 'Cookie Policy | Reviewly',
+    title: 'Cookie Policy | Typani',
     description:
-      'Reviewly Cookie Policy. Learn about the cookies we use, why we use them, and how to manage your cookie preferences.',
+      'Typani Cookie Policy. Learn about the cookies we use, why we use them, and how to manage your cookie preferences.',
   }
 }
 

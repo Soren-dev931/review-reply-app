@@ -3,7 +3,7 @@ import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Positive Hotel Review Response Examples | Reviewly",
+    title: "Positive Hotel Review Response Examples | Typani",
     description: "See how hotels should respond to 5-star Google reviews. Real examples that reinforce guest loyalty and attract future bookings.",
   };
 }
@@ -45,7 +45,7 @@ export default function PositiveHotelReviewResponseExamples() {
       featureImage="/images/screenshots/dashboard-recent-responses.webp"
       mobileImage="/images/screenshots/mobile-dashboard.webp"
       heroImageAlt="Positive hotel review response examples"
-      featureImageAlt="Responding to positive hotel reviews in Reviewly"
+      featureImageAlt="Responding to positive hotel reviews in Typani"
       mobileImageAlt="Respond to positive hotel reviews on mobile"
       related={[
         { href: "/uses/hotel-review-response-examples", label: "Hotel Review Response Examples" },

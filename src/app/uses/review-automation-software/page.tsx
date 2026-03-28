@@ -3,7 +3,7 @@ import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Review Automation Software | Reviewly",
+    title: "Review Automation Software | Typani",
     description: "Automate your Google review management with smart software. Get notified, generate AI responses, and track your reputation — without manual monitoring.",
   };
 }
@@ -13,9 +13,9 @@ export default function ReviewAutomationSoftware() {
     <UsesPageLayout
       badge="Automation"
       h1="Review Automation Software for Google Reviews"
-      tagline="Reviewly automates the most time-consuming parts of review management — alerts, response drafts, and tracking — so your reputation stays protected without constant attention."
+      tagline="Typani automates the most time-consuming parts of review management — alerts, response drafts, and tracking — so your reputation stays protected without constant attention."
       featureHeading="What Review Automation Software Does"
-      featureBody="Review automation software isn't about removing your judgment — it's about removing the friction. Reviewly handles the monitoring and draft generation so you can spend your limited time on the decision, not the process."
+      featureBody="Review automation software isn't about removing your judgment — it's about removing the friction. Typani handles the monitoring and draft generation so you can spend your limited time on the decision, not the process."
       featurePoints={[
         "Automatic review monitoring — no manual checking required",
         "Instant alerts when a new review is posted",
@@ -28,7 +28,7 @@ export default function ReviewAutomationSoftware() {
         {
           stars: 2,
           review: "A business that actually uses review automation should be embarrassed when their automated response doesn't even match the content of my review. Mine was clearly not read.",
-          response: "That's a fair and important critique — an automated-sounding response that ignores the actual review content is worse than no response. Reviewly is built specifically to address this: every response is generated from the actual review text, so it reflects what was said. We're committed to automation that still feels human.",
+          response: "That's a fair and important critique — an automated-sounding response that ignores the actual review content is worse than no response. Typani is built specifically to address this: every response is generated from the actual review text, so it reflects what was said. We're committed to automation that still feels human.",
         },
         {
           stars: 5,
@@ -39,7 +39,7 @@ export default function ReviewAutomationSoftware() {
       whyHeading="Why Review Automation Software Beats Manual Management"
       whyBody={[
         "Manual review management fails silently. Businesses miss reviews during busy periods, respond to them days or weeks late, and never realize how much reputation ground they're losing. Review automation software creates a system that works even when you're too busy to think about it.",
-        "The best review automation tools don't sacrifice quality for speed. Reviewly's AI generates responses that are specific to each review — not templated — so you never have to apologize for a response that didn't address the actual complaint. The automation is invisible to the customer.",
+        "The best review automation tools don't sacrifice quality for speed. Typani's AI generates responses that are specific to each review — not templated — so you never have to apologize for a response that didn't address the actual complaint. The automation is invisible to the customer.",
       ]}
       heroImage="/images/screenshots/dashboard-recent-responses.webp"
       featureImage="/images/screenshots/analytics-page.webp"

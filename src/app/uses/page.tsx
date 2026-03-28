@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "AI Review Responses for Every Business | Reviewly",
-    description: "Browse review response examples by business type, star rating, or use case. Generate personalized review replies in 10 seconds with Reviewly.",
+    title: "AI Review Responses for Every Business | Typani",
+    description: "Browse review response examples by business type, star rating, or use case. Generate personalized review replies in 10 seconds with Typani.",
   };
 }
 
@@ -136,7 +136,7 @@ export default function UsesHub() {
         AI Review Responses for Every Business
       </h1>
       <p className="text-lg text-navy-700 mb-4">
-        Reviewly generates personalized review responses for any business type and any star rating. Browse examples by category or try the tool yourself.
+        Typani generates personalized review responses for any business type and any star rating. Browse examples by category or try the tool yourself.
       </p>
 
       <a href="/#demo" className="btn-primary inline-block mb-12">

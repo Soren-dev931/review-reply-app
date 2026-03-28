@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Auto Repair Review Response Examples — Replies for Shops | Reviewly",
+    title: "Auto Repair Review Response Examples — Replies for Shops | Typani",
     description: "Auto repair review response examples for pricing, repair quality, and turnaround time. Generate mechanic shop review replies in 10 seconds.",
   };
 }
@@ -25,7 +25,7 @@ export default function AutoRepairReviewResponseExamples() {
             </h1>
             <p className="text-lg text-navy-600 mb-8 leading-relaxed">
               In an industry built on trust, your response to a bad review is
-              more powerful than the review itself. Reviewly generates
+              more powerful than the review itself. Typani generates
               professional replies for pricing complaints, repair quality issues,
               and 5-star shoutouts — in seconds.
             </p>
@@ -41,7 +41,7 @@ export default function AutoRepairReviewResponseExamples() {
           <div className="rounded-2xl overflow-hidden shadow-2xl border border-navy-100">
             <Image
               src="/images/screenshots/dashboard-main.webp"
-              alt="Reviewly dashboard — auto repair review response management"
+              alt="Typani dashboard — auto repair review response management"
               width={720}
               height={480}
               className="w-full h-auto"
@@ -61,7 +61,7 @@ export default function AutoRepairReviewResponseExamples() {
             </div>
             <div>
               <p className="text-3xl font-bold text-emerald-400">500+</p>
-              <p className="text-navy-300 text-sm mt-1">businesses using Reviewly</p>
+              <p className="text-navy-300 text-sm mt-1">businesses using Typani</p>
             </div>
             <div>
               <p className="text-3xl font-bold text-emerald-400">4.8★</p>
@@ -88,7 +88,7 @@ export default function AutoRepairReviewResponseExamples() {
               What Customers Mention in Auto Repair Reviews
             </h2>
             <p className="text-navy-600 mb-6">
-              Every auto repair review tends to hit the same topics. Reviewly
+              Every auto repair review tends to hit the same topics. Typani
               picks up on the details and writes a response that actually
               addresses what was said.
             </p>
@@ -115,7 +115,7 @@ export default function AutoRepairReviewResponseExamples() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-navy-900 mb-3">
-              Real Examples — See What Reviewly Generates
+              Real Examples — See What Typani Generates
             </h2>
             <p className="text-navy-600 max-w-xl mx-auto">
               Paste any review, get a reply that sounds like a real shop owner —
@@ -137,7 +137,7 @@ export default function AutoRepairReviewResponseExamples() {
               <div className="border-t border-navy-100 pt-6">
                 <div className="flex items-center gap-2 mb-3">
                   <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
-                  <span className="text-sm font-semibold text-emerald-700 uppercase tracking-wide">Reviewly Response</span>
+                  <span className="text-sm font-semibold text-emerald-700 uppercase tracking-wide">Typani Response</span>
                 </div>
                 <p className="text-navy-700 leading-relaxed">
                   "I understand the frustration — a higher-than-expected bill
@@ -162,7 +162,7 @@ export default function AutoRepairReviewResponseExamples() {
               <div className="border-t border-navy-100 pt-6">
                 <div className="flex items-center gap-2 mb-3">
                   <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
-                  <span className="text-sm font-semibold text-emerald-700 uppercase tracking-wide">Reviewly Response</span>
+                  <span className="text-sm font-semibold text-emerald-700 uppercase tracking-wide">Typani Response</span>
                 </div>
                 <p className="text-navy-700 leading-relaxed">
                   "Five years — that means a lot. Mike prides himself on being
@@ -189,7 +189,7 @@ export default function AutoRepairReviewResponseExamples() {
               itself.
             </p>
             <p className="text-navy-600 mb-6 leading-relaxed">
-              Reviewly helps shop owners respond between jobs. No drafting, no
+              Typani helps shop owners respond between jobs. No drafting, no
               wordsmithing. Paste the review, hit generate, post it.
             </p>
             <a href="/signup" className="btn-primary inline-block">
@@ -199,7 +199,7 @@ export default function AutoRepairReviewResponseExamples() {
           <div className="rounded-2xl overflow-hidden shadow-xl border border-navy-100">
             <Image
               src="/images/screenshots/mobile-dashboard.webp"
-              alt="Respond to auto repair reviews from your phone with Reviewly"
+              alt="Respond to auto repair reviews from your phone with Typani"
               width={720}
               height={480}
               className="w-full h-auto"
@@ -221,7 +221,7 @@ export default function AutoRepairReviewResponseExamples() {
             href="/signup"
             className="inline-block bg-white text-emerald-700 font-bold px-8 py-4 rounded-xl hover:bg-emerald-50 transition-colors text-lg"
           >
-            Try Reviewly Free
+            Try Typani Free
           </a>
         </div>
       </section>

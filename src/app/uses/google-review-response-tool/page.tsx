@@ -3,7 +3,7 @@ import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Google Review Response Tool | Reviewly",
+    title: "Google Review Response Tool | Typani",
     description: "The simplest Google review response tool for local businesses. Generate, edit, and post professional replies to any Google review — in seconds.",
   };
 }
@@ -13,9 +13,9 @@ export default function GoogleReviewResponseTool() {
     <UsesPageLayout
       badge="AI Tools"
       h1="Google Review Response Tool for Local Businesses"
-      tagline="Reviewly is the simplest tool for responding to Google reviews. Paste a review, get a professional response in seconds — no complex setup, no learning curve."
+      tagline="Typani is the simplest tool for responding to Google reviews. Paste a review, get a professional response in seconds — no complex setup, no learning curve."
       featureHeading="What Makes a Great Google Review Response Tool"
-      featureBody="The best review response tools get out of your way. They should be fast, produce quality output, and make it easy to edit before posting. Here's how Reviewly delivers on all three."
+      featureBody="The best review response tools get out of your way. They should be fast, produce quality output, and make it easy to edit before posting. Here's how Typani delivers on all three."
       featurePoints={[
         "Paste-and-generate interface — no complex setup",
         "AI-generated responses specific to each review",
@@ -45,7 +45,7 @@ export default function GoogleReviewResponseTool() {
       featureImage="/images/screenshots/dashboard-main.webp"
       mobileImage="/images/screenshots/mobile-dashboard.webp"
       heroImageAlt="Google review response tool interface"
-      featureImageAlt="Reviewly response tool dashboard"
+      featureImageAlt="Typani response tool dashboard"
       mobileImageAlt="Use the Google review response tool on mobile"
       related={[
         { href: "/uses/google-review-response-generator", label: "Google Review Response Generator" },

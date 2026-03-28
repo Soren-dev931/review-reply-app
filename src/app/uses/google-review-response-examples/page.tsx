@@ -3,7 +3,7 @@ import UsesPageLayout from "@/components/UsesPageLayout";
 
 export function generateMetadata(): Metadata {
   return {
-    title: "Google Review Response Examples | Reviewly",
+    title: "Google Review Response Examples | Typani",
     description: "See real examples of professional Google review responses for any star rating or industry. Copy, adapt, or generate your own with AI.",
   };
 }
@@ -45,7 +45,7 @@ export default function GoogleReviewResponseExamples() {
       featureImage="/images/screenshots/dashboard-5star-response.webp"
       mobileImage="/images/screenshots/mobile-dashboard.webp"
       heroImageAlt="Google review response examples dashboard"
-      featureImageAlt="Example Google review responses in Reviewly"
+      featureImageAlt="Example Google review responses in Typani"
       mobileImageAlt="View Google review response examples on mobile"
       related={[
         { href: "/uses/review-response-examples", label: "Review Response Examples" },
