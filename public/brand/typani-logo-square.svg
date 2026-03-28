@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="400" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" rx="88" fill="url(#bg)"/>
+  <rect width="400" height="400" rx="88" fill="url(#shine)"/>
+
+  <!-- Speech bubble (centered, scaled up) -->
+  <path d="M69 138 C69 119 84 104 103 104 L297 104 C316 104 331 119 331 138 L331 244 C331 263 316 278 297 278 L221 278 L180 330 L180 278 L103 278 C84 278 69 263 69 244 Z" fill="white" fill-opacity="0.95"/>
+
+  <!-- Star (centered in bubble) -->
+  <path d="M200 130 L215 175 L263 175 L225 200 L240 245 L200 220 L160 245 L175 200 L137 175 L185 175 Z" fill="url(#bg)"/>
+</svg>
