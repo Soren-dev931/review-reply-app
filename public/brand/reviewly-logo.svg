@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" fill="none">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="60" y2="60" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="shine2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Icon mark (scaled to 52x52, centered vertically in 60px height) -->
+  <g transform="translate(0, 4)">
+    <rect width="52" height="52" rx="13" fill="url(#bg2)"/>
+    <rect width="52" height="52" rx="13" fill="url(#shine2)"/>
+    <!-- Speech bubble -->
+    <path d="M9 12 C9 10.3 10.3 9 12 9 L40 9 C41.7 9 43 10.3 43 12 L43 31 C43 32.7 41.7 34 40 34 L29 34 L23.5 42 L23.5 34 L12 34 C10.3 34 9 32.7 9 31 Z" fill="white" fill-opacity="0.95"/>
+    <!-- Star -->
+    <path d="M26 14.5 L27.6 19.6 L33 19.6 L28.7 22.7 L30.3 27.8 L26 24.7 L21.7 27.8 L23.3 22.7 L19 19.6 L24.4 19.6 Z" fill="url(#bg2)"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="66" y="39" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="26" font-weight="700" fill="#0f172a" letter-spacing="-0.5">Reviewly</text>
+</svg>

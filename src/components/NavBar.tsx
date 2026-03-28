@@ -43,9 +43,8 @@ export default function NavBar() {
     <nav className="border-b border-navy-100 bg-white/80 backdrop-blur-sm sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         {/* Logo */}
-        <a href="/" className="flex items-center gap-2" onClick={closeMenu}>
-          <span className="text-2xl">💬</span>
-          <span className="text-xl font-bold text-navy-900">Reviewly</span>
+        <a href="/" className="flex items-center" onClick={closeMenu}>
+          <img src="/brand/reviewly-logo.svg" alt="Reviewly" width={140} height={38} className="h-9 w-auto" />
         </a>
 
         {/* Desktop center links */}
