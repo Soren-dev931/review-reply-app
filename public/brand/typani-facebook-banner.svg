@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 312" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="820" y2="312" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#064e3b"/>
+      <stop offset="60%" stop-color="#065f46"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="iconbg" x1="0" y1="0" x2="90" y2="90" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <!-- Subtle dot pattern -->
+    <pattern id="dots" x="0" y="0" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#ffffff" fill-opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="820" height="312" fill="url(#bg)"/>
+  <rect width="820" height="312" fill="url(#dots)"/>
+  <rect width="820" height="312" fill="url(#shine)"/>
+
+  <!-- Decorative circle top right -->
+  <circle cx="720" cy="-20" r="180" fill="#10b981" fill-opacity="0.12"/>
+  <circle cx="760" cy="340" r="140" fill="#10b981" fill-opacity="0.08"/>
+
+  <!-- Icon mark (left side) -->
+  <g transform="translate(80, 111)">
+    <rect width="90" height="90" rx="22" fill="url(#iconbg)"/>
+    <!-- Speech bubble -->
+    <path d="M15 20 C15 17 17 15 20 15 L70 15 C73 15 75 17 75 20 L75 54 C75 57 73 59 70 59 L50 59 L40.5 72 L40.5 59 L20 59 C17 59 15 57 15 54 Z" fill="white" fill-opacity="0.95"/>
+    <!-- Star -->
+    <path d="M45 25.5 L47.8 34 L56.5 34 L49.8 39 L52.5 47.5 L45 42.5 L37.5 47.5 L40.2 39 L33.5 34 L42.2 34 Z" fill="url(#iconbg)"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="192" y="168" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="58" font-weight="800" fill="#ffffff" letter-spacing="-1">Typani</text>
+
+  <!-- Divider line -->
+  <rect x="192" y="182" width="340" height="2" rx="1" fill="#10b981" fill-opacity="0.6"/>
+
+  <!-- Tagline -->
+  <text x="192" y="218" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="20" font-weight="400" fill="#a7f3d0" letter-spacing="0.2">AI replies to every Google review — automatically</text>
+
+  <!-- Website pill -->
+  <rect x="192" y="238" width="160" height="34" rx="17" fill="#10b981" fill-opacity="0.25"/>
+  <text x="272" y="260" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" font-weight="600" fill="#6ee7b7" text-anchor="middle" letter-spacing="0.3">typani.com</text>
+</svg>
