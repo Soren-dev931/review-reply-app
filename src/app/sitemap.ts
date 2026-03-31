@@ -14,6 +14,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: '/cookies', changeFrequency: 'yearly' as const, priority: 0.2 },
   ]
 
+  const alternativesPages = [
+    '/alternatives',
+    '/alternatives/birdeye-alternative',
+    '/alternatives/podium-alternative',
+    '/alternatives/reviewly-ai-alternative',
+    '/alternatives/nicejob-alternative',
+    '/alternatives/reviewtrackers-alternative',
+    '/alternatives/rightresponse-ai-alternative',
+  ].map((url) => ({
+    url,
+    changeFrequency: 'weekly' as const,
+    priority: 0.9,
+  }))
+
   const usesPages = [
     '/uses',
     // Hospitality
@@ -99,21 +113,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
-  const alternativesPages = [
-    '/alternatives',
-    '/alternatives/birdeye-alternative',
-    '/alternatives/podium-alternative',
-    '/alternatives/reviewly-ai-alternative',
-    '/alternatives/nicejob-alternative',
-    '/alternatives/reviewtrackers-alternative',
-    '/alternatives/rightresponse-ai-alternative',
-  ].map((url) => ({
-    url,
-    changeFrequency: 'weekly' as const,
-    priority: 0.9,
-  }))
-
-  return [...staticPages, ...usesPages, ...blogPages, ...alternativesPages].map((page) => ({
+  return [...staticPages, ...alternativesPages, ...usesPages, ...blogPages].map((page) => ({
     url: `${BASE_URL}${page.url}`,
     lastModified: now,
     changeFrequency: page.changeFrequency,
