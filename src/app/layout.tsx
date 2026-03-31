@@ -114,6 +114,7 @@ export default function RootLayout({
                   <a href="/uses" className="block hover:text-white transition-colors">Use Cases</a>
                   <a href="/blog" className="block hover:text-white transition-colors">Blog</a>
                   <a href="/contact" className="block hover:text-white transition-colors">Contact</a>
+                  <a href="/alternatives" className="block hover:text-white transition-colors">Compare Tools</a>
                 </div>
               </div>
               <div>

@@ -99,7 +99,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
-  return [...staticPages, ...usesPages, ...blogPages].map((page) => ({
+  const alternativesPages = [
+    '/alternatives',
+    '/alternatives/birdeye-alternative',
+    '/alternatives/podium-alternative',
+    '/alternatives/reviewly-ai-alternative',
+    '/alternatives/nicejob-alternative',
+    '/alternatives/reviewtrackers-alternative',
+    '/alternatives/rightresponse-ai-alternative',
+  ].map((url) => ({
+    url,
+    changeFrequency: 'weekly' as const,
+    priority: 0.9,
+  }))
+
+  return [...staticPages, ...usesPages, ...blogPages, ...alternativesPages].map((page) => ({
     url: `${BASE_URL}${page.url}`,
     lastModified: now,
     changeFrequency: page.changeFrequency,

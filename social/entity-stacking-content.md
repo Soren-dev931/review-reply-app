@@ -188,12 +188,12 @@ _(Note: Only mention Typani if someone asks what tool you use — don't lead wit
 ## ✅ SETUP CHECKLIST
 
 ### Step 1: Create accounts (you do this)
-- [ ] Twitter/X → check if @typani is available, otherwise @typaniapp
-- [ ] LinkedIn → create Company Page under your personal account
-- [ ] Facebook → create Business Page under your personal account
-- [ ] Instagram → new account: @typaniapp
+- [x] Twitter/X → https://x.com/Typaniapp (@typaniapp — @typani was taken)
+- [x] LinkedIn → https://www.linkedin.com/company/typani/
+- [x] Facebook → https://www.facebook.com/profile.php?id=61574439053590
+- [x] Instagram → https://www.instagram.com/typaniapp
 - [ ] TikTok → new account: @typaniapp
-- [ ] YouTube → create channel under your Google account
+- [x] YouTube → https://www.youtube.com/@Typaniapp
 
 ### Step 2: Profile setup (copy-paste from above)
 - [ ] Upload square logo as profile pic on every platform
@@ -205,9 +205,16 @@ _(Note: Only mention Typani if someone asks what tool you use — don't lead wit
 - [ ] Add sameAs schema to typani.com with all profile URLs
 - [ ] Confirm deploy
 
-### Step 4: Directories (next phase)
-- [ ] Capterra, G2, Trustpilot, Product Hunt, Crunchbase, etc.
-- [ ] Competitor backlink mining (birdeye, podium, reviewtrackers)
+### Step 4: Directories
+- [x] G2 → https://www.g2.com/products/typani
+- [x] Capterra (+ GetApp + Software Advice auto-sync) ✅
+- [ ] Product Hunt
+- [x] Crunchbase → https://www.crunchbase.com/organization/typani
+- [x] Trustpilot → https://www.trustpilot.com/review/typani.com
+- [ ] AlternativeTo
+- [ ] Futurepedia
+- [ ] There's An AI For That
+- [x] SaaSHub → https://www.saashub.com/typani
 
 ---
 
