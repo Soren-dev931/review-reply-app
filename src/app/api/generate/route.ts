@@ -2,15 +2,18 @@ import { createServerClient } from '@supabase/ssr'
 import { cookies } from 'next/headers'
 import { NextResponse } from 'next/server'
 import Anthropic from '@anthropic-ai/sdk'
+import { sanitizeReviewText } from '@/lib/sanitize'
 
 export async function POST(request: Request) {
   try {
-    const { reviewText, rating } = await request.json()
+    const body = await request.json()
+    const reviewText = sanitizeReviewText(body.reviewText)
+    const rating = typeof body.rating === 'number' ? Math.floor(body.rating) : 0
 
-    if (!reviewText || typeof reviewText !== 'string' || reviewText.trim().length === 0) {
+    if (!reviewText || reviewText.length === 0) {
       return NextResponse.json({ error: 'Review text is required' }, { status: 400 })
     }
-    if (!rating || typeof rating !== 'number' || rating < 1 || rating > 5) {
+    if (rating < 1 || rating > 5) {
       return NextResponse.json({ error: 'Rating must be between 1 and 5' }, { status: 400 })
     }
 
@@ -143,7 +146,8 @@ Write ONLY the response text. No quotes, no labels, no "Response:" prefix.`
 
     return NextResponse.json({ response: generatedResponse })
   } catch (err) {
+    // Log full error server-side only — never expose to client
     console.error('Generate error:', err)
-    return NextResponse.json({ error: 'Internal server error' }, { status: 500 })
+    return NextResponse.json({ error: 'Something went wrong. Please try again.' }, { status: 500 })
   }
 }
