@@ -21,7 +21,17 @@ export async function GET() {
     }
 
     // Step 1: List accounts
-    const accounts = await getBusinessAccountId(oauth2Client)
+    let accounts
+    try {
+      accounts = await getBusinessAccountId(oauth2Client)
+    } catch (err) {
+      console.error('Google accounts API error:', err)
+      const errMsg = err instanceof Error ? err.message : String(err)
+      return NextResponse.json(
+        { error: `Google API error: ${errMsg}. Make sure "My Business Account Management API" is enabled in Google Cloud Console.`, locations: [] },
+        { status: 500 }
+      )
+    }
 
     if (!accounts || accounts.length === 0) {
       return NextResponse.json({
@@ -52,7 +62,15 @@ export async function GET() {
       )
 
       if (!locRes.ok) {
-        console.error(`Failed to fetch locations for ${accountName}:`, await locRes.text())
+        const errText = await locRes.text()
+        console.error(`Failed to fetch locations for ${accountName}: ${locRes.status}`, errText)
+        // If it's a 403, the API isn't enabled
+        if (locRes.status === 403) {
+          return NextResponse.json(
+            { error: 'Google Business Information API not enabled. Enable "My Business Business Information API" in Google Cloud Console.', locations: [] },
+            { status: 500 }
+          )
+        }
         continue
       }
 

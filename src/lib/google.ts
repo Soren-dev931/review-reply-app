@@ -5,7 +5,11 @@ const GOOGLE_CLIENT_ID = process.env.GOOGLE_CLIENT_ID!
 const GOOGLE_CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET!
 const GOOGLE_REDIRECT_URI = process.env.GOOGLE_REDIRECT_URI || 'https://typani.com/api/auth/google/callback'
 
-const SCOPES = ['https://www.googleapis.com/auth/business.manage']
+const SCOPES = [
+  'https://www.googleapis.com/auth/business.manage',
+  'openid',
+  'email',
+]
 
 // Admin Supabase client for token operations (bypasses RLS)
 function getAdminClient() {
