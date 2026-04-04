@@ -1,7 +1,8 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { createClient } from '@/lib/supabase/client'
+import { useSearchParams } from 'next/navigation'
 
 const BUSINESS_TYPES = [
   { value: 'restaurant', label: 'Restaurant' },
@@ -39,8 +40,26 @@ export default function SettingsPage() {
   const [error, setError] = useState('')
   const [upgrading, setUpgrading] = useState(false)
   const [billingToggle, setBillingToggle] = useState<'monthly' | 'annual'>('monthly')
+  const [googleConnected, setGoogleConnected] = useState(false)
+  const [googleEmail, setGoogleEmail] = useState<string | null>(null)
+  const [googleLoading, setGoogleLoading] = useState(true)
+  const [googleAction, setGoogleAction] = useState(false)
+  const [googleMessage, setGoogleMessage] = useState('')
 
   const supabase = createClient()
+  const searchParams = useSearchParams()
+
+  const checkGoogleConnection = useCallback(async () => {
+    try {
+      const res = await fetch('/api/auth/google')
+      const data = await res.json()
+      setGoogleConnected(data.connected || false)
+      setGoogleEmail(data.email || null)
+    } catch {
+      // ignore
+    }
+    setGoogleLoading(false)
+  }, [])
 
   useEffect(() => {
     async function load() {
@@ -60,7 +79,23 @@ export default function SettingsPage() {
       }
     }
     load()
-  }, [supabase])
+    checkGoogleConnection()
+  }, [supabase, checkGoogleConnection])
+
+  // Handle Google OAuth redirect result
+  useEffect(() => {
+    const googleParam = searchParams.get('google')
+    if (googleParam === 'connected') {
+      setGoogleMessage('Google Business Profile connected successfully!')
+      checkGoogleConnection()
+      // Clean URL
+      window.history.replaceState({}, '', '/app/settings')
+    } else if (googleParam === 'error') {
+      const reason = searchParams.get('reason') || 'unknown'
+      setGoogleMessage(`Failed to connect Google: ${reason}. Please try again.`)
+      window.history.replaceState({}, '', '/app/settings')
+    }
+  }, [searchParams, checkGoogleConnection])
 
   async function handleSave(e: React.FormEvent) {
     e.preventDefault()
@@ -215,27 +250,87 @@ export default function SettingsPage() {
           <p className="text-navy-500 text-xs mb-4">
             Connect your Google profile to auto-monitor reviews and post responses directly.
           </p>
-          <div className="flex items-center justify-between bg-navy-50 rounded-lg p-4">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-navy-200 rounded-lg flex items-center justify-center">
-                <span className="text-lg">🔗</span>
-              </div>
-              <div>
-                <p className="font-medium text-navy-900 text-sm">Not Connected</p>
-                <p className="text-navy-500 text-xs">Auto-monitoring will be available once connected</p>
+
+          {googleMessage && (
+            <div className={`rounded-lg p-3 mb-4 text-sm ${
+              googleMessage.includes('success') ? 'bg-emerald-50 border border-emerald-200 text-emerald-800' : 'bg-red-50 border border-red-200 text-red-800'
+            }`}>
+              <div className="flex items-center justify-between">
+                <p>{googleMessage}</p>
+                <button onClick={() => setGoogleMessage('')} className="text-sm ml-2">✕</button>
               </div>
             </div>
-            <div className="flex items-center gap-2">
-              <span className="text-xs bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full font-medium">Coming Soon</span>
+          )}
+
+          {googleLoading ? (
+            <div className="bg-navy-50 rounded-lg p-4 text-navy-400 text-sm">Checking connection...</div>
+          ) : googleConnected ? (
+            <div className="flex items-center justify-between bg-emerald-50 border border-emerald-200 rounded-lg p-4">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center">
+                  <span className="text-lg">✅</span>
+                </div>
+                <div>
+                  <p className="font-medium text-navy-900 text-sm">Connected</p>
+                  <p className="text-emerald-700 text-xs">{googleEmail || 'Google Business Profile linked'}</p>
+                </div>
+              </div>
               <button
                 type="button"
-                disabled
-                className="btn-outline text-sm opacity-50 cursor-not-allowed"
+                onClick={async () => {
+                  if (!confirm('Disconnect Google? This will unlink all locations.')) return
+                  setGoogleAction(true)
+                  try {
+                    await fetch('/api/auth/google', { method: 'DELETE' })
+                    setGoogleConnected(false)
+                    setGoogleEmail(null)
+                    setGoogleMessage('Google disconnected.')
+                  } catch {
+                    setGoogleMessage('Failed to disconnect.')
+                  }
+                  setGoogleAction(false)
+                }}
+                disabled={googleAction}
+                className="text-red-500 hover:text-red-700 text-sm font-medium transition-colors disabled:opacity-50"
               >
-                Connect Google
+                {googleAction ? 'Disconnecting...' : 'Disconnect'}
               </button>
             </div>
-          </div>
+          ) : (
+            <div className="flex items-center justify-between bg-navy-50 rounded-lg p-4">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-navy-200 rounded-lg flex items-center justify-center">
+                  <span className="text-lg">🔗</span>
+                </div>
+                <div>
+                  <p className="font-medium text-navy-900 text-sm">Not Connected</p>
+                  <p className="text-navy-500 text-xs">Connect to auto-monitor reviews and post responses</p>
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={async () => {
+                  setGoogleAction(true)
+                  try {
+                    const res = await fetch('/api/auth/google', { method: 'POST' })
+                    const data = await res.json()
+                    if (data.url) {
+                      window.location.href = data.url
+                    } else {
+                      setGoogleMessage('Failed to start Google connection.')
+                    }
+                  } catch {
+                    setGoogleMessage('Failed to start Google connection.')
+                  }
+                  setGoogleAction(false)
+                }}
+                disabled={googleAction}
+                className="btn-primary text-sm disabled:opacity-50"
+              >
+                {googleAction ? 'Connecting...' : 'Connect Google'}
+              </button>
+            </div>
+          )}
         </div>
 
         {/* Plan Selection */}

@@ -224,7 +224,7 @@ export default function ReviewsPage() {
                         disabled={actionLoading === review.id}
                         className="bg-emerald-500 hover:bg-emerald-600 text-white text-xs font-medium px-3 py-1.5 rounded-md transition-colors disabled:opacity-50"
                       >
-                        {actionLoading === review.id ? '...' : '✓ Approve'}
+                        {actionLoading === review.id ? '...' : '✓ Approve & Post'}
                       </button>
                       <button
                         onClick={() => { setEditingId(review.id); setEditText(review.ai_response || '') }}
@@ -239,6 +239,14 @@ export default function ReviewsPage() {
                       >
                         Skip
                       </button>
+                    </div>
+                  )}
+                  {review.response_status === 'posted' && review.posted_at && (
+                    <div className="flex items-center gap-2 mt-1">
+                      <span className="text-xs text-emerald-600 font-medium">✓ Posted to Google</span>
+                      <span className="text-xs text-navy-400">
+                        {new Date(review.posted_at).toLocaleDateString()}
+                      </span>
                     </div>
                   )}
                 </div>
