@@ -22,13 +22,29 @@ export async function GET() {
 
     // Step 1: List accounts
     let accounts
+    let rawAccountsResponse: unknown = null
     try {
-      accounts = await getBusinessAccountId(oauth2Client)
+      const accountsRes = await fetch('https://mybusinessaccountmanagement.googleapis.com/v1/accounts', {
+        headers: {
+          Authorization: `Bearer ${oauth2Client.credentials.access_token}`,
+        },
+      })
+      rawAccountsResponse = await accountsRes.json()
+      
+      if (!accountsRes.ok) {
+        console.error('Google accounts API error:', accountsRes.status, rawAccountsResponse)
+        return NextResponse.json(
+          { error: `Google Accounts API returned ${accountsRes.status}. Make sure "My Business Account Management API" is enabled.`, debug: rawAccountsResponse, locations: [] },
+          { status: 500 }
+        )
+      }
+      
+      accounts = (rawAccountsResponse as { accounts?: unknown[] }).accounts || []
     } catch (err) {
       console.error('Google accounts API error:', err)
       const errMsg = err instanceof Error ? err.message : String(err)
       return NextResponse.json(
-        { error: `Google API error: ${errMsg}. Make sure "My Business Account Management API" is enabled in Google Cloud Console.`, locations: [] },
+        { error: `Google API error: ${errMsg}`, locations: [] },
         { status: 500 }
       )
     }
@@ -36,7 +52,8 @@ export async function GET() {
     if (!accounts || accounts.length === 0) {
       return NextResponse.json({
         locations: [],
-        message: 'No Google Business accounts found. Make sure you have a Google Business Profile.',
+        message: 'No Google Business accounts found. The API returned 0 accounts.',
+        debug: rawAccountsResponse,
       })
     }
 
@@ -49,7 +66,7 @@ export async function GET() {
       placeId: string | null
     }> = []
 
-    for (const account of accounts) {
+    for (const account of accounts as Array<{ name: string }>) {
       const accountName = account.name // e.g., "accounts/123456"
 
       const locRes = await fetch(
